@@ -1,0 +1,42 @@
+# Render Blueprint: BACKEND ONLY (frontend is deployed on Vercel, database on Neon).
+# Render dashboard -> New -> Blueprint -> pick this repo.
+# Variables marked `sync: false` are asked for in the dashboard during setup.
+services:
+  - type: web
+    name: aevona-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL          # Neon connection string
+        sync: false
+      - key: CORS_ORIGINS          # e.g. https://your-app.vercel.app
+        sync: false
+      - key: FRONTEND_URL          # e.g. https://your-app.vercel.app
+        sync: false
+      - key: ADMIN_USERNAME
+        value: admin
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: ADMIN_GOOGLE_EMAILS
+        sync: false
+      - key: SMTP_HOST
+        value: smtp.gmail.com
+      - key: SMTP_PORT
+        value: "587"
+      - key: SMTP_USERNAME
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: SMTP_FROM_EMAIL
+        sync: false
+      - key: SMTP_FROM_NAME
+        value: Aevona Solutions
+      - key: SMTP_USE_SSL
+        value: "false"

@@ -3,7 +3,6 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.core.config import settings
 from app.database import Base, SessionLocal, engine
 from app.routers import (
     auth,
@@ -37,11 +36,19 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="Aevona Solutions API", version="1.0.0", lifespan=lifespan)
+app = FastAPI(
+    title="Aevona Solutions API",
+    version="1.0.0",
+    lifespan=lifespan,
+)
 
+# Allow requests from the deployed Aevona frontend.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.cors_origins_list,
+    allow_origins=[
+        "https://www.aevonasolution.com",
+        "https://aevonasolution.com",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -62,9 +69,11 @@ app.include_router(contact.router)
 app.include_router(support.router)
 
 
-# GET + HEAD: uptime monitors (UptimeRobot etc.) often probe with HEAD.
-# Deliberately does not touch the database so it stays fast and cheap.
+# GET + HEAD: uptime monitors often probe with HEAD.
 @app.api_route("/", methods=["GET", "HEAD"], tags=["health"])
 @app.api_route("/health", methods=["GET", "HEAD"], tags=["health"])
 def health_check():
-    return {"status": "ok", "service": "Aevona Solutions API"}
+    return {
+        "status": "ok",
+        "service": "Aevona Solutions API",
+    }

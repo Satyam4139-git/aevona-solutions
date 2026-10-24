@@ -207,8 +207,7 @@ export const SettingsPage: React.FC = () => {
               >
                 <option value="English (US)">English (US)</option>
                 <option value="English (UK)">English (UK)</option>
-                <option value="German">German</option>
-                <option value="French">French</option>
+                
               </select>
             </div>
 
@@ -261,18 +260,28 @@ export const SettingsPage: React.FC = () => {
             <Button variant="outline" size="sm">Enable 2FA</Button>
           </div>
 
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">Active Login Sessions</h4>
-            <div className="p-3.5 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] flex items-center justify-between text-xs">
-              <div>
-                <div className="font-bold text-[#1c1019] dark:text-[#fbf4ee]">Chrome on macOS (San Francisco, CA)</div>
-                <div className="text-[10px] text-[#5e4650]">Current Session • IP: 192.168.1.45</div>
+         
+      {/* TAB CONTENT: SECURITY */}
+      {activeTab === 'security' && (
+        <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-3xl p-6 sm:p-8 space-y-6 shadow-sm">
+          <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+            Security & Authentication
+          </h3>
+
+          <div className="p-4 rounded-2xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/30 flex items-center justify-between">
+            <div>
+              <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+                Two-Factor Authentication (2FA)
               </div>
-              <span className="text-emerald-600 font-bold">Active</span>
+              <div className="text-[11px] text-[#5e4650] dark:text-[#e08858]">
+                Enforce TOTP authenticator app on login.
+              </div>
             </div>
+            <Button variant="outline" size="sm">Enable 2FA</Button>
           </div>
         </div>
       )}
+
 
       {/* TAB CONTENT: NOTIFICATIONS */}
       {activeTab === 'notifications' && (

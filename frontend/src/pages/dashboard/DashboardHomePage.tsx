@@ -84,7 +84,7 @@ export const DashboardHomePage: React.FC = () => {
             Executive Summary
           </span>
           <h1 className="text-2xl sm:text-3xl font-serif font-bold">
-            Good morning, {currentUser?.name || 'Partner'}
+            Hello there, {currentUser?.name || 'Partner'}
           </h1>
           <p className="text-xs sm:text-sm text-[#ebdacd]/80">
             Here's what's happening with your active projects and cloud infrastructure today.

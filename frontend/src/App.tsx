@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { ThemeProvider } from './context/ThemeContext';
@@ -44,7 +44,6 @@ import { TasksPage } from './pages/dashboard/TasksPage';
 import { FilesPage } from './pages/dashboard/FilesPage';
 import { MessagesPage } from './pages/dashboard/MessagesPage';
 import { NotificationsPage } from './pages/dashboard/NotificationsPage';
-import { TeamPage } from './pages/dashboard/TeamPage';
 import { BillingPage } from './pages/dashboard/BillingPage';
 import { SettingsPage } from './pages/dashboard/SettingsPage';
 import { SupportPage } from './pages/dashboard/SupportPage';
@@ -104,7 +103,6 @@ export const App: React.FC = () => {
                 <Route path="files" element={<FilesPage />} />
                 <Route path="messages" element={<MessagesPage />} />
                 <Route path="notifications" element={<NotificationsPage />} />
-                <Route path="team" element={<TeamPage />} />
                 <Route path="billing" element={<BillingPage />} />
                 <Route path="settings" element={<SettingsPage />} />
                 <Route path="support" element={<SupportPage />} />
@@ -126,3 +124,4 @@ export const App: React.FC = () => {
 };
 
 export default App;
+

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Send, Paperclip, Phone, Video, FileText, Plus, UserPlus } from 'lucide-react';
 import { useDashboard } from '../../context/DashboardContext';
@@ -139,7 +139,7 @@ export const MessagesPage: React.FC = () => {
                 {activeConv.participant.name}
               </div>
               <div className="text-[10px] text-[#5e4650] dark:text-[#e08858]">
-                {activeConv.participant.role} • {activeConv.participant.online ? 'Online' : 'Offline'}
+                {activeConv.participant.role} â€¢ {activeConv.participant.online ? 'Online' : 'Offline'}
               </div>
             </div>
           </div>
@@ -247,16 +247,7 @@ export const MessagesPage: React.FC = () => {
                       className="mt-4"
                     >
                       New message
-                    </Button>
-                  ) : (
-                    <Link
-                      to="/dashboard/team"
-                      className="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-[#5e4650] hover:underline dark:text-[#e08858]"
-                    >
-                      <UserPlus className="w-4 h-4" />
-                      Invite a team member
-                    </Link>
-                  )}
+                    </Button>) : null}
                 </>
               )}
             </div>
@@ -278,7 +269,7 @@ export const MessagesPage: React.FC = () => {
               >
                 {teamMembers.map((member) => (
                   <option key={member.id} value={member.id}>
-                    {member.name} · {member.role} · {member.status}
+                    {member.name} Â· {member.role} Â· {member.status}
                   </option>
                 ))}
               </select>
@@ -291,23 +282,10 @@ export const MessagesPage: React.FC = () => {
             </div>
           </form>
         ) : (
-          <div className="space-y-4">
-            <p className="text-sm text-[#5e4650] dark:text-[#e08858]/80">
-              Add someone to your team before starting a conversation.
-            </p>
-            <div className="flex justify-end">
-              <Link
-                to="/dashboard/team"
-                onClick={() => setIsNewMessageOpen(false)}
-                className="inline-flex items-center gap-2 rounded-xl bg-[#e08858] px-3 py-2 text-xs font-bold text-[#1c1019] hover:brightness-95"
-              >
-                <UserPlus className="w-4 h-4" />
-                Invite team member
-              </Link>
-            </div>
-          </div>
+          <div className="py-4 text-sm text-[#5e4650] dark:text-[#e08858]/80">No team members are available to message.</div>
         )}
       </Modal>
     </div>
   );
 };
+

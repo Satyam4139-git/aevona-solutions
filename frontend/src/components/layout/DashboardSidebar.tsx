@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import {
   LayoutDashboard,
@@ -49,7 +49,6 @@ export const DashboardSidebar: React.FC<DashboardSidebarProps> = ({
     { name: 'Files', path: '/dashboard/files', icon: FileText },
     { name: 'Messages', path: '/dashboard/messages', icon: MessageSquare },
     { name: 'Notifications', path: '/dashboard/notifications', icon: Bell, badge: unreadCount },
-    { name: 'Team', path: '/dashboard/team', icon: Users },
     { name: 'Billing', path: '/dashboard/billing', icon: CreditCard },
     { name: 'Settings', path: '/dashboard/settings', icon: Settings },
   ];
@@ -197,3 +196,4 @@ export const DashboardSidebar: React.FC<DashboardSidebarProps> = ({
     </>
   );
 };
+

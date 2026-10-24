@@ -55,7 +55,7 @@ export const SettingsPage: React.FC = () => {
     currentUser?.jobTitle || 'VP of Strategy'
   );
   const [location, setLocation] = useState(
-    currentUser?.location || 'San Francisco, CA'
+    currentUser?.location || ''
   );
 
   // Account Preferences State
@@ -330,8 +330,6 @@ export const SettingsPage: React.FC = () => {
               >
                 <option value="English (US)">English (US)</option>
                 <option value="English (UK)">English (UK)</option>
-                <option value="German">German</option>
-                <option value="French">French</option>
               </select>
             </div>
 
@@ -407,26 +405,7 @@ export const SettingsPage: React.FC = () => {
             <Button type="button" variant="outline" size="sm">
               Enable 2FA
             </Button>
-          </div>
-
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">
-              Active Login Sessions
-            </h4>
-
-            <div className="p-3.5 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] flex items-center justify-between gap-3 text-xs">
-              <div>
-                <div className="font-bold text-[#1c1019] dark:text-[#fbf4ee]">
-                  Current Browser Session
-                </div>
-                <div className="text-[10px] text-[#5e4650] dark:text-[#e08858] mt-1">
-                  This session
-                </div>
-              </div>
-              <span className="text-emerald-600 font-bold">Active</span>
-            </div>
-          </div>
-        </div>
+          </div></div>
       )}
 
       {/* NOTIFICATIONS TAB */}

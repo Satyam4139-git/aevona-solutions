@@ -250,10 +250,6 @@ export const HomePage: React.FC = () => {
 
                 </div>
 
-                <p className="mt-3 text-[9px] uppercase tracking-wider text-[#5e4650]/55 dark:text-[#e08858]/55">
-                  Sample figures supplied in the brief; confirm before publication.
-                </p>
-
               </div>
 
             </div>

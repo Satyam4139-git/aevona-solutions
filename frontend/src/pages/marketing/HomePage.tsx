@@ -260,8 +260,12 @@ export const HomePage: React.FC = () => {
             <div className="lg:col-span-5 relative">
               <div className="absolute -inset-3 rounded-[2rem] border border-[#c45139]/20 rotate-2" />
               <div className="aenova-showreel-float relative isolate overflow-hidden rounded-[2rem] border border-[#2e1a2a] bg-[#0e0810] shadow-[0_30px_70px_rgba(0,0,0,.45)] [container-type:inline-size]" style={{ aspectRatio: '620 / 477' }}>
-                <img src="/images/services-hero.png" alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover" />
-
+                <img
+                   src="/images/services-hero.png"
+                   alt="Enterprise technology, software engineering and digital solutions by Aevona Solution"
+                   title="Aevona Solution Enterprise Services"
+                   className="absolute inset-0 h-full w-full object-cover"
+                />
                 <svg aria-hidden="true" viewBox="0 0 620 477" className="pointer-events-none absolute inset-0 z-10 h-full w-full">
                   <defs>
                     <radialGradient id="orbit-dot-glow"><stop offset="0" stopColor="#f8d0b0" stopOpacity=".9" /><stop offset="1" stopColor="#f59a62" stopOpacity="0" /></radialGradient>

@@ -20,9 +20,10 @@ export const Logo: React.FC<LogoProps> = ({
   const Content = (
     <div className="inline-flex items-center group cursor-pointer">
       <img
-        src={logo}
-        alt="AEVONA"
-        className={`${heights[size]} w-auto object-contain rounded-md bg-[#100810] px-2 py-1 dark:bg-transparent dark:p-0 group-hover:scale-105 transition-transform duration-300`}
+         src={logo}
+         alt="Aevona Solution - Enterprise Technology and Digital Solutions Company"
+         title="Aevona Solution"
+         className={`${heights[size]} w-auto object-contain rounded-md bg-[#100810] px-2 py-1 dark:bg-transparent dark:p-0 group-hover:scale-105 transition-transform duration-300`}
       />
     </div>
   );

@@ -26,17 +26,17 @@ export const VerifyEmailPage: React.FC = () => {
   return (
     <div className="space-y-6 text-center">
       {/* Email Icon Badge */}
-      <div className="w-16 h-16 rounded-2xl bg-[#e08858]/20 border border-[#e08858]/40 text-[#5e4650] dark:text-[#e08858] flex items-center justify-center mx-auto shadow-md">
+      <div className="w-16 h-16 rounded-2xl bg-[#0b4f9c]/20 border border-[#0b4f9c]/40 text-[#4a5a6a]  flex items-center justify-center mx-auto shadow-md">
         <Mail className="w-8 h-8" />
       </div>
 
       <div>
-        <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+        <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#12202f] ">
           Verify your Email Address
         </h2>
-        <p className="text-sm text-[#5e4650] dark:text-[#e08858]/80 mt-2 max-w-sm mx-auto">
+        <p className="text-sm text-[#4a5a6a]  mt-2 max-w-sm mx-auto">
           We sent a verification link to{' '}
-          <span className="font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+          <span className="font-bold text-[#12202f] ">
             {currentUser?.email || 'alex@company.com'}
           </span>
           . Please check your inbox and click the link to activate your account.
@@ -44,7 +44,7 @@ export const VerifyEmailPage: React.FC = () => {
       </div>
 
       {resent && (
-        <div className="p-3.5 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 border border-emerald-300 dark:border-emerald-800 text-xs text-emerald-800 dark:text-emerald-300 flex items-center justify-center gap-2">
+        <div className="p-3.5 rounded-xl bg-emerald-100  border border-emerald-300  text-xs text-emerald-800  flex items-center justify-center gap-2">
           <CheckCircle className="w-4 h-4" /> A new verification link was sent to your email!
         </div>
       )}
@@ -66,22 +66,22 @@ export const VerifyEmailPage: React.FC = () => {
           <button
             onClick={handleResend}
             disabled={loading}
-            className="flex items-center gap-1.5 text-[#5e4650] dark:text-[#e08858] hover:underline"
+            className="flex items-center gap-1.5 text-[#4a5a6a]  hover:underline"
           >
             <RefreshCw className={`w-3.5 h-3.5 ${loading ? 'animate-spin' : ''}`} />
             Resend Email
           </button>
 
-          <span className="text-[#e08858]/40">•</span>
+          <span className="text-[#0b4f9c]/40">•</span>
 
-          <Link to="/signup" className="flex items-center gap-1.5 text-[#5e4650] dark:text-[#e08858] hover:underline">
+          <Link to="/signup" className="flex items-center gap-1.5 text-[#4a5a6a]  hover:underline">
             <Edit3 className="w-3.5 h-3.5" /> Change Email
           </Link>
         </div>
       </div>
 
-      <div className="pt-4 border-t border-[#e08858]/30 dark:border-[#3a2530]">
-        <Link to="/login" className="text-xs text-[#5e4650]/70 dark:text-[#e08858]/70 hover:underline">
+      <div className="pt-4 border-t border-[#0b4f9c]/30 ">
+        <Link to="/login" className="text-xs text-[#4a5a6a]/70  hover:underline">
           Back to Login
         </Link>
       </div>

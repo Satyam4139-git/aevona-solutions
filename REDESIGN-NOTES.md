@@ -17,3 +17,14 @@ The original React/FastAPI application has been refreshed in place. Existing rou
 Follow `DEPLOYMENT.md` for full-stack setup. For the frontend, run `npm ci` and `npm run dev` inside `frontend/`. For the API, install `backend/requirements.txt`, configure `backend/.env` from `.env.example`, then run `uvicorn app.main:app --reload` from `backend/`.
 
 The billing plans retain the server's existing Starter ($199/month), Professional ($799/month), Business ($1,999/month), and Enterprise (custom) amounts. The API persists plan selections but does not process a real card payment unless a payment provider is configured.
+
+---
+
+## Corporate light-theme redesign (frontend only)
+
+The frontend was re-skinned in the style of large IT-services firms (TCS / Accenture): white surfaces, navy text, a single blue accent (#0b4f9c), IBM Plex Sans body and Schibsted Grotesk headings, tighter corner radii and flat buttons.
+
+- Backend, database, API calls, routes, auth and dashboard logic are unchanged.
+- Theme tokens live in `frontend/tailwind.config.js` and `frontend/src/index.css`.
+- Removed decorative effects: custom cursor, particle trail, floating gold balls, shimmer headlines, dark mode (the app is light-only).
+- The header/footer/auth logo is now a CSS wordmark. `images/logo.png` is a light-on-dark asset and is still in the repo if you want to use it on dark backgrounds.

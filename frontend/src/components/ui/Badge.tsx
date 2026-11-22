@@ -15,13 +15,13 @@ export const Badge: React.FC<BadgeProps> = ({
   className
 }) => {
   const variants = {
-    default: 'bg-[#f6e9de] text-[#5e4650] dark:bg-[#2a1a25] dark:text-[#ebdacd]',
-    success: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 dark:border dark:border-emerald-800/40',
-    warning: 'bg-amber-100 text-amber-900 dark:bg-amber-950/60 dark:text-amber-300 dark:border dark:border-amber-800/40',
-    info: 'bg-sky-100 text-sky-800 dark:bg-sky-950/60 dark:text-sky-300 dark:border dark:border-sky-800/40',
-    danger: 'bg-rose-100 text-rose-800 dark:bg-rose-950/60 dark:text-rose-300 dark:border dark:border-rose-800/40',
-    gold: 'bg-[#e08858]/20 text-[#a63d2a] border border-[#e08858]/40 dark:bg-[#e08858]/15 dark:text-[#e08858]',
-    outline: 'border border-[#c45139]/30 text-[#5e4650] dark:text-[#e08858] dark:border-[#c45139]/40',
+    default: 'bg-[#f3f6f9] text-[#4a5a6a]  ',
+    success: 'bg-emerald-100 text-emerald-800    ',
+    warning: 'bg-amber-100 text-amber-900    ',
+    info: 'bg-sky-100 text-sky-800    ',
+    danger: 'bg-rose-100 text-rose-800    ',
+    gold: 'bg-[#0b4f9c]/20 text-[#083b75] border border-[#0b4f9c]/40  ',
+    outline: 'border border-[#0b4f9c]/30 text-[#4a5a6a]  ',
   };
 
   const sizes = {

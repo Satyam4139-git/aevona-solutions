@@ -120,22 +120,22 @@ export const SettingsPage: React.FC = () => {
   ];
 
   const inputClass =
-    'w-full px-3.5 py-2.5 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 rounded-xl text-sm text-[#1c1019] dark:text-[#fbf4ee] outline-none focus:ring-2 focus:ring-[#e08858]/40';
+    'w-full px-3.5 py-2.5 bg-[#ffffff]  border border-[#0b4f9c]/50 rounded-xl text-sm text-[#12202f]  outline-none focus:ring-2 focus:ring-[#0b4f9c]/40';
 
   const labelClass =
-    'block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1';
+    'block text-xs font-semibold text-[#12202f]  mb-1';
 
   const panelClass =
-    'bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-3xl p-6 sm:p-8 shadow-sm';
+    'bg-white  border border-[#0b4f9c]/30 rounded-3xl p-6 sm:p-8 shadow-sm';
 
   return (
     <div className="space-y-6">
       {/* Page Title */}
       <div>
-        <h1 className="text-2xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+        <h1 className="text-2xl font-serif font-bold text-[#12202f] ">
           System Settings
         </h1>
-        <p className="text-xs text-[#5e4650] dark:text-[#e08858]/80 mt-1">
+        <p className="text-xs text-[#4a5a6a]  mt-1">
           Manage your personal profile, security configuration,
           notifications, and theme settings.
         </p>
@@ -145,7 +145,7 @@ export const SettingsPage: React.FC = () => {
       {savedSuccess && (
         <div
           role="status"
-          className="p-3.5 rounded-xl bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 text-xs font-semibold flex items-center gap-2"
+          className="p-3.5 rounded-xl bg-emerald-100 text-emerald-800   text-xs font-semibold flex items-center gap-2"
         >
           <CheckCircle2 className="w-4 h-4" />
           Settings saved successfully!
@@ -153,7 +153,7 @@ export const SettingsPage: React.FC = () => {
       )}
 
       {/* Settings Tabs */}
-      <div className="flex items-center gap-2 border-b border-[#e08858]/30 overflow-x-auto pb-2 scrollbar-none">
+      <div className="flex items-center gap-2 border-b border-[#0b4f9c]/30 overflow-x-auto pb-2 scrollbar-none">
         {tabs.map((tab) => {
           const Icon = tab.icon;
           const isCurrent = activeTab === tab.id;
@@ -166,8 +166,8 @@ export const SettingsPage: React.FC = () => {
               aria-pressed={isCurrent}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-colors ${
                 isCurrent
-                  ? 'bg-[#5e4650] text-white dark:bg-[#e08858] dark:text-[#140a14]'
-                  : 'bg-white dark:bg-[#1e1220] text-[#5e4650] dark:text-[#e08858] hover:bg-[#f6e9de] dark:hover:bg-[#33222c]'
+                  ? 'bg-[#4a5a6a] text-white  '
+                  : 'bg-white  text-[#4a5a6a]  hover:bg-[#f3f6f9] '
               }`}
             >
               <Icon className="w-4 h-4" />
@@ -183,26 +183,26 @@ export const SettingsPage: React.FC = () => {
           onSubmit={handleSaveProfile}
           className={`${panelClass} space-y-6`}
         >
-          <div className="flex items-center gap-4 pb-6 border-b border-[#f6e9de] dark:border-[#33222c]">
+          <div className="flex items-center gap-4 pb-6 border-b border-[#f3f6f9] ">
             <img
               src={
                 currentUser?.avatar ||
                 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200'
               }
               alt={name || 'User avatar'}
-              className="w-16 h-16 rounded-full object-cover border-2 border-[#e08858]"
+              className="w-16 h-16 rounded-full object-cover border-2 border-[#0b4f9c]"
             />
 
             <div>
-              <h3 className="text-base font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+              <h3 className="text-base font-bold text-[#12202f] ">
                 {name}
               </h3>
-              <p className="text-xs text-[#5e4650] dark:text-[#e08858]">
+              <p className="text-xs text-[#4a5a6a] ">
                 {jobTitle} • {company}
               </p>
               <button
                 type="button"
-                className="text-xs font-semibold text-[#5e4650] dark:text-[#e08858] hover:underline mt-1"
+                className="text-xs font-semibold text-[#4a5a6a]  hover:underline mt-1"
                 onClick={() => {
                   document.getElementById('avatar-url')?.focus();
                 }}
@@ -294,7 +294,7 @@ export const SettingsPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex justify-end pt-4 border-t border-[#f6e9de] dark:border-[#33222c]">
+          <div className="flex justify-end pt-4 border-t border-[#f3f6f9] ">
             <Button
               type="submit"
               variant="gold"
@@ -313,7 +313,7 @@ export const SettingsPage: React.FC = () => {
           onSubmit={handleSaveProfile}
           className={`${panelClass} space-y-4`}
         >
-          <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+          <h3 className="text-base font-serif font-bold text-[#12202f] ">
             Localization & Account Format
           </h3>
 
@@ -368,7 +368,7 @@ export const SettingsPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex justify-end pt-4 border-t border-[#f6e9de] dark:border-[#33222c]">
+          <div className="flex justify-end pt-4 border-t border-[#f3f6f9] ">
             <Button
               type="submit"
               variant="gold"
@@ -384,18 +384,18 @@ export const SettingsPage: React.FC = () => {
       {/* SECURITY TAB */}
       {activeTab === 'security' && (
         <div className={`${panelClass} space-y-6`}>
-          <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+          <h3 className="text-base font-serif font-bold text-[#12202f] ">
             Security & Authentication
           </h3>
 
-          <div className="p-4 rounded-2xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/30 flex items-center justify-between gap-4">
+          <div className="p-4 rounded-2xl bg-[#ffffff]  border border-[#0b4f9c]/30 flex items-center justify-between gap-4">
             <div className="flex items-start gap-3">
-              <Lock className="w-5 h-5 text-[#e08858] mt-0.5" />
+              <Lock className="w-5 h-5 text-[#0b4f9c] mt-0.5" />
               <div>
-                <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+                <div className="text-xs font-bold text-[#12202f] ">
                   Two-Factor Authentication (2FA)
                 </div>
-                <div className="text-[11px] text-[#5e4650] dark:text-[#e08858] mt-1">
+                <div className="text-[11px] text-[#4a5a6a]  mt-1">
                   Use an authenticator app for an additional layer of
                   account protection.
                 </div>
@@ -414,16 +414,16 @@ export const SettingsPage: React.FC = () => {
           onSubmit={handleSaveProfile}
           className={`${panelClass} space-y-4`}
         >
-          <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+          <h3 className="text-base font-serif font-bold text-[#12202f] ">
             Notification Preferences
           </h3>
 
           {Object.entries(notifs).map(([key, value]) => (
             <label
               key={key}
-              className="flex items-center justify-between gap-4 p-3.5 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/20 cursor-pointer"
+              className="flex items-center justify-between gap-4 p-3.5 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/20 cursor-pointer"
             >
-              <span className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee] capitalize">
+              <span className="text-xs font-bold text-[#12202f]  capitalize">
                 {key.replace(/([A-Z])/g, ' $1')}
               </span>
 
@@ -436,12 +436,12 @@ export const SettingsPage: React.FC = () => {
                     [key]: e.target.checked,
                   }))
                 }
-                className="w-4 h-4 accent-[#5e4650] dark:accent-[#e08858]"
+                className="w-4 h-4 accent-[#4a5a6a] "
               />
             </label>
           ))}
 
-          <div className="flex justify-end pt-4 border-t border-[#f6e9de] dark:border-[#33222c]">
+          <div className="flex justify-end pt-4 border-t border-[#f3f6f9] ">
             <Button
               type="submit"
               variant="gold"
@@ -458,33 +458,23 @@ export const SettingsPage: React.FC = () => {
       {activeTab === 'appearance' && (
         <div className={`${panelClass} space-y-4`}>
           <div>
-            <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+            <h3 className="text-base font-serif font-bold text-[#12202f] ">
               Theme Identity Preference
             </h3>
-            <p className="text-xs text-[#5e4650] dark:text-[#e08858]/80 mt-1">
-              Select your UI theme. The Aevona dark theme preserves warm
-              brown, gold, and cream identity tones.
+            <p className="text-xs text-[#4a5a6a]  mt-1">
+              The workspace uses the Aevona corporate light theme: white surfaces,
+              navy text and blue accents.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+          <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 pt-2">
             {[
               {
                 id: 'light',
                 title: 'Light Theme',
-                desc: 'Cream background with warm coffee text',
+                desc: 'Clean white workspace with blue accents',
               },
-              {
-                id: 'dark',
-                title: 'Aevona Dark',
-                desc: 'Deep warm dark brown with glowing gold',
-              },
-              {
-                id: 'system',
-                title: 'System Default',
-                desc: 'Sync with browser preferences',
-              },
-            ].map((item) => (
+              ].map((item) => (
               <button
                 key={item.id}
                 type="button"
@@ -492,21 +482,21 @@ export const SettingsPage: React.FC = () => {
                 onClick={() => setTheme(item.id as any)}
                 className={`text-left p-4 rounded-2xl border cursor-pointer transition-all ${
                   theme === item.id
-                    ? 'border-[#e08858] bg-[#e08858]/15 shadow-md'
-                    : 'border-[#e08858]/30 bg-[#fbf4ee]/50 dark:bg-[#140a14] hover:border-[#e08858]'
+                    ? 'border-[#0b4f9c] bg-[#0b4f9c]/15 shadow-md'
+                    : 'border-[#0b4f9c]/30 bg-[#ffffff]/50  hover:border-[#0b4f9c]'
                 }`}
               >
-                <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+                <div className="text-xs font-bold text-[#12202f] ">
                   {item.title}
                 </div>
-                <div className="text-[11px] text-[#5e4650]/80 dark:text-[#e08858]/70 mt-1">
+                <div className="text-[11px] text-[#4a5a6a]/80  mt-1">
                   {item.desc}
                 </div>
               </button>
             ))}
           </div>
 
-          <div className="flex justify-end pt-4 border-t border-[#f6e9de] dark:border-[#33222c]">
+          <div className="flex justify-end pt-4 border-t border-[#f3f6f9] ">
             <Button
               type="button"
               variant="gold"

@@ -133,14 +133,14 @@ export const SolutionsPage: React.FC = () => {
 
   const accentStyles: Record<string, any> = {
     gold: {
-      icon: 'bg-[#e08858]/20 text-[#a63d2a] dark:text-[#e08858]',
-      glow: 'bg-[#e08858]/10',
-      badge: 'bg-[#e08858]/10 text-[#a63d2a] dark:text-[#e08858]',
+      icon: 'bg-[#0b4f9c]/20 text-[#083b75] ',
+      glow: 'bg-[#0b4f9c]/10',
+      badge: 'bg-[#0b4f9c]/10 text-[#083b75] ',
     },
     sage: {
-      icon: 'bg-[#a63d2a]/15 text-[#d08a68]',
-      glow: 'bg-[#a63d2a]/10',
-      badge: 'bg-[#a63d2a]/10 text-[#d08a68]',
+      icon: 'bg-[#083b75]/15 text-[#4a88c9]',
+      glow: 'bg-[#083b75]/10',
+      badge: 'bg-[#083b75]/10 text-[#4a88c9]',
     },
     rose: {
       icon: 'bg-[#a34646]/15 text-[#8f4a4a]',
@@ -148,14 +148,14 @@ export const SolutionsPage: React.FC = () => {
       badge: 'bg-[#a34646]/10 text-[#8f4a4a]',
     },
     terracotta: {
-      icon: 'bg-[#a63d2a]/15 text-[#8D513C]',
-      glow: 'bg-[#a63d2a]/10',
-      badge: 'bg-[#a63d2a]/10 text-[#8D513C]',
+      icon: 'bg-[#083b75]/15 text-[#0a3a70]',
+      glow: 'bg-[#083b75]/10',
+      badge: 'bg-[#083b75]/10 text-[#0a3a70]',
     },
     olive: {
-      icon: 'bg-[#b06f53]/15 text-[#a86a4a]',
-      glow: 'bg-[#b06f53]/10',
-      badge: 'bg-[#b06f53]/10 text-[#a86a4a]',
+      icon: 'bg-[#1f5ba6]/15 text-[#174f94]',
+      glow: 'bg-[#1f5ba6]/10',
+      badge: 'bg-[#1f5ba6]/10 text-[#174f94]',
     },
   };
 
@@ -186,7 +186,7 @@ export const SolutionsPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#fbf4ee] dark:bg-[#140a14] text-[#1c1019] dark:text-[#fbf4ee] overflow-hidden">
+    <div className="min-h-screen bg-[#ffffff]  text-[#12202f]  overflow-hidden">
 
       {/* =====================================================
           HERO
@@ -196,21 +196,21 @@ export const SolutionsPage: React.FC = () => {
 <GoldBalls />
 
         {/* Background glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[850px] h-[420px] bg-[#e08858]/10 blur-[140px] rounded-full pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[850px] h-[420px] bg-[#0b4f9c]/10 blur-[140px] rounded-full pointer-events-none" />
 
-        <div className="absolute left-[5%] top-44 w-32 h-32 rounded-full bg-[#a63d2a]/5 blur-3xl" />
+        <div className="absolute left-[5%] top-44 w-32 h-32 rounded-full bg-[#083b75]/5 blur-3xl" />
 
-        <div className="absolute right-[6%] top-52 w-36 h-36 rounded-full bg-[#a63d2a]/5 blur-3xl" />
+        <div className="absolute right-[6%] top-52 w-36 h-36 rounded-full bg-[#083b75]/5 blur-3xl" />
 
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
           <div className="text-center lg:text-left lg:[&_p]:mx-0 lg:[&_.justify-center]:justify-start lg:[&_h1]:!text-5xl xl:[&_h1]:!text-6xl">
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full border border-[#e08858]/40 bg-[#e08858]/10 shadow-sm">
+          <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full border border-[#0b4f9c]/40 bg-[#0b4f9c]/10 shadow-sm">
 
-            <Sparkles className="w-4 h-4 text-[#e08858]" />
+            <Sparkles className="w-4 h-4 text-[#0b4f9c]" />
 
-            <span className="text-xs sm:text-sm font-Clarkson font-bold uppercase tracking-[0.2em] text-[#5e4650] dark:text-[#e08858]">
+            <span className="text-xs sm:text-sm font-Clarkson font-bold uppercase tracking-[0.2em] text-[#4a5a6a] ">
               Industry Solutions
             </span>
 
@@ -219,19 +219,19 @@ export const SolutionsPage: React.FC = () => {
           {/* Heading */}
           <h1 className="mt-8 font-Clarkson font-bold text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] leading-[0.98] tracking-[-0.055em]">
 
-            <span className="text-[#1c1019] dark:text-[#fbf4ee]">
+            <span className="text-[#12202f] ">
               Built for your
             </span>
 
             <br />
 
-            <span className="text-[#5e4650] dark:text-[#e08858]">
+            <span className="text-[#4a5a6a] ">
               industry's reality.
             </span>
 
           </h1>
 
-          <p className="mt-8 max-w-3xl mx-auto text-base sm:text-lg lg:text-xl leading-8 font-Clarkson text-[#5e4650]/80 dark:text-[#e08858]/75">
+          <p className="mt-8 max-w-3xl mx-auto text-base sm:text-lg lg:text-xl leading-8 font-Clarkson text-[#4a5a6a]/80 ">
             We combine engineering expertise with industry context to build
             digital solutions around the challenges, regulations, and
             workflows that actually matter to your business.
@@ -240,31 +240,31 @@ export const SolutionsPage: React.FC = () => {
           {/* Stats */}
           <div className="mt-12 flex flex-wrap justify-center gap-4">
 
-            <div className="group flex items-center gap-3 px-5 py-3.5 rounded-full bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm hover:-translate-y-1 hover:border-[#e08858]/60 hover:shadow-lg transition-all duration-300">
+            <div className="group flex items-center gap-3 px-5 py-3.5 rounded-full bg-white  border border-[#0b4f9c]/25 shadow-sm hover:-translate-y-1 hover:border-[#0b4f9c]/60 hover:shadow-lg transition-all duration-300">
 
-              <Globe2 className="w-5 h-5 text-[#e08858] group-hover:rotate-12 transition-transform" />
+              <Globe2 className="w-5 h-5 text-[#0b4f9c] group-hover:rotate-12 transition-transform" />
 
-              <span className="text-sm font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+              <span className="text-sm font-Clarkson font-semibold text-[#4a5a6a] ">
                 6 Industry Verticals
               </span>
 
             </div>
 
-            <div className="group flex items-center gap-3 px-5 py-3.5 rounded-full bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm hover:-translate-y-1 hover:border-[#e08858]/60 hover:shadow-lg transition-all duration-300">
+            <div className="group flex items-center gap-3 px-5 py-3.5 rounded-full bg-white  border border-[#0b4f9c]/25 shadow-sm hover:-translate-y-1 hover:border-[#0b4f9c]/60 hover:shadow-lg transition-all duration-300">
 
-              <Layers3 className="w-5 h-5 text-[#a63d2a] group-hover:scale-110 transition-transform" />
+              <Layers3 className="w-5 h-5 text-[#083b75] group-hover:scale-110 transition-transform" />
 
-              <span className="text-sm font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+              <span className="text-sm font-Clarkson font-semibold text-[#4a5a6a] ">
                 36+ Capabilities
               </span>
 
             </div>
 
-            <div className="group flex items-center gap-3 px-5 py-3.5 rounded-full bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm hover:-translate-y-1 hover:border-[#e08858]/60 hover:shadow-lg transition-all duration-300">
+            <div className="group flex items-center gap-3 px-5 py-3.5 rounded-full bg-white  border border-[#0b4f9c]/25 shadow-sm hover:-translate-y-1 hover:border-[#0b4f9c]/60 hover:shadow-lg transition-all duration-300">
 
-              <BrainCircuit className="w-5 h-5 text-[#a63d2a] group-hover:rotate-6 transition-transform" />
+              <BrainCircuit className="w-5 h-5 text-[#083b75] group-hover: transition-transform" />
 
-              <span className="text-sm font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+              <span className="text-sm font-Clarkson font-semibold text-[#4a5a6a] ">
                 Technology + Domain
               </span>
 
@@ -274,8 +274,8 @@ export const SolutionsPage: React.FC = () => {
 
         </div>
           <figure className="relative mx-auto w-full max-w-[520px] lg:ml-auto">
-            <div className="absolute -inset-2 rounded-[2rem] border border-[#e08858]/25" />
-            <img src="/images/solutions.jpg" alt="Team collaborating around a holographic engineering table" className="relative aspect-[7/5] w-full rounded-[1.75rem] border border-[#e08858]/20 object-cover object-[center_30%] shadow-[0_24px_60px_rgba(28,16,28,.25)]" />
+            <div className="absolute -inset-2 rounded-xl border border-[#0b4f9c]/25" />
+            <img src="/images/solutions.jpg" alt="Team collaborating around a holographic engineering table" className="relative aspect-[7/5] w-full rounded-xl border border-[#0b4f9c]/20 object-cover object-[center_30%] shadow-[0_24px_60px_rgba(28,16,28,.25)]" />
           </figure>
         </div>
       </section>
@@ -288,25 +288,25 @@ export const SolutionsPage: React.FC = () => {
       <section className="gold-balls max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pb-12">
 <GoldBalls />
 
-        <div className="rounded-[2rem] bg-white dark:bg-[#1e1220] border border-[#e08858]/30 p-5 sm:p-7 shadow-sm hover:shadow-lg transition-shadow duration-300">
+        <div className="rounded-xl bg-white  border border-[#0b4f9c]/30 p-5 sm:p-7 shadow-sm hover:shadow-lg transition-shadow duration-300">
 
           {/* Search */}
           <div className="relative">
 
-            <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-[#5e4650]/45 dark:text-[#e08858]/45" />
+            <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-[#4a5a6a]/45 " />
 
             <input
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search industries, capabilities..."
-              className="w-full h-14 pl-14 pr-12 rounded-2xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/20 outline-none font-Clarkson text-sm sm:text-base text-[#1c1019] dark:text-[#fbf4ee] placeholder:text-[#5e4650]/40 dark:placeholder:text-[#e08858]/40 focus:border-[#e08858] focus:ring-4 focus:ring-[#e08858]/10 transition-all"
+              className="w-full h-14 pl-14 pr-12 rounded-2xl bg-[#ffffff]  border border-[#0b4f9c]/20 outline-none font-Clarkson text-sm sm:text-base text-[#12202f]  placeholder:text-[#4a5a6a]/40  focus:border-[#0b4f9c] focus:ring-4 focus:ring-[#0b4f9c]/10 transition-all"
             />
 
             {search && (
               <button
                 onClick={() => setSearch('')}
-                className="absolute right-5 top-1/2 -translate-y-1/2 text-[#5e4650]/50 hover:text-[#5e4650] dark:text-[#e08858]/50 dark:hover:text-[#e08858] hover:scale-110 transition-all"
+                className="absolute right-5 top-1/2 -translate-y-1/2 text-[#4a5a6a]/50 hover:text-[#4a5a6a]   hover:scale-110 transition-all"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -329,8 +329,8 @@ export const SolutionsPage: React.FC = () => {
                   hover:-translate-y-0.5
                   ${
                     activeCategory === category
-                      ? 'bg-[#1c1019] text-[#fbf4ee] border-[#1c1019] shadow-lg dark:bg-[#e08858] dark:text-[#1c1019] dark:border-[#e08858]'
-                      : 'bg-[#fbf4ee] dark:bg-[#140a14] text-[#5e4650] dark:text-[#e08858] border-[#e08858]/20 hover:border-[#e08858]/60 hover:shadow-sm'
+                      ? 'bg-[#12202f] text-[#ffffff] border-[#12202f] shadow-lg   '
+                      : 'bg-[#ffffff]  text-[#4a5a6a]  border-[#0b4f9c]/20 hover:border-[#0b4f9c]/60 hover:shadow-sm'
                   }
                 `}
               >
@@ -353,12 +353,12 @@ export const SolutionsPage: React.FC = () => {
         <section className="gold-balls max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pb-16">
 <GoldBalls />
 
-          <div className="group relative overflow-hidden rounded-[2.5rem] bg-[#1c1019] dark:bg-[#1e1220] border border-[#e08858]/30 shadow-xl">
+          <div className="group relative overflow-hidden rounded-xl bg-[#12202f]  border border-[#0b4f9c]/30 shadow-xl">
 
             {/* Background glows */}
-            <div className="absolute -right-32 -top-32 w-[30rem] h-[30rem] rounded-full bg-[#e08858]/10 blur-3xl pointer-events-none" />
+            <div className="absolute -right-32 -top-32 w-[30rem] h-[30rem] rounded-full bg-[#0b4f9c]/10 blur-3xl pointer-events-none" />
 
-            <div className="absolute -left-32 -bottom-32 w-[28rem] h-[28rem] rounded-full bg-[#a63d2a]/10 blur-3xl pointer-events-none" />
+            <div className="absolute -left-32 -bottom-32 w-[28rem] h-[28rem] rounded-full bg-[#083b75]/10 blur-3xl pointer-events-none" />
 
             {/* Main side-by-side layout */}
             <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 p-7 sm:p-10 lg:p-14 xl:p-16 items-center">
@@ -366,27 +366,27 @@ export const SolutionsPage: React.FC = () => {
               {/* LEFT CONTENT */}
               <div>
 
-                <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#e08858]/10 border border-[#e08858]/20">
+                <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#0b4f9c]/10 border border-[#0b4f9c]/20">
 
-                  <Sparkles className="w-4 h-4 text-[#e08858]" />
+                  <Sparkles className="w-4 h-4 text-[#0b4f9c]" />
 
-                  <span className="text-xs font-Clarkson uppercase tracking-[0.2em] text-[#e08858]">
+                  <span className="text-xs font-Clarkson uppercase tracking-[0.2em] text-[#0b4f9c]">
                     Featured Approach
                   </span>
 
                 </div>
 
-                <h2 className="mt-7 max-w-xl font-Clarkson font-bold text-3xl sm:text-4xl lg:text-5xl leading-[1.05] tracking-[-0.045em] text-[#fbf4ee]">
+                <h2 className="mt-7 max-w-xl font-Clarkson font-bold text-3xl sm:text-4xl lg:text-5xl leading-[1.05] tracking-[-0.045em] text-[#ffffff]">
 
                   Technology that understands
 
-                  <span className="text-[#e08858]">
+                  <span className="text-[#0b4f9c]">
                     {' '}your business.
                   </span>
 
                 </h2>
 
-                <p className="mt-6 max-w-xl text-base sm:text-lg leading-8 font-Clarkson text-[#fbf4ee]/70">
+                <p className="mt-6 max-w-xl text-base sm:text-lg leading-8 font-Clarkson text-[#ffffff]/70">
                   Great software is not just about writing code. It needs to
                   understand users, workflows, regulations, data, and the
                   environment it operates in.
@@ -404,7 +404,7 @@ export const SolutionsPage: React.FC = () => {
 
                     <span
                       key={item}
-                      className="px-4 py-2 rounded-full border border-[#fbf4ee]/10 bg-[#fbf4ee]/5 text-xs sm:text-sm font-Clarkson text-[#fbf4ee]/75 hover:bg-[#e08858]/10 hover:border-[#e08858]/30 hover:text-[#e08858] transition-all duration-300"
+                      className="px-4 py-2 rounded-full border border-[#ffffff]/10 bg-[#ffffff]/5 text-xs sm:text-sm font-Clarkson text-[#ffffff]/75 hover:bg-[#0b4f9c]/10 hover:border-[#0b4f9c]/30 hover:text-[#0b4f9c] transition-all duration-300"
                     >
                       {item}
                     </span>
@@ -416,7 +416,7 @@ export const SolutionsPage: React.FC = () => {
                 {/* Small CTA */}
                 <Link
                   to="/login?next=%2Fdashboard%2Fbilling"
-                  className="inline-flex items-center gap-3 mt-9 px-6 py-3.5 rounded-xl bg-[#e08858] text-[#1c1019] text-sm font-Clarkson font-bold hover:bg-[#f0c4a4] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                  className="inline-flex items-center gap-3 mt-9 px-6 py-3.5 rounded-xl bg-[#0b4f9c] text-white text-sm font-Clarkson font-bold hover:bg-[#9cc0e6] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
                 >
                   Explore our approach
                   <ArrowRight className="w-5 h-5" />
@@ -429,15 +429,15 @@ export const SolutionsPage: React.FC = () => {
               <div className="relative">
 
                 {/* Image glow */}
-                <div className="absolute -inset-5 rounded-[2rem] bg-[#e08858]/10 blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="absolute -inset-5 rounded-xl bg-[#0b4f9c]/10 blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-700" />
 
                 {/* Image frame */}
-                <div className="relative rounded-[1.75rem] border border-[#e08858]/30 bg-[#fbf4ee]/5 p-2 shadow-2xl overflow-hidden transform group-hover:-translate-y-2 group-hover:rotate-[0.3deg] transition-all duration-700">
+                <div className="relative rounded-xl border border-[#0b4f9c]/30 bg-[#ffffff]/5 p-2 shadow-2xl overflow-hidden transform group-hover:-translate-y-2 group-hover: transition-all duration-700">
 
-                  <div className="relative overflow-hidden rounded-[1.35rem]">
+                  <div className="relative overflow-hidden rounded-xl">
 
                     {/* Image overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#1c1019]/35 via-transparent to-transparent opacity-60 pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#12202f]/35 via-transparent to-transparent opacity-60 pointer-events-none" />
 
                   </div>
 
@@ -445,23 +445,23 @@ export const SolutionsPage: React.FC = () => {
 
 
                 {/* Floating UI badge */}
-                <div className="absolute -bottom-5 -left-5 sm:-left-7 px-4 py-3 rounded-2xl bg-[#fbf4ee] dark:bg-[#1e1220] border border-[#e08858]/30 shadow-xl">
+                <div className="absolute -bottom-5 -left-5 sm:-left-7 px-4 py-3 rounded-2xl bg-[#ffffff]  border border-[#0b4f9c]/30 shadow-xl">
 
                   <div className="flex items-center gap-3">
 
-                    <div className="w-9 h-9 rounded-xl bg-[#e08858]/15 flex items-center justify-center">
+                    <div className="w-9 h-9 rounded-xl bg-[#0b4f9c]/15 flex items-center justify-center">
 
-                      <Globe2 className="w-5 h-5 text-[#e08858]" />
+                      <Globe2 className="w-5 h-5 text-[#0b4f9c]" />
 
                     </div>
 
                     <div>
 
-                      <p className="text-[10px] uppercase tracking-wider font-Clarkson text-[#5e4650]/50 dark:text-[#e08858]/50">
+                      <p className="text-[10px] uppercase tracking-wider font-Clarkson text-[#4a5a6a]/50 ">
                         Designed around
                       </p>
 
-                      <p className="text-sm font-Clarkson font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+                      <p className="text-sm font-Clarkson font-bold text-[#12202f] ">
                         Your Industry
                       </p>
 
@@ -492,17 +492,17 @@ export const SolutionsPage: React.FC = () => {
 
           <div>
 
-            <span className="text-xs font-Clarkson font-bold uppercase tracking-[0.2em] text-[#e08858]">
+            <span className="text-xs font-Clarkson font-bold uppercase tracking-[0.2em] text-[#0b4f9c]">
               Explore Verticals
             </span>
 
-            <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-Clarkson font-bold tracking-[-0.04em] text-[#1c1019] dark:text-[#fbf4ee]">
+            <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-Clarkson font-bold tracking-[-0.04em] text-[#12202f] ">
               Solutions for real-world industries
             </h2>
 
           </div>
 
-          <span className="hidden sm:block text-sm font-Clarkson text-[#5e4650]/45 dark:text-[#e08858]/45">
+          <span className="hidden sm:block text-sm font-Clarkson text-[#4a5a6a]/45 ">
             {filteredIndustries.length} industries
           </span>
 
@@ -522,7 +522,7 @@ export const SolutionsPage: React.FC = () => {
 
                 <div
                   key={industry.title}
-                  className="group relative overflow-hidden rounded-[2rem] bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm hover:shadow-2xl hover:-translate-y-3 hover:border-[#e08858]/60 transition-all duration-500"
+                  className="group relative overflow-hidden rounded-xl bg-white  border border-[#0b4f9c]/25 shadow-sm hover:shadow-2xl hover:-translate-y-3 hover:border-[#0b4f9c]/60 transition-all duration-500"
                 >
 
                   {/* Glow */}
@@ -536,12 +536,12 @@ export const SolutionsPage: React.FC = () => {
                     <div className="flex items-start justify-between">
 
                       <div
-                        className={`w-14 h-14 rounded-2xl flex items-center justify-center ${accent.icon} group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}
+                        className={`w-14 h-14 rounded-2xl flex items-center justify-center ${accent.icon} group-hover:scale-110 group-hover: transition-all duration-300`}
                       >
                         <Icon className="w-6 h-6" />
                       </div>
 
-                      <span className="text-sm font-Clarkson font-semibold text-[#5e4650]/25 dark:text-[#e08858]/25">
+                      <span className="text-sm font-Clarkson font-semibold text-[#4a5a6a]/25 ">
                         {String(index + 1).padStart(2, '0')}
                       </span>
 
@@ -557,7 +557,7 @@ export const SolutionsPage: React.FC = () => {
                         {industry.category}
                       </span>
 
-                      <h3 className="mt-4 text-2xl sm:text-[1.7rem] leading-tight font-Clarkson font-bold tracking-[-0.03em] text-[#1c1019] dark:text-[#fbf4ee]">
+                      <h3 className="mt-4 text-2xl sm:text-[1.7rem] leading-tight font-Clarkson font-bold tracking-[-0.03em] text-[#12202f] ">
                         {industry.title}
                       </h3>
 
@@ -565,7 +565,7 @@ export const SolutionsPage: React.FC = () => {
 
 
                     {/* Description */}
-                    <p className="mt-4 text-sm sm:text-base leading-7 font-Clarkson text-[#5e4650]/75 dark:text-[#e08858]/70">
+                    <p className="mt-4 text-sm sm:text-base leading-7 font-Clarkson text-[#4a5a6a]/75 ">
                       {industry.desc}
                     </p>
 
@@ -575,11 +575,11 @@ export const SolutionsPage: React.FC = () => {
 
                       <div className="flex items-center gap-3 mb-4">
 
-                        <span className="text-[10px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#5e4650]/45 dark:text-[#e08858]/45">
+                        <span className="text-[10px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#4a5a6a]/45 ">
                           Capabilities
                         </span>
 
-                        <div className="h-px flex-1 bg-[#f6e9de] dark:bg-[#33222c]" />
+                        <div className="h-px flex-1 bg-[#f3f6f9] " />
 
                       </div>
 
@@ -589,7 +589,7 @@ export const SolutionsPage: React.FC = () => {
 
                           <div
                             key={capability}
-                            className="flex items-center gap-3 text-sm font-Clarkson text-[#5e4650] dark:text-[#e08858] group-hover:translate-x-1 transition-transform duration-300"
+                            className="flex items-center gap-3 text-sm font-Clarkson text-[#4a5a6a]  group-hover:translate-x-1 transition-transform duration-300"
                           >
 
                             <CheckCircle2
@@ -608,11 +608,11 @@ export const SolutionsPage: React.FC = () => {
 
 
                     {/* Bottom */}
-                    <div className="mt-8 pt-6 border-t border-[#f6e9de] dark:border-[#33222c]">
+                    <div className="mt-8 pt-6 border-t border-[#f3f6f9] ">
 
                       <Link
                         to="/login?next=%2Fdashboard%2Fbilling"
-                        className="inline-flex items-center gap-2 text-sm font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858] group/link"
+                        className="inline-flex items-center gap-2 text-sm font-Clarkson font-semibold text-[#4a5a6a]  group/link"
                       >
 
                         Explore solution
@@ -634,25 +634,25 @@ export const SolutionsPage: React.FC = () => {
 
         ) : (
 
-          <div className="py-24 rounded-[2rem] bg-white dark:bg-[#1e1220] border border-[#e08858]/30 text-center">
+          <div className="py-24 rounded-xl bg-white  border border-[#0b4f9c]/30 text-center">
 
-            <div className="w-16 h-16 mx-auto rounded-2xl bg-[#e08858]/10 flex items-center justify-center">
+            <div className="w-16 h-16 mx-auto rounded-2xl bg-[#0b4f9c]/10 flex items-center justify-center">
 
-              <Search className="w-7 h-7 text-[#e08858]" />
+              <Search className="w-7 h-7 text-[#0b4f9c]" />
 
             </div>
 
-            <h3 className="mt-6 font-Clarkson font-bold text-2xl text-[#1c1019] dark:text-[#fbf4ee]">
+            <h3 className="mt-6 font-Clarkson font-bold text-2xl text-[#12202f] ">
               No industries found
             </h3>
 
-            <p className="mt-3 text-sm font-Clarkson text-[#5e4650]/60 dark:text-[#e08858]/60">
+            <p className="mt-3 text-sm font-Clarkson text-[#4a5a6a]/60 ">
               Try another search or category.
             </p>
 
             <button
               onClick={clearFilters}
-              className="mt-6 text-sm font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858] underline underline-offset-4"
+              className="mt-6 text-sm font-Clarkson font-semibold text-[#4a5a6a]  underline underline-offset-4"
             >
               Clear filters
             </button>
@@ -671,31 +671,31 @@ export const SolutionsPage: React.FC = () => {
       <section className="gold-balls max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pb-24">
 <GoldBalls />
 
-        <div className="relative overflow-hidden rounded-[2.5rem] border border-[#e08858]/30 bg-white dark:bg-[#1e1220] p-8 sm:p-10 lg:p-14 shadow-sm hover:shadow-xl transition-shadow duration-500">
+        <div className="relative overflow-hidden rounded-xl border border-[#0b4f9c]/30 bg-white  p-8 sm:p-10 lg:p-14 shadow-sm hover:shadow-xl transition-shadow duration-500">
 
-          <div className="absolute -right-24 -top-24 w-80 h-80 rounded-full bg-[#e08858]/10 blur-3xl" />
+          <div className="absolute -right-24 -top-24 w-80 h-80 rounded-full bg-[#0b4f9c]/10 blur-3xl" />
 
           <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
             <div>
 
-              <span className="text-xs font-Clarkson font-bold uppercase tracking-[0.2em] text-[#e08858]">
+              <span className="text-xs font-Clarkson font-bold uppercase tracking-[0.2em] text-[#0b4f9c]">
                 Technology Foundation
               </span>
 
-              <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-Clarkson font-bold tracking-[-0.04em] text-[#1c1019] dark:text-[#fbf4ee]">
+              <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-Clarkson font-bold tracking-[-0.04em] text-[#12202f] ">
 
                 Modern technology.
 
                 <br />
 
-                <span className="text-[#5e4650] dark:text-[#e08858]">
+                <span className="text-[#4a5a6a] ">
                   Practical outcomes.
                 </span>
 
               </h2>
 
-              <p className="mt-6 text-base sm:text-lg leading-8 font-Clarkson text-[#5e4650]/70 dark:text-[#e08858]/65 max-w-xl">
+              <p className="mt-6 text-base sm:text-lg leading-8 font-Clarkson text-[#4a5a6a]/70  max-w-xl">
                 Our solutions are built using modern development practices,
                 cloud infrastructure, intelligent data systems, and
                 security-conscious architecture.
@@ -710,22 +710,22 @@ export const SolutionsPage: React.FC = () => {
                 {
                   icon: Building2,
                   label: 'Engineering',
-                  color: 'text-[#5e4650]',
+                  color: 'text-[#4a5a6a]',
                 },
                 {
                   icon: Cloud,
                   label: 'Cloud',
-                  color: 'text-[#a63d2a]',
+                  color: 'text-[#083b75]',
                 },
                 {
                   icon: Database,
                   label: 'Data',
-                  color: 'text-[#b06f53]',
+                  color: 'text-[#1f5ba6]',
                 },
                 {
                   icon: ShieldCheck,
                   label: 'Security',
-                  color: 'text-[#a63d2a]',
+                  color: 'text-[#083b75]',
                 },
               ].map((item) => {
 
@@ -735,14 +735,14 @@ export const SolutionsPage: React.FC = () => {
 
                   <div
                     key={item.label}
-                    className="group p-6 rounded-2xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/20 hover:-translate-y-2 hover:border-[#e08858]/50 hover:shadow-lg transition-all duration-300"
+                    className="group p-6 rounded-2xl bg-[#ffffff]  border border-[#0b4f9c]/20 hover:-translate-y-2 hover:border-[#0b4f9c]/50 hover:shadow-lg transition-all duration-300"
                   >
 
                     <Icon
                       className={`w-7 h-7 ${item.color} group-hover:scale-110 transition-transform`}
                     />
 
-                    <p className="mt-5 text-base font-Clarkson font-semibold text-[#1c1019] dark:text-[#fbf4ee]">
+                    <p className="mt-5 text-base font-Clarkson font-semibold text-[#12202f] ">
                       {item.label}
                     </p>
 
@@ -767,29 +767,29 @@ export const SolutionsPage: React.FC = () => {
       <section className="gold-balls max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pb-20">
 <GoldBalls />
 
-        <div className="relative overflow-hidden rounded-[2.5rem] bg-[#1c1019] dark:bg-[#1e1220] border border-[#e08858]/30 px-8 py-16 sm:px-12 sm:py-20 text-center shadow-xl">
+        <div className="relative overflow-hidden rounded-xl bg-[#12202f]  border border-[#0b4f9c]/30 px-8 py-16 sm:px-12 sm:py-20 text-center shadow-xl">
 
-          <div className="absolute left-[15%] top-0 w-56 h-56 rounded-full bg-[#e08858]/10 blur-3xl" />
+          <div className="absolute left-[15%] top-0 w-56 h-56 rounded-full bg-[#0b4f9c]/10 blur-3xl" />
 
-          <div className="absolute right-[15%] bottom-0 w-56 h-56 rounded-full bg-[#a63d2a]/10 blur-3xl" />
+          <div className="absolute right-[15%] bottom-0 w-56 h-56 rounded-full bg-[#083b75]/10 blur-3xl" />
 
           <div className="relative">
 
-            <span className="text-xs font-Clarkson uppercase tracking-[0.25em] text-[#e08858]">
+            <span className="text-xs font-Clarkson uppercase tracking-[0.25em] text-[#0b4f9c]">
               Your industry. Your challenge.
             </span>
 
-            <h2 className="mt-6 max-w-3xl mx-auto text-3xl sm:text-4xl lg:text-5xl font-Clarkson font-bold tracking-[-0.04em] text-[#fbf4ee]">
+            <h2 className="mt-6 max-w-3xl mx-auto text-3xl sm:text-4xl lg:text-5xl font-Clarkson font-bold tracking-[-0.04em] text-[#ffffff]">
 
               Let's build something
 
-              <span className="text-[#e08858]">
+              <span className="text-[#0b4f9c]">
                 {' '}that fits.
               </span>
 
             </h2>
 
-            <p className="mt-6 max-w-2xl mx-auto text-base sm:text-lg leading-8 font-Clarkson text-[#fbf4ee]/60">
+            <p className="mt-6 max-w-2xl mx-auto text-base sm:text-lg leading-8 font-Clarkson text-[#ffffff]/60">
               Tell us about your industry, your challenge, or the product
               you're imagining. We'll help translate it into a practical
               technology solution.

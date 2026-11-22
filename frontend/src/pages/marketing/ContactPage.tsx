@@ -54,7 +54,7 @@ export const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#fbf4ee] dark:bg-[#140a14] text-[#1c1019] dark:text-[#fbf4ee] overflow-hidden">
+    <div className="min-h-screen bg-[#ffffff]  text-[#12202f]  overflow-hidden">
 
       {/* =====================================================
           HERO
@@ -64,20 +64,20 @@ export const ContactPage: React.FC = () => {
 <GoldBalls />
 
         {/* Ambient background */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[750px] h-[350px] bg-[#e08858]/10 blur-[140px] rounded-full pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[750px] h-[350px] bg-[#0b4f9c]/10 blur-[140px] rounded-full pointer-events-none" />
 
-        <div className="absolute left-[7%] top-40 w-40 h-40 rounded-full bg-[#a63d2a]/5 blur-3xl" />
+        <div className="absolute left-[7%] top-40 w-40 h-40 rounded-full bg-[#083b75]/5 blur-3xl" />
 
-        <div className="absolute right-[7%] top-52 w-40 h-40 rounded-full bg-[#a63d2a]/5 blur-3xl" />
+        <div className="absolute right-[7%] top-52 w-40 h-40 rounded-full bg-[#083b75]/5 blur-3xl" />
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
           {/* Eyebrow */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#e08858]/10 border border-[#e08858]/35">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0b4f9c]/10 border border-[#0b4f9c]/35">
 
-            <Sparkles className="w-3.5 h-3.5 text-[#e08858]" />
+            <Sparkles className="w-3.5 h-3.5 text-[#0b4f9c]" />
 
-            <span className="text-[10px] font-Clarkson font-bold uppercase tracking-[0.22em] text-[#5e4650] dark:text-[#e08858]">
+            <span className="text-[10px] font-Clarkson font-bold uppercase tracking-[0.22em] text-[#4a5a6a] ">
               Let's Connect
             </span>
 
@@ -85,19 +85,19 @@ export const ContactPage: React.FC = () => {
 
           <h1 className="mt-7 font-Clarkson font-bold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl tracking-[-0.055em] leading-[1.02]">
 
-            <span className="text-[#1c1019] dark:text-[#fbf4ee]">
+            <span className="text-[#12202f] ">
               Have an idea?
             </span>
 
             <br />
 
-            <span className="text-[#5e4650] dark:text-[#e08858]">
+            <span className="text-[#4a5a6a] ">
               Let's build it.
             </span>
 
           </h1>
 
-          <p className="mt-7 max-w-2xl mx-auto text-sm sm:text-base leading-8 font-Clarkson text-[#5e4650]/75 dark:text-[#e08858]/70">
+          <p className="mt-7 max-w-2xl mx-auto text-sm sm:text-base leading-8 font-Clarkson text-[#4a5a6a]/75 ">
             Tell us what you're working on, what you're trying to solve,
             or where your current system is falling apart. We'll take it
             from there.
@@ -106,21 +106,21 @@ export const ContactPage: React.FC = () => {
           {/* Response indicators */}
           <div className="mt-9 flex flex-wrap justify-center gap-3">
 
-            <div className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm">
+            <div className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white  border border-[#0b4f9c]/25 shadow-sm">
 
-              <Clock3 className="w-3.5 h-3.5 text-[#e08858]" />
+              <Clock3 className="w-3.5 h-3.5 text-[#0b4f9c]" />
 
-              <span className="text-[9px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+              <span className="text-[9px] font-Clarkson font-semibold text-[#4a5a6a] ">
                 Response within 24 hours
               </span>
 
             </div>
 
-            <div className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm">
+            <div className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white  border border-[#0b4f9c]/25 shadow-sm">
 
-              <ShieldCheck className="w-3.5 h-3.5 text-[#a63d2a]" />
+              <ShieldCheck className="w-3.5 h-3.5 text-[#083b75]" />
 
-              <span className="text-[9px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+              <span className="text-[9px] font-Clarkson font-semibold text-[#4a5a6a] ">
                 Your information stays private
               </span>
 
@@ -147,27 +147,27 @@ export const ContactPage: React.FC = () => {
               CONTACT INFORMATION
           ================================================== */}
 
-          <div className="relative overflow-hidden rounded-[2rem] bg-[#1c1019] dark:bg-[#1e1220] border border-[#e08858]/30 p-7 sm:p-10 shadow-xl mb-10">
+          <div className="relative overflow-hidden rounded-xl bg-[#12202f]  border border-[#0b4f9c]/30 p-7 sm:p-10 shadow-xl mb-10">
 
             {/* Side accent line */}
-            <div className="absolute left-0 top-8 bottom-8 w-1 rounded-r-full bg-[#e08858]" />
+            <div className="absolute left-0 top-8 bottom-8 w-1 rounded-r-full bg-[#0b4f9c]" />
 
             {/* Decorative glow */}
-            <div className="absolute -right-24 -top-24 w-72 h-72 rounded-full bg-[#e08858]/10 blur-3xl" />
+            <div className="absolute -right-24 -top-24 w-72 h-72 rounded-full bg-[#0b4f9c]/10 blur-3xl" />
 
             <div className="relative h-full flex flex-col">
 
               <div>
 
-                <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#e08858]">
+                <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#0b4f9c]">
                   Contact Information
                 </span>
 
-                <h2 className="mt-4 text-2xl sm:text-3xl font-Clarkson font-bold tracking-[-0.04em] text-[#fbf4ee]">
+                <h2 className="mt-4 text-2xl sm:text-3xl font-Clarkson font-bold tracking-[-0.04em] text-[#ffffff]">
                   Start a conversation.
                 </h2>
 
-                <p className="mt-4 text-xs leading-6 font-Clarkson text-[#fbf4ee]/55">
+                <p className="mt-4 text-xs leading-6 font-Clarkson text-[#ffffff]/55">
                   Whether you're planning a new product or improving an
                   existing system, we're ready to understand the problem
                   before proposing the solution.
@@ -181,23 +181,23 @@ export const ContactPage: React.FC = () => {
 
 
                 {/* Location */}
-                <div className="group p-4 rounded-2xl bg-[#fbf4ee]/5 border border-[#fbf4ee]/10 hover:bg-[#fbf4ee]/10 transition-colors">
+                <div className="group p-4 rounded-2xl bg-[#ffffff]/5 border border-[#ffffff]/10 hover:bg-[#ffffff]/10 transition-colors">
 
                   <div className="flex items-start gap-4">
 
-                    <div className="w-10 h-10 shrink-0 rounded-xl bg-[#e08858]/10 flex items-center justify-center">
+                    <div className="w-10 h-10 shrink-0 rounded-xl bg-[#0b4f9c]/10 flex items-center justify-center">
 
-                      <MapPin className="w-4 h-4 text-[#e08858]" />
+                      <MapPin className="w-4 h-4 text-[#0b4f9c]" />
 
                     </div>
 
                     <div>
 
-                      <div className="text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#fbf4ee]/40">
+                      <div className="text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#ffffff]/40">
                         Headquarters
                       </div>
 
-                      <div className="mt-1 text-xs font-Clarkson leading-5 text-[#fbf4ee]/75">
+                      <div className="mt-1 text-xs font-Clarkson leading-5 text-[#ffffff]/75">
                         Studio 51
                         <br />
                         Birmingham B4 7AH
@@ -211,23 +211,23 @@ export const ContactPage: React.FC = () => {
 
 
                 {/* Email */}
-                <div className="group p-4 rounded-2xl bg-[#fbf4ee]/5 border border-[#fbf4ee]/10 hover:bg-[#fbf4ee]/10 transition-colors">
+                <div className="group p-4 rounded-2xl bg-[#ffffff]/5 border border-[#ffffff]/10 hover:bg-[#ffffff]/10 transition-colors">
 
                   <div className="flex items-start gap-4">
 
-                    <div className="w-10 h-10 shrink-0 rounded-xl bg-[#e08858]/10 flex items-center justify-center">
+                    <div className="w-10 h-10 shrink-0 rounded-xl bg-[#0b4f9c]/10 flex items-center justify-center">
 
-                      <Mail className="w-4 h-4 text-[#e08858]" />
+                      <Mail className="w-4 h-4 text-[#0b4f9c]" />
 
                     </div>
 
                     <div>
 
-                      <div className="text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#fbf4ee]/40">
+                      <div className="text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#ffffff]/40">
                         Email Us
                       </div>
 
-                      <div className="mt-1 space-y-1 text-xs font-Clarkson text-[#fbf4ee]/75">
+                      <div className="mt-1 space-y-1 text-xs font-Clarkson text-[#ffffff]/75">
                         <div>info@aevonasolution.com</div>
                         <div>aevonasolution@gmail.com</div>
                       </div>
@@ -240,23 +240,23 @@ export const ContactPage: React.FC = () => {
 
 
                 {/* Phone */}
-                <div className="group p-4 rounded-2xl bg-[#fbf4ee]/5 border border-[#fbf4ee]/10 hover:bg-[#fbf4ee]/10 transition-colors">
+                <div className="group p-4 rounded-2xl bg-[#ffffff]/5 border border-[#ffffff]/10 hover:bg-[#ffffff]/10 transition-colors">
 
                   <div className="flex items-start gap-4">
 
-                    <div className="w-10 h-10 shrink-0 rounded-xl bg-[#e08858]/10 flex items-center justify-center">
+                    <div className="w-10 h-10 shrink-0 rounded-xl bg-[#0b4f9c]/10 flex items-center justify-center">
 
-                      <Phone className="w-4 h-4 text-[#e08858]" />
+                      <Phone className="w-4 h-4 text-[#0b4f9c]" />
 
                     </div>
 
                     <div>
 
-                      <div className="text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#fbf4ee]/40">
+                      <div className="text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#ffffff]/40">
                         Call Us
                       </div>
 
-                      <div className="mt-1 space-y-1 text-xs font-Clarkson text-[#fbf4ee]/75">
+                      <div className="mt-1 space-y-1 text-xs font-Clarkson text-[#ffffff]/75">
                         <div>+44 7404 010483</div>
                         <div>+91 98756 43914</div>
                       </div>
@@ -275,19 +275,19 @@ export const ContactPage: React.FC = () => {
 
                 <div className="flex items-center gap-3">
 
-                  <div className="w-8 h-8 rounded-lg bg-[#a63d2a]/15 flex items-center justify-center">
+                  <div className="w-8 h-8 rounded-lg bg-[#083b75]/15 flex items-center justify-center">
 
-                    <MessageCircle className="w-3.5 h-3.5 text-[#e0a07a]" />
+                    <MessageCircle className="w-3.5 h-3.5 text-[#5f9bd6]" />
 
                   </div>
 
                   <div>
 
-                    <div className="text-[9px] font-Clarkson font-semibold text-[#fbf4ee]/70">
+                    <div className="text-[9px] font-Clarkson font-semibold text-[#ffffff]/70">
                       Prefer a quick conversation?
                     </div>
 
-                    <div className="mt-1 text-[8px] font-Clarkson text-[#fbf4ee]/40">
+                    <div className="mt-1 text-[8px] font-Clarkson text-[#ffffff]/40">
                       Email us directly and we'll get back to you.
                     </div>
 
@@ -302,33 +302,33 @@ export const ContactPage: React.FC = () => {
           </div>
 
 
-          <section id="estimate" className="rounded-[2rem] border border-[#e08858]/30 bg-white dark:bg-[#1e1220] p-7 sm:p-10 shadow-xl scroll-mt-28">
+          <section id="estimate" className="rounded-xl border border-[#0b4f9c]/30 bg-white  p-7 sm:p-10 shadow-xl scroll-mt-28">
             <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_.8fr] gap-8 items-center">
               <div>
-                <span className="text-[10px] font-bold uppercase tracking-[.2em] text-[#e08858]">Project planning</span>
-                <h2 className="mt-3 text-2xl sm:text-3xl font-bold text-[#1c1019] dark:text-[#fbf4ee]">A first project estimate.</h2>
-                <p className="mt-2 text-sm text-[#5e4650] dark:text-[#e08858]/75">Choose a service and delivery scope for a directional USD range.</p>
+                <span className="text-[10px] font-bold uppercase tracking-[.2em] text-[#0b4f9c]">Project planning</span>
+                <h2 className="mt-3 text-2xl sm:text-3xl font-bold text-[#12202f] ">A first project estimate.</h2>
+                <p className="mt-2 text-sm text-[#4a5a6a] ">Choose a service and delivery scope for a directional USD range.</p>
                 <div className="mt-5 grid sm:grid-cols-2 gap-4">
                   <label className="text-xs font-semibold">Service
-                    <select value={estimateService} onChange={(e) => setEstimateService(e.target.value)} className="mt-2 block w-full rounded-xl border border-[#e08858]/30 bg-[#fbf4ee] dark:bg-[#140a14] p-3 text-sm">
+                    <select value={estimateService} onChange={(e) => setEstimateService(e.target.value)} className="mt-2 block w-full rounded-xl border border-[#0b4f9c]/30 bg-[#ffffff]  p-3 text-sm">
                       <option value="web">Web &amp; SaaS</option><option value="ai">AI &amp; Data</option><option value="mobile">Mobile application</option><option value="cloud">Cloud &amp; DevOps</option><option value="design">Product design</option>
                     </select>
                   </label>
                   <label className="text-xs font-semibold">Scope
-                    <select value={estimateScope} onChange={(e) => setEstimateScope(Number(e.target.value))} className="mt-2 block w-full rounded-xl border border-[#e08858]/30 bg-[#fbf4ee] dark:bg-[#140a14] p-3 text-sm">
+                    <select value={estimateScope} onChange={(e) => setEstimateScope(Number(e.target.value))} className="mt-2 block w-full rounded-xl border border-[#0b4f9c]/30 bg-[#ffffff]  p-3 text-sm">
                       <option value={1}>MVP launch</option><option value={3}>Growth SaaS</option><option value={7}>Enterprise programme</option>
                     </select>
                   </label>
                 </div>
                 <label className="mt-5 block text-xs font-semibold">Timeline: {estimateMonths} month{estimateMonths === 1 ? '' : 's'}
-                  <input aria-label="Estimate timeline in months" type="range" min="1" max="12" value={estimateMonths} onChange={(e) => setEstimateMonths(Number(e.target.value))} className="mt-3 block w-full accent-[#c45139]" />
+                  <input aria-label="Estimate timeline in months" type="range" min="1" max="12" value={estimateMonths} onChange={(e) => setEstimateMonths(Number(e.target.value))} className="mt-3 block w-full accent-[#0b4f9c]" />
                 </label>
-                <p className="mt-3 text-[10px] text-[#5e4650]/70 dark:text-[#e08858]/60">Directional estimate only; not a quote. Final fees depend on agreed scope and delivery plan.</p>
+                <p className="mt-3 text-[10px] text-[#4a5a6a]/70 ">Directional estimate only; not a quote. Final fees depend on agreed scope and delivery plan.</p>
               </div>
-              <div className="rounded-2xl border border-[#c45139]/25 bg-[#fbf4ee] p-6">
-                <span className="text-[10px] uppercase tracking-wider text-[#5e4650]">Estimated project range</span>
-                <div className="mt-3 text-3xl font-bold text-[#e08858]">${(estimate.low / 1000).toLocaleString()}k – ${(estimate.high / 1000).toLocaleString()}k</div>
-                <Link to="/login" className="mt-6 inline-flex rounded-xl bg-[#e08858] px-4 py-3 text-sm font-bold text-[#1c1019]">DISCUSS THIS ESTIMATE ↗</Link>
+              <div className="rounded-2xl border border-[#0b4f9c]/25 bg-[#ffffff] p-6">
+                <span className="text-[10px] uppercase tracking-wider text-[#4a5a6a]">Estimated project range</span>
+                <div className="mt-3 text-3xl font-bold text-[#0b4f9c]">${(estimate.low / 1000).toLocaleString()}k – ${(estimate.high / 1000).toLocaleString()}k</div>
+                <Link to="/login" className="mt-6 inline-flex rounded-xl bg-[#0b4f9c] px-4 py-3 text-sm font-bold text-white">DISCUSS THIS ESTIMATE ↗</Link>
               </div>
             </div>
           </section>
@@ -337,7 +337,7 @@ export const ContactPage: React.FC = () => {
               FORM
           ================================================== */}
 
-          <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-[2rem] p-7 sm:p-10 shadow-xl">
+          <div className="bg-white  border border-[#0b4f9c]/30 rounded-xl p-7 sm:p-10 shadow-xl">
 
             {submitted ? (
 
@@ -351,31 +351,31 @@ export const ContactPage: React.FC = () => {
 
                   <div className="relative mx-auto w-20 h-20">
 
-                    <div className="absolute inset-0 rounded-full bg-[#a63d2a]/10 animate-pulse" />
+                    <div className="absolute inset-0 rounded-full bg-[#083b75]/10 animate-pulse" />
 
-                    <div className="relative w-20 h-20 rounded-full bg-[#a63d2a]/15 border border-[#a63d2a]/30 flex items-center justify-center">
+                    <div className="relative w-20 h-20 rounded-full bg-[#083b75]/15 border border-[#083b75]/30 flex items-center justify-center">
 
-                      <CheckCircle2 className="w-9 h-9 text-[#c8805e]" />
+                      <CheckCircle2 className="w-9 h-9 text-[#2f6db5]" />
 
                     </div>
 
                   </div>
 
-                  <h3 className="mt-7 text-2xl sm:text-3xl font-Clarkson font-bold tracking-[-0.04em] text-[#1c1019] dark:text-[#fbf4ee]">
+                  <h3 className="mt-7 text-2xl sm:text-3xl font-Clarkson font-bold tracking-[-0.04em] text-[#12202f] ">
                     Message received.
                   </h3>
 
-                  <p className="mt-4 text-xs sm:text-sm leading-7 font-Clarkson text-[#5e4650]/65 dark:text-[#e08858]/65">
+                  <p className="mt-4 text-xs sm:text-sm leading-7 font-Clarkson text-[#4a5a6a]/65 ">
                     Thanks for reaching out to Aevona Solution. Your
                     message has been received and our team will get back
                     to you within 24 hours.
                   </p>
 
-                  <div className="mt-7 inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/20">
+                  <div className="mt-7 inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/20">
 
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#a63d2a]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#083b75]" />
 
-                    <span className="text-[9px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+                    <span className="text-[9px] font-Clarkson font-semibold text-[#4a5a6a] ">
                       Successfully submitted
                     </span>
 
@@ -383,7 +383,7 @@ export const ContactPage: React.FC = () => {
 
                   <button
                     onClick={() => setSubmitted(false)}
-                    className="mt-7 flex items-center gap-2 mx-auto text-[10px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858] hover:gap-3 transition-all"
+                    className="mt-7 flex items-center gap-2 mx-auto text-[10px] font-Clarkson font-semibold text-[#4a5a6a]  hover:gap-3 transition-all"
                   >
                     Send another message
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -405,15 +405,15 @@ export const ContactPage: React.FC = () => {
 
                 <div>
 
-                  <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#e08858]">
+                  <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#0b4f9c]">
                     Send a Message
                   </span>
 
-                  <h2 className="mt-3 text-2xl sm:text-3xl font-Clarkson font-bold tracking-[-0.04em] text-[#1c1019] dark:text-[#fbf4ee]">
+                  <h2 className="mt-3 text-2xl sm:text-3xl font-Clarkson font-bold tracking-[-0.04em] text-[#12202f] ">
                     Tell us what you're building.
                   </h2>
 
-                  <p className="mt-3 text-xs leading-6 font-Clarkson text-[#5e4650]/55 dark:text-[#e08858]/55">
+                  <p className="mt-3 text-xs leading-6 font-Clarkson text-[#4a5a6a]/55 ">
                     Give us a little context and we'll take it from there.
                   </p>
 
@@ -425,7 +425,7 @@ export const ContactPage: React.FC = () => {
 
                   <div>
 
-                    <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#1c1019] dark:text-[#fbf4ee]">
+                    <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#12202f] ">
                       Full Name *
                     </label>
 
@@ -434,7 +434,7 @@ export const ContactPage: React.FC = () => {
                       name="name"
                       required
                       placeholder="Alex Morgan"
-                      className="w-full h-12 px-4 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/25 text-xs font-Clarkson text-[#1c1019] dark:text-[#fbf4ee] placeholder:text-[#5e4650]/35 dark:placeholder:text-[#e08858]/35 outline-none focus:border-[#e08858] focus:ring-2 focus:ring-[#e08858]/10 transition-all"
+                      className="w-full h-12 px-4 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/25 text-xs font-Clarkson text-[#12202f]  placeholder:text-[#4a5a6a]/35  outline-none focus:border-[#0b4f9c] focus:ring-2 focus:ring-[#0b4f9c]/10 transition-all"
                     />
 
                   </div>
@@ -442,7 +442,7 @@ export const ContactPage: React.FC = () => {
 
                   <div>
 
-                    <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#1c1019] dark:text-[#fbf4ee]">
+                    <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#12202f] ">
                       Work Email *
                     </label>
 
@@ -451,7 +451,7 @@ export const ContactPage: React.FC = () => {
                       name="email"
                       required
                       placeholder="alex@company.com"
-                      className="w-full h-12 px-4 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/25 text-xs font-Clarkson text-[#1c1019] dark:text-[#fbf4ee] placeholder:text-[#5e4650]/35 dark:placeholder:text-[#e08858]/35 outline-none focus:border-[#e08858] focus:ring-2 focus:ring-[#e08858]/10 transition-all"
+                      className="w-full h-12 px-4 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/25 text-xs font-Clarkson text-[#12202f]  placeholder:text-[#4a5a6a]/35  outline-none focus:border-[#0b4f9c] focus:ring-2 focus:ring-[#0b4f9c]/10 transition-all"
                     />
 
                   </div>
@@ -462,7 +462,7 @@ export const ContactPage: React.FC = () => {
                 {/* Company */}
                 <div>
 
-                  <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#1c1019] dark:text-[#fbf4ee]">
+                  <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#12202f] ">
                     Company / Organization
                   </label>
 
@@ -470,7 +470,7 @@ export const ContactPage: React.FC = () => {
                     type="text"
                     name="company"
                     placeholder="Aevona Enterprises"
-                    className="w-full h-12 px-4 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/25 text-xs font-Clarkson text-[#1c1019] dark:text-[#fbf4ee] placeholder:text-[#5e4650]/35 dark:placeholder:text-[#e08858]/35 outline-none focus:border-[#e08858] focus:ring-2 focus:ring-[#e08858]/10 transition-all"
+                    className="w-full h-12 px-4 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/25 text-xs font-Clarkson text-[#12202f]  placeholder:text-[#4a5a6a]/35  outline-none focus:border-[#0b4f9c] focus:ring-2 focus:ring-[#0b4f9c]/10 transition-all"
                   />
 
                 </div>
@@ -479,14 +479,14 @@ export const ContactPage: React.FC = () => {
                 {/* Project Type */}
                 <div>
 
-                  <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#1c1019] dark:text-[#fbf4ee]">
+                  <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#12202f] ">
                     What can we help with?
                   </label>
 
                   <select
                     name="service"
                     defaultValue=""
-                    className="w-full h-12 px-4 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/25 text-xs font-Clarkson text-[#1c1019] dark:text-[#fbf4ee] outline-none focus:border-[#e08858] focus:ring-2 focus:ring-[#e08858]/10 transition-all"
+                    className="w-full h-12 px-4 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/25 text-xs font-Clarkson text-[#12202f]  outline-none focus:border-[#0b4f9c] focus:ring-2 focus:ring-[#0b4f9c]/10 transition-all"
                   >
 
                     <option value="" disabled>
@@ -529,7 +529,7 @@ export const ContactPage: React.FC = () => {
                 {/* Message */}
                 <div>
 
-                  <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#1c1019] dark:text-[#fbf4ee]">
+                  <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#12202f] ">
                     Message *
                   </label>
 
@@ -538,7 +538,7 @@ export const ContactPage: React.FC = () => {
                     rows={5}
                     required
                     placeholder="Tell us about your project, requirements, timeline, or the problem you're trying to solve..."
-                    className="w-full px-4 py-3.5 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/25 text-xs leading-6 font-Clarkson text-[#1c1019] dark:text-[#fbf4ee] placeholder:text-[#5e4650]/35 dark:placeholder:text-[#e08858]/35 outline-none resize-none focus:border-[#e08858] focus:ring-2 focus:ring-[#e08858]/10 transition-all"
+                    className="w-full px-4 py-3.5 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/25 text-xs leading-6 font-Clarkson text-[#12202f]  placeholder:text-[#4a5a6a]/35  outline-none resize-none focus:border-[#0b4f9c] focus:ring-2 focus:ring-[#0b4f9c]/10 transition-all"
                   />
 
                 </div>
@@ -560,9 +560,9 @@ export const ContactPage: React.FC = () => {
                 {/* Privacy note */}
                 <div className="flex items-center justify-center gap-2">
 
-                  <ShieldCheck className="w-3 h-3 text-[#a63d2a]" />
+                  <ShieldCheck className="w-3 h-3 text-[#083b75]" />
 
-                  <span className="text-[8px] font-Clarkson text-[#5e4650]/40 dark:text-[#e08858]/40">
+                  <span className="text-[8px] font-Clarkson text-[#4a5a6a]/40 ">
                     Your information is only used to respond to your enquiry.
                   </span>
 
@@ -586,17 +586,17 @@ export const ContactPage: React.FC = () => {
       <section className="gold-balls max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
 <GoldBalls />
 
-        <div className="relative overflow-hidden rounded-[2rem] bg-white dark:bg-[#1e1220] border border-[#e08858]/30 px-7 py-10 sm:px-12">
+        <div className="relative overflow-hidden rounded-xl bg-white  border border-[#0b4f9c]/30 px-7 py-10 sm:px-12">
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
 
             <div className="text-center md:text-left">
 
-              <div className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#e08858]">
+              <div className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#0b4f9c]">
                 Prefer email?
               </div>
 
-              <div className="mt-2 text-lg sm:text-xl font-Clarkson font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+              <div className="mt-2 text-lg sm:text-xl font-Clarkson font-bold text-[#12202f] ">
                 info@aevonasolution.com
               </div>
 
@@ -604,7 +604,7 @@ export const ContactPage: React.FC = () => {
 
             <a
               href="mailto:info@aevonasolution.com"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#5e4650] text-white dark:bg-[#e08858] dark:text-[#140a14] text-[10px] font-Clarkson font-bold hover:-translate-y-0.5 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#4a5a6a] text-white   text-[10px] font-Clarkson font-bold hover:-translate-y-0.5 transition-all"
             >
               Email Aevona
               <ArrowRight className="w-3.5 h-3.5" />

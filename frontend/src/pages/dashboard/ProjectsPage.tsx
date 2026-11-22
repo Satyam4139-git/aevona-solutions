@@ -52,10 +52,10 @@ export const ProjectsPage: React.FC = () => {
       {/* Top Title & Actions */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+          <h1 className="text-2xl font-serif font-bold text-[#12202f] ">
             Projects Directory
           </h1>
-          <p className="text-xs text-[#5e4650] dark:text-[#e08858]/80 mt-1">
+          <p className="text-xs text-[#4a5a6a]  mt-1">
             Monitor, manage, and create client initiatives and digital projects.
           </p>
         </div>
@@ -66,16 +66,16 @@ export const ProjectsPage: React.FC = () => {
       </div>
 
       {/* Filter & Search Bar */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-white dark:bg-[#1e1220] p-3.5 rounded-2xl border border-[#e08858]/30 dark:border-[#3a2530]">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-white  p-3.5 rounded-2xl border border-[#0b4f9c]/30 ">
         {/* Search Input */}
         <div className="relative w-full sm:w-80">
-          <Search className="absolute left-3.5 top-3 w-4 h-4 text-[#c45139]" />
+          <Search className="absolute left-3.5 top-3 w-4 h-4 text-[#0b4f9c]" />
           <input
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search projects by name..."
-            className="w-full pl-9 pr-4 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/40 dark:border-[#3a2530] rounded-xl text-xs text-[#1c1019] dark:text-[#fbf4ee] focus:ring-2 focus:ring-[#e08858]"
+            className="w-full pl-9 pr-4 py-2 bg-[#ffffff]  border border-[#0b4f9c]/40  rounded-xl text-xs text-[#12202f]  focus:ring-2 focus:ring-[#0b4f9c]"
           />
         </div>
 
@@ -87,8 +87,8 @@ export const ProjectsPage: React.FC = () => {
               onClick={() => setStatusFilter(st)}
               className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-colors ${
                 statusFilter === st
-                  ? 'bg-[#5e4650] text-white dark:bg-[#e08858] dark:text-[#140a14]'
-                  : 'text-[#5e4650] dark:text-[#e08858] hover:bg-[#f6e9de] dark:hover:bg-[#2a1a25]'
+                  ? 'bg-[#4a5a6a] text-white  '
+                  : 'text-[#4a5a6a]  hover:bg-[#f3f6f9] '
               }`}
             >
               {st}
@@ -102,12 +102,12 @@ export const ProjectsPage: React.FC = () => {
         {filteredProjects.map((project) => (
           <div
             key={project.id}
-            className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 dark:border-[#3a2530] rounded-3xl p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-4 group"
+            className="bg-white  border border-[#0b4f9c]/30  rounded-3xl p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-4 group"
           >
             <div>
               {/* Header */}
               <div className="flex items-start justify-between gap-2 mb-2">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[#c45139] dark:text-[#e08858] px-2.5 py-0.5 rounded-full bg-[#e08858]/15">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#0b4f9c]  px-2.5 py-0.5 rounded-full bg-[#0b4f9c]/15">
                   {project.serviceType}
                 </span>
                 <StatusBadge status={project.status} />
@@ -115,46 +115,46 @@ export const ProjectsPage: React.FC = () => {
 
               <Link
                 to={`/dashboard/projects/${project.id}`}
-                className="text-lg font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee] group-hover:text-[#5e4650] dark:group-hover:text-[#e08858] transition-colors line-clamp-1"
+                className="text-lg font-serif font-bold text-[#12202f]  group-hover:text-[#4a5a6a]  transition-colors line-clamp-1"
               >
                 {project.name}
               </Link>
 
-              <p className="text-xs text-[#5e4650]/80 dark:text-[#e08858]/70 mt-2 line-clamp-2 leading-relaxed">
+              <p className="text-xs text-[#4a5a6a]/80  mt-2 line-clamp-2 leading-relaxed">
                 {project.description}
               </p>
             </div>
 
             {/* Middle Stats */}
-            <div className="space-y-3 pt-2 border-t border-[#f6e9de] dark:border-[#33222c]">
+            <div className="space-y-3 pt-2 border-t border-[#f3f6f9] ">
               {/* Progress */}
               <div className="space-y-1">
                 <div className="flex justify-between text-xs font-semibold">
-                  <span className="text-[#5e4650] dark:text-[#e08858]">Completion Progress</span>
-                  <span className="text-[#1c1019] dark:text-[#fbf4ee]">{project.progress}%</span>
+                  <span className="text-[#4a5a6a] ">Completion Progress</span>
+                  <span className="text-[#12202f] ">{project.progress}%</span>
                 </div>
-                <div className="h-2 w-full bg-[#f6e9de] dark:bg-[#2a1a25] rounded-full overflow-hidden">
+                <div className="h-2 w-full bg-[#f3f6f9]  rounded-full overflow-hidden">
                   <div
-                    className="h-full bg-gradient-to-r from-[#e08858] to-[#5e4650] rounded-full transition-all"
+                    className="h-full bg-gradient-to-r from-[#0b4f9c] to-[#1a63b5] rounded-full transition-all"
                     style={{ width: `${project.progress}%` }}
                   />
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-2 text-[11px] text-[#5e4650] dark:text-[#e08858]/70 pt-1">
+              <div className="grid grid-cols-2 gap-2 text-[11px] text-[#4a5a6a]  pt-1">
                 <div className="flex items-center gap-1.5">
-                  <Calendar className="w-3.5 h-3.5 text-[#e08858]" />
+                  <Calendar className="w-3.5 h-3.5 text-[#0b4f9c]" />
                   <span>Due {project.deadline}</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <DollarSign className="w-3.5 h-3.5 text-[#e08858]" />
+                  <DollarSign className="w-3.5 h-3.5 text-[#0b4f9c]" />
                   <span>Budget: {project.budget || 'Custom'}</span>
                 </div>
               </div>
             </div>
 
             {/* Footer */}
-            <div className="flex items-center justify-between pt-3 border-t border-[#f6e9de] dark:border-[#33222c]">
+            <div className="flex items-center justify-between pt-3 border-t border-[#f3f6f9] ">
               <div className="flex -space-x-2 overflow-hidden">
                 {project.teamMembers.map((m, idx) => (
                   <img
@@ -162,14 +162,14 @@ export const ProjectsPage: React.FC = () => {
                     src={m.avatar}
                     alt={m.name}
                     title={`${m.name} (${m.role})`}
-                    className="inline-block h-7 w-7 rounded-full ring-2 ring-white dark:ring-[#1e1220] object-cover"
+                    className="inline-block h-7 w-7 rounded-full ring-2 ring-white  object-cover"
                   />
                 ))}
               </div>
 
               <Link
                 to={`/dashboard/projects/${project.id}`}
-                className="text-xs font-bold text-[#5e4650] dark:text-[#e08858] hover:underline inline-flex items-center gap-1"
+                className="text-xs font-bold text-[#4a5a6a]  hover:underline inline-flex items-center gap-1"
               >
                 View Details <ChevronRight className="w-4 h-4" />
               </Link>
@@ -179,10 +179,10 @@ export const ProjectsPage: React.FC = () => {
       </div>
 
       {filteredProjects.length === 0 && (
-        <div className="py-16 text-center bg-white dark:bg-[#1e1220] rounded-3xl border border-[#e08858]/30 space-y-3">
-          <FolderKanban className="w-10 h-10 text-[#e08858] mx-auto" />
-          <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">No projects found</h3>
-          <p className="text-xs text-[#5e4650]">Try adjusting your search query or status filter.</p>
+        <div className="py-16 text-center bg-white  rounded-3xl border border-[#0b4f9c]/30 space-y-3">
+          <FolderKanban className="w-10 h-10 text-[#0b4f9c] mx-auto" />
+          <h3 className="text-base font-serif font-bold text-[#12202f] ">No projects found</h3>
+          <p className="text-xs text-[#4a5a6a]">Try adjusting your search query or status filter.</p>
         </div>
       )}
 
@@ -190,7 +190,7 @@ export const ProjectsPage: React.FC = () => {
       <Modal isOpen={isCreateModalOpen} onClose={() => setIsCreateModalOpen(false)} title="Create New Enterprise Project">
         <form onSubmit={handleCreateSubmit} className="space-y-4">
           <div>
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+            <label className="block text-xs font-semibold text-[#12202f]  mb-1">
               Project Title *
             </label>
             <input
@@ -199,12 +199,12 @@ export const ProjectsPage: React.FC = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="e.g. NextGen Microservices Platform"
-              className="w-full px-3.5 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-sm text-[#1c1019] dark:text-[#fbf4ee]"
+              className="w-full px-3.5 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-sm text-[#12202f] "
             />
           </div>
 
           <div>
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+            <label className="block text-xs font-semibold text-[#12202f]  mb-1">
               Description
             </label>
             <textarea
@@ -212,19 +212,19 @@ export const ProjectsPage: React.FC = () => {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Enter project scope details..."
-              className="w-full px-3.5 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-sm text-[#1c1019] dark:text-[#fbf4ee]"
+              className="w-full px-3.5 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-sm text-[#12202f] "
             />
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+              <label className="block text-xs font-semibold text-[#12202f]  mb-1">
                 Service Type
               </label>
               <select
                 value={serviceType}
                 onChange={(e) => setServiceType(e.target.value)}
-                className="w-full px-3 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-xs text-[#1c1019] dark:text-[#fbf4ee]"
+                className="w-full px-3 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-xs text-[#12202f] "
               >
                 <option value="Cloud Infrastructure">Cloud Infrastructure</option>
                 <option value="Web & Application Development">Web Application</option>
@@ -235,13 +235,13 @@ export const ProjectsPage: React.FC = () => {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+              <label className="block text-xs font-semibold text-[#12202f]  mb-1">
                 Priority
               </label>
               <select
                 value={priority}
                 onChange={(e) => setPriority(e.target.value as any)}
-                className="w-full px-3 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-xs text-[#1c1019] dark:text-[#fbf4ee]"
+                className="w-full px-3 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-xs text-[#12202f] "
               >
                 <option value="Low">Low</option>
                 <option value="Medium">Medium</option>
@@ -252,14 +252,14 @@ export const ProjectsPage: React.FC = () => {
           </div>
 
           <div>
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+            <label className="block text-xs font-semibold text-[#12202f]  mb-1">
               Estimated Deadline
             </label>
             <input
               type="date"
               value={deadline}
               onChange={(e) => setDeadline(e.target.value)}
-              className="w-full px-3.5 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-xs text-[#1c1019] dark:text-[#fbf4ee]"
+              className="w-full px-3.5 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-xs text-[#12202f] "
             />
           </div>
 

@@ -133,7 +133,7 @@ export const HomePage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#fbf4ee] dark:bg-[#100810] text-[#1c1019] dark:text-[#fbf4ee]">
+    <div className="min-h-screen bg-[#ffffff]  text-[#12202f] ">
 
       {/* =========================================================
           HERO
@@ -143,9 +143,9 @@ export const HomePage: React.FC = () => {
 <GoldBalls />
 
         {/* Background glow */}
-        <div className="absolute top-0 left-1/3 w-[650px] h-[400px] rounded-full bg-[#e08858]/20 dark:bg-[#e08858]/10 blur-[120px] pointer-events-none" />
+        <div className="absolute top-0 left-1/3 w-[650px] h-[400px] rounded-full bg-[#0b4f9c]/20  blur-[120px] pointer-events-none" />
 
-        <div className="absolute bottom-0 right-0 w-[400px] h-[300px] rounded-full bg-[#c45139]/10 blur-[100px] pointer-events-none" />
+        <div className="absolute bottom-0 right-0 w-[400px] h-[300px] rounded-full bg-[#0b4f9c]/10 blur-[100px] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -156,7 +156,7 @@ export const HomePage: React.FC = () => {
             <div className="lg:col-span-7">
 
               {/* Eyebrow */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#e08858]/15 border border-[#e08858]/40 text-xs font-semibold text-[#5e4650] dark:text-[#e08858]">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0b4f9c]/15 border border-[#0b4f9c]/40 text-xs font-semibold text-[#4a5a6a] ">
 
                 <Zap className="w-3.5 h-3.5" />
 
@@ -165,18 +165,18 @@ export const HomePage: React.FC = () => {
               </div>
 
               {/* Heading */}
-              <h1 className="mt-7 text-5xl sm:text-6xl lg:text-[72px] xl:text-[80px] font-Clarkson font-bold leading-[0.98] tracking-tight text-[#1c1019] dark:text-[#fbf4ee]">
+              <h1 className="mt-7 text-5xl sm:text-6xl lg:text-[72px] xl:text-[80px] font-Clarkson font-bold leading-[0.98] tracking-tight text-[#12202f] ">
 
                 Technology for a
 
-                <span className="block text-[#c45139] dark:text-[#e08858]">
+                <span className="block text-[#0b4f9c] ">
                   Brighter Tomorrow.
                 </span>
 
               </h1>
 
               {/* Description */}
-              <p className="mt-7 max-w-2xl text-base sm:text-lg lg:text-xl text-[#5e4650]/90 dark:text-[#e08858]/75 leading-8">
+              <p className="mt-7 max-w-2xl text-base sm:text-lg lg:text-xl text-[#4a5a6a]/90  leading-8">
 
                 We design, engineer, and deploy high-impact digital solutions,
                 cloud infrastructure, and custom SaaS platforms that help
@@ -214,7 +214,7 @@ export const HomePage: React.FC = () => {
               </div>
 
               {/* Stats */}
-              <div className="mt-10 pt-7 border-t border-[#e08858]/30">
+              <div className="mt-10 pt-7 border-t border-[#0b4f9c]/30">
 
                 <div className="grid grid-cols-3 gap-5">
 
@@ -223,7 +223,7 @@ export const HomePage: React.FC = () => {
                       50+
                     </div>
 
-                    <div className="mt-1 text-xs sm:text-sm text-[#5e4650] dark:text-[#e08858]/70">
+                    <div className="mt-1 text-xs sm:text-sm text-[#4a5a6a] ">
                       Projects Delivered
                     </div>
                   </div>
@@ -233,7 +233,7 @@ export const HomePage: React.FC = () => {
                       30+
                     </div>
 
-                    <div className="mt-1 text-xs sm:text-sm text-[#5e4650] dark:text-[#e08858]/70">
+                    <div className="mt-1 text-xs sm:text-sm text-[#4a5a6a] ">
                       Happy Clients
                     </div>
                   </div>
@@ -243,7 +243,7 @@ export const HomePage: React.FC = () => {
                       100%
                     </div>
 
-                    <div className="mt-1 text-xs sm:text-sm text-[#5e4650] dark:text-[#e08858]/70">
+                    <div className="mt-1 text-xs sm:text-sm text-[#4a5a6a] ">
                       Client Satisfaction
                     </div>
                   </div>
@@ -258,8 +258,8 @@ export const HomePage: React.FC = () => {
             {/* ================= RIGHT IMAGE ================= */}
 
             <div className="lg:col-span-5 relative">
-              <div className="absolute -inset-3 rounded-[2rem] border border-[#c45139]/20 rotate-2" />
-              <div className="aenova-showreel-float relative isolate overflow-hidden rounded-[2rem] border border-[#2e1a2a] bg-[#0e0810] shadow-[0_30px_70px_rgba(0,0,0,.45)] [container-type:inline-size]" style={{ aspectRatio: '620 / 477' }}>
+              <div className="absolute -inset-3 rounded-xl border border-[#0b4f9c]/20 " />
+              <div className="aenova-showreel-float relative isolate overflow-hidden rounded-xl border border-[#1b2b3d] bg-[#0c1824] shadow-[0_30px_70px_rgba(0,0,0,.45)] [container-type:inline-size]" style={{ aspectRatio: '620 / 477' }}>
                 <img
                    src="/images/services-hero.png"
                    alt="Enterprise technology, software engineering and digital solutions by Aevona Solution"
@@ -268,40 +268,40 @@ export const HomePage: React.FC = () => {
                 />
                 <svg aria-hidden="true" viewBox="0 0 620 477" className="pointer-events-none absolute inset-0 z-10 h-full w-full">
                   <defs>
-                    <radialGradient id="orbit-dot-glow"><stop offset="0" stopColor="#f8d0b0" stopOpacity=".9" /><stop offset="1" stopColor="#f59a62" stopOpacity="0" /></radialGradient>
+                    <radialGradient id="orbit-dot-glow"><stop offset="0" stopColor="#bcd5ee" stopOpacity=".9" /><stop offset="1" stopColor="#1a63b5" stopOpacity="0" /></radialGradient>
                     <path id="orbit-path" d="M97.5 261a240 240 0 1 1 480 0a240 240 0 1 1 -480 0" />
                   </defs>
                   <g>
                     <circle r="12" fill="url(#orbit-dot-glow)" />
-                    <circle r="3.6" fill="#f5b58a" />
+                    <circle r="3.6" fill="#7fb0e0" />
                     <animateMotion dur="16s" repeatCount="indefinite" rotate="auto"><mpath href="#orbit-path" /></animateMotion>
                   </g>
                 </svg>
 
-                <div className="absolute z-20 inline-flex items-center gap-2 rounded-xl border border-[#c45139]/25 bg-[#160c16] px-3 shadow-lg" style={{ left: '1.5%', top: '0.8%', height: '6.2%', fontSize: 'clamp(7px,1.6cqw,11px)' }}>
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#e08858] shadow-[0_0_10px_#e08858]" />
-                  <span className="font-bold uppercase tracking-[.18em] text-[#c45139]">Our Services</span>
+                <div className="absolute z-20 inline-flex items-center gap-2 rounded-xl border border-[#0b4f9c]/25 bg-[#0c1824] px-3 shadow-lg" style={{ left: '1.5%', top: '0.8%', height: '6.2%', fontSize: 'clamp(7px,1.6cqw,11px)' }}>
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#0b4f9c] shadow-[0_0_10px_#0b4f9c]" />
+                  <span className="font-bold uppercase tracking-[.18em] text-[#0b4f9c]">Our Services</span>
                 </div>
 
                 {[
-                  { title: 'AI & Machine Learning', sub: 'Generative AI & ML', icon: BrainCircuit, tint: '#f59a62', box: { left: '4.6%', top: '7.2%', width: '28%', height: '18%' }, still: true },
-                  { title: 'Full-Stack Web & SaaS', sub: 'Scalable platforms', icon: Code2, tint: '#f59a62', box: { left: '69%', top: '4.5%', width: '30%', height: '10.5%' } },
-                  { title: 'Cloud & DevOps', sub: 'Secure infrastructure', icon: Cloud, tint: '#f59a62', box: { left: '67.5%', top: '51%', width: '31.5%', height: '11.8%' }, still: true },
+                  { title: 'AI & Machine Learning', sub: 'Generative AI & ML', icon: BrainCircuit, tint: '#1a63b5', box: { left: '4.6%', top: '7.2%', width: '28%', height: '18%' }, still: true },
+                  { title: 'Full-Stack Web & SaaS', sub: 'Scalable platforms', icon: Code2, tint: '#1a63b5', box: { left: '69%', top: '4.5%', width: '30%', height: '10.5%' } },
+                  { title: 'Cloud & DevOps', sub: 'Secure infrastructure', icon: Cloud, tint: '#1a63b5', box: { left: '67.5%', top: '51%', width: '31.5%', height: '11.8%' }, still: true },
                   { title: 'Data Engineering', sub: 'Pipelines & analytics', icon: Database, tint: '#34d399', box: { left: '63.2%', top: '75.2%', width: '35.8%', height: '19.5%' }, still: true },
                   { title: 'Mobile Applications', sub: 'iOS & Android', icon: Smartphone, tint: '#34d399', box: { left: '1.5%', top: '84.5%', width: '24%', height: '11%' } },
-                  { title: 'UI/UX Product Design', sub: 'Research to prototype', icon: Compass, tint: '#f59a62', box: { left: '1.5%', top: '49%', width: '28%', height: '11%' } },
+                  { title: 'UI/UX Product Design', sub: 'Research to prototype', icon: Compass, tint: '#1a63b5', box: { left: '1.5%', top: '49%', width: '28%', height: '11%' } },
                 ].map((service, index) => {
                   const ServiceIcon = service.icon;
                   return (
                     <div
                       key={service.title}
-                      className="absolute z-20 flex items-center gap-[4%] rounded-2xl border border-[#f0c4a4]/30 px-[3%] shadow-[0_12px_34px_rgba(0,0,0,.55)]"
-                      style={{ ...service.box, background: 'linear-gradient(135deg,#1c0f1e 0%,#120a16 100%)', fontSize: 'clamp(8px,1.9cqw,13px)', ...(service.still ? {} : { animation: `aenova-float 4s ease-in-out ${index * -0.45}s infinite` }) }}
+                      className="absolute z-20 flex items-center gap-[4%] rounded-2xl border border-[#9cc0e6]/30 px-[3%] shadow-[0_12px_34px_rgba(0,0,0,.55)]"
+                      style={{ ...service.box, background: 'linear-gradient(135deg,#0c1824 0%,#0c1824 100%)', fontSize: 'clamp(8px,1.9cqw,13px)', ...(service.still ? {} : { animation: `aenova-float 4s ease-in-out ${index * -0.45}s infinite` }) }}
                     >
                       <ServiceIcon className="h-[1.5em] w-[1.5em] shrink-0" style={{ color: service.tint }} />
                       <div className="min-w-0">
                         <div className="font-bold leading-tight text-white">{service.title}</div>
-                        <div className="mt-[.25em] text-[.82em] leading-tight text-[#c9a0a8]">{service.sub}</div>
+                        <div className="mt-[.25em] text-[.82em] leading-tight text-[#9fb2c6]">{service.sub}</div>
                       </div>
                     </div>
                   );
@@ -320,7 +320,7 @@ export const HomePage: React.FC = () => {
           TRUST / CAPABILITIES STRIP
       ========================================================= */}
 
-      <section className="gold-balls border-y border-[#e08858]/20 bg-[#fbf4ee]/60 dark:bg-[#140a14]">
+      <section className="gold-balls border-y border-[#0b4f9c]/20 bg-[#ffffff]/60 ">
 <GoldBalls />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -340,10 +340,10 @@ export const HomePage: React.FC = () => {
 
               <div
                 key={item}
-                className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-[#5e4650] dark:text-[#e08858]/75"
+                className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-[#4a5a6a] "
               >
 
-                <span className="w-1.5 h-1.5 rounded-full bg-[#e08858]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#0b4f9c]" />
 
                 {item}
 
@@ -370,18 +370,18 @@ export const HomePage: React.FC = () => {
           {/* Section heading */}
           <div className="mb-14 grid items-center gap-10 lg:grid-cols-2 lg:gap-14"><div className="max-w-3xl">
 
-            <span className="text-sm font-bold uppercase tracking-[0.26em] text-[#c45139] dark:text-[#e08858]">
+            <span className="text-sm font-bold uppercase tracking-[0.26em] text-[#0b4f9c] ">
               Our Expertise
             </span>
 
             <h2 className="mt-4 text-5xl sm:text-6xl font-Clarkson font-bold leading-tight">
               Technology built around
-              <span className="text-[#c45139] dark:text-[#e08858]">
+              <span className="text-[#0b4f9c] ">
                 {' '}business outcomes.
               </span>
             </h2>
 
-            <p className="mt-5 text-base sm:text-lg text-[#5e4650]/80 dark:text-[#e08858]/70 leading-7 max-w-2xl">
+            <p className="mt-5 text-base sm:text-lg text-[#4a5a6a]/80  leading-7 max-w-2xl">
               From application engineering to cloud infrastructure and
               intelligent automation, we provide end-to-end technology
               services for modern organizations.
@@ -389,8 +389,8 @@ export const HomePage: React.FC = () => {
 
           </div>
             <figure className="relative">
-              <div className="absolute -inset-2 rounded-[1.75rem] border border-[#c45139]/15" />
-              <img src="/images/ai-trends.png" alt="Top AI trends driving business growth and innovation in 2026" className="relative w-full rounded-3xl border border-[#33202b] object-cover shadow-[0_24px_60px_rgba(0,0,0,.4)]" loading="lazy" />
+              <div className="absolute -inset-2 rounded-xl border border-[#0b4f9c]/15" />
+              <img src="/images/ai-trends.png" alt="Top AI trends driving business growth and innovation in 2026" className="relative w-full rounded-3xl border border-[#2a3a4c] object-cover shadow-[0_24px_60px_rgba(0,0,0,.4)]" loading="lazy" />
             </figure>
           </div>
 
@@ -406,21 +406,21 @@ export const HomePage: React.FC = () => {
 
                 <div
                   key={item.title}
-                  className="group relative p-7 sm:p-8 rounded-[2rem] bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden"
+                  className="group relative p-7 sm:p-8 rounded-xl bg-white  border border-[#0b4f9c]/25 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden"
                 >
 
                   {/* Background glow */}
-                  <div className="absolute -top-24 -right-24 w-48 h-48 rounded-full bg-[#e08858]/10 blur-3xl group-hover:bg-[#e08858]/20 transition-colors duration-500" />
+                  <div className="absolute -top-24 -right-24 w-48 h-48 rounded-full bg-[#0b4f9c]/10 blur-3xl group-hover:bg-[#0b4f9c]/20 transition-colors duration-500" />
 
                   <div className="relative">
 
                     <div className="flex items-center justify-between">
 
-                      <div className="w-13 h-13 p-3 rounded-2xl bg-[#e08858]/15 border border-[#e08858]/30 text-[#5e4650] dark:text-[#e08858] group-hover:scale-110 transition-transform duration-300">
+                      <div className="w-13 h-13 p-3 rounded-2xl bg-[#0b4f9c]/15 border border-[#0b4f9c]/30 text-[#4a5a6a]  group-hover:scale-110 transition-transform duration-300">
                         <Icon className="w-full h-full" />
                       </div>
 
-                      <span className="text-xs font-serif text-[#c45139]/50 dark:text-[#e08858]/30">
+                      <span className="text-xs font-serif text-[#0b4f9c]/50 ">
                         0{idx + 1}
                       </span>
 
@@ -430,13 +430,13 @@ export const HomePage: React.FC = () => {
                       {item.title}
                     </h3>
 
-                    <p className="mt-3 text-base text-[#5e4650]/75 dark:text-[#e08858]/65 leading-7">
+                    <p className="mt-3 text-base text-[#4a5a6a]/75  leading-7">
                       {item.desc}
                     </p>
 
                     <Link
                       to="/services"
-                      className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-[#5e4650] dark:text-[#e08858] group/link"
+                      className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-[#4a5a6a]  group/link"
                     >
                       Explore Service
 
@@ -462,7 +462,7 @@ export const HomePage: React.FC = () => {
           SOLUTIONS
       ========================================================= */}
 
-      <section className="gold-balls py-24 lg:py-32 bg-[#fbf4ee] dark:bg-[#140a14]">
+      <section className="gold-balls py-24 lg:py-32 bg-[#ffffff] ">
 <GoldBalls />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -472,18 +472,18 @@ export const HomePage: React.FC = () => {
             {/* Left */}
             <div className="lg:col-span-4">
 
-              <span className="text-sm font-bold uppercase tracking-[0.26em] text-[#c45139] dark:text-[#e08858]">
+              <span className="text-sm font-bold uppercase tracking-[0.26em] text-[#0b4f9c] ">
                 Solutions
               </span>
 
               <h2 className="mt-4 text-5xl sm:text-6xl font-Clarkson font-bold leading-tight">
                 Built for the way
-                <span className="text-[#c45139] dark:text-[#e08858]">
+                <span className="text-[#0b4f9c] ">
                   {' '}business works.
                 </span>
               </h2>
 
-              <p className="mt-6 text-base text-[#5e4650]/80 dark:text-[#e08858]/70 leading-7">
+              <p className="mt-6 text-base text-[#4a5a6a]/80  leading-7">
                 Technology should solve meaningful problems. Our solutions
                 combine engineering, strategy and modern infrastructure to
                 create systems that are ready for what comes next.
@@ -491,7 +491,7 @@ export const HomePage: React.FC = () => {
 
               <Link
                 to="/services"
-                className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#5e4650] dark:text-[#e08858]"
+                className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#4a5a6a] "
               >
                 Explore Solutions
                 <ArrowRight className="w-4 h-4" />
@@ -503,7 +503,7 @@ export const HomePage: React.FC = () => {
             {/* Right */}
             <div className="lg:col-span-8">
 
-              <div className="border-t border-[#e08858]/30">
+              <div className="border-t border-[#0b4f9c]/30">
 
                 {solutions.map((solution) => {
 
@@ -513,10 +513,10 @@ export const HomePage: React.FC = () => {
 
                     <div
                       key={solution.number}
-                      className="group py-7 border-b border-[#e08858]/30 grid grid-cols-[48px_1fr_auto] gap-5 items-start hover:bg-[#fbf4ee]/40 dark:hover:bg-[#1e1220]/40 px-3 -mx-3 transition-colors duration-300"
+                      className="group py-7 border-b border-[#0b4f9c]/30 grid grid-cols-[48px_1fr_auto] gap-5 items-start hover:bg-[#ffffff]/40  px-3 -mx-3 transition-colors duration-300"
                     >
 
-                      <span className="text-xs font-serif text-[#c45139] dark:text-[#e08858] pt-1">
+                      <span className="text-xs font-serif text-[#0b4f9c]  pt-1">
                         {solution.number}
                       </span>
 
@@ -524,7 +524,7 @@ export const HomePage: React.FC = () => {
 
                         <div className="flex items-center gap-3">
 
-                          <Icon className="w-5 h-5 text-[#c45139] dark:text-[#e08858]" />
+                          <Icon className="w-5 h-5 text-[#0b4f9c] " />
 
                           <h3 className="text-xl sm:text-2xl font-serif font-bold">
                             {solution.title}
@@ -532,13 +532,13 @@ export const HomePage: React.FC = () => {
 
                         </div>
 
-                        <p className="mt-3 text-base text-[#5e4650]/70 dark:text-[#e08858]/65 leading-7 max-w-xl">
+                        <p className="mt-3 text-base text-[#4a5a6a]/70  leading-7 max-w-xl">
                           {solution.desc}
                         </p>
 
                       </div>
 
-                      <ArrowRight className="w-5 h-5 text-[#c45139] dark:text-[#e08858] group-hover:translate-x-2 transition-transform" />
+                      <ArrowRight className="w-5 h-5 text-[#0b4f9c]  group-hover:translate-x-2 transition-transform" />
 
                     </div>
 
@@ -571,29 +571,29 @@ export const HomePage: React.FC = () => {
             {/* Visual */}
             <div className="relative order-2 lg:order-1">
 
-              <div className="absolute -inset-5 rounded-[2.5rem] bg-[#e08858]/10 blur-2xl" />
+              <div className="absolute -inset-5 rounded-xl bg-[#0b4f9c]/10 blur-2xl" />
 
-              <div className="relative rounded-[2rem] bg-[#1c1019] p-5 sm:p-7 shadow-2xl overflow-hidden">
+              <div className="relative rounded-xl bg-[#12202f] p-5 sm:p-7 shadow-2xl overflow-hidden">
 
-                <div className="absolute -top-32 -right-32 w-72 h-72 rounded-full bg-[#e08858]/20 blur-[90px]" />
+                <div className="absolute -top-32 -right-32 w-72 h-72 rounded-full bg-[#0b4f9c]/20 blur-[90px]" />
 
                 {/* Dashboard */}
-                <div className="relative rounded-2xl border border-[#e08858]/20 bg-[#1a0e16] overflow-hidden">
+                <div className="relative rounded-2xl border border-[#0b4f9c]/20 bg-[#0c1824] overflow-hidden">
 
                   {/* Header */}
-                  <div className="flex items-center justify-between px-5 py-4 border-b border-[#e08858]/15">
+                  <div className="flex items-center justify-between px-5 py-4 border-b border-[#0b4f9c]/15">
 
                     <div className="flex items-center gap-2">
 
-                      <div className="w-2.5 h-2.5 rounded-full bg-[#e08858]" />
+                      <div className="w-2.5 h-2.5 rounded-full bg-[#0b4f9c]" />
 
-                      <span className="text-xs font-semibold text-[#fbf4ee]">
+                      <span className="text-xs font-semibold text-[#ffffff]">
                         Aevona Platform
                       </span>
 
                     </div>
 
-                    <span className="text-[10px] text-[#e08858]">
+                    <span className="text-[10px] text-[#0b4f9c]">
                       SYSTEMS ONLINE
                     </span>
 
@@ -602,29 +602,29 @@ export const HomePage: React.FC = () => {
                   {/* Metrics */}
                   <div className="grid grid-cols-2 gap-3 p-4">
 
-                    <div className="p-4 rounded-xl bg-[#1c1019] border border-[#e08858]/10">
+                    <div className="p-4 rounded-xl bg-[#12202f] border border-[#0b4f9c]/10">
 
-                      <TrendingUp className="w-4 h-4 text-[#e08858]" />
+                      <TrendingUp className="w-4 h-4 text-[#0b4f9c]" />
 
-                      <div className="mt-4 text-2xl font-serif font-bold text-[#fbf4ee]">
+                      <div className="mt-4 text-2xl font-serif font-bold text-[#ffffff]">
                         98.4%
                       </div>
 
-                      <div className="text-[10px] text-[#e08858]/60 mt-1">
+                      <div className="text-[10px] text-[#0b4f9c]/60 mt-1">
                         Platform Performance
                       </div>
 
                     </div>
 
-                    <div className="p-4 rounded-xl bg-[#1c1019] border border-[#e08858]/10">
+                    <div className="p-4 rounded-xl bg-[#12202f] border border-[#0b4f9c]/10">
 
-                      <BarChart3 className="w-4 h-4 text-[#e08858]" />
+                      <BarChart3 className="w-4 h-4 text-[#0b4f9c]" />
 
-                      <div className="mt-4 text-2xl font-serif font-bold text-[#fbf4ee]">
+                      <div className="mt-4 text-2xl font-serif font-bold text-[#ffffff]">
                         +45.9%
                       </div>
 
-                      <div className="text-[10px] text-[#e08858]/60 mt-1">
+                      <div className="text-[10px] text-[#0b4f9c]/60 mt-1">
                         Business Growth
                       </div>
 
@@ -635,15 +635,15 @@ export const HomePage: React.FC = () => {
                   {/* Fake chart */}
                   <div className="px-4 pb-4">
 
-                    <div className="rounded-xl bg-[#1c1019] border border-[#e08858]/10 p-5">
+                    <div className="rounded-xl bg-[#12202f] border border-[#0b4f9c]/10 p-5">
 
                       <div className="flex justify-between">
 
-                        <span className="text-xs text-[#fbf4ee]/70">
+                        <span className="text-xs text-[#ffffff]/70">
                           Platform Activity
                         </span>
 
-                        <span className="text-[10px] text-[#e08858]">
+                        <span className="text-[10px] text-[#0b4f9c]">
                           LIVE
                         </span>
 
@@ -656,7 +656,7 @@ export const HomePage: React.FC = () => {
 
                             <div
                               key={index}
-                              className="flex-1 rounded-t bg-[#e08858]/50 hover:bg-[#e08858] transition-colors"
+                              className="flex-1 rounded-t bg-[#0b4f9c]/50 hover:bg-[#0b4f9c] transition-colors"
                               style={{ height: `${height}%` }}
                             />
 
@@ -679,18 +679,18 @@ export const HomePage: React.FC = () => {
             {/* Content */}
             <div className="order-1 lg:order-2">
 
-              <span className="text-sm font-bold uppercase tracking-[0.26em] text-[#c45139] dark:text-[#e08858]">
+              <span className="text-sm font-bold uppercase tracking-[0.26em] text-[#0b4f9c] ">
                 Enterprise Technology
               </span>
 
               <h2 className="mt-4 text-5xl sm:text-6xl font-Clarkson font-bold leading-tight">
                 Systems designed to
-                <span className="text-[#c45139] dark:text-[#e08858]">
+                <span className="text-[#0b4f9c] ">
                   {' '}scale with you.
                 </span>
               </h2>
 
-              <p className="mt-6 text-sm sm:text-base text-[#5e4650]/80 dark:text-[#e08858]/70 leading-7">
+              <p className="mt-6 text-sm sm:text-base text-[#4a5a6a]/80  leading-7">
                 We combine modern application development, cloud infrastructure,
                 data systems and automation to build technology that remains
                 reliable as your business evolves.
@@ -711,7 +711,7 @@ export const HomePage: React.FC = () => {
                     className="flex items-center gap-3 text-base"
                   >
 
-                    <CheckCircle2 className="w-5 h-5 text-[#c45139] dark:text-[#e08858]" />
+                    <CheckCircle2 className="w-5 h-5 text-[#0b4f9c] " />
 
                     <span>{item}</span>
 
@@ -723,7 +723,7 @@ export const HomePage: React.FC = () => {
 
               <Link
                 to="/services"
-                className="mt-9 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-[#1c1019] dark:bg-[#e08858] text-[#fbf4ee] dark:text-[#1c1019] text-sm font-semibold hover:-translate-y-1 hover:shadow-lg transition-all"
+                className="mt-9 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-[#12202f]  text-[#ffffff]  text-sm font-semibold hover:-translate-y-1 hover:shadow-lg transition-all"
               >
                 Explore Our Capabilities
                 <ArrowRight className="w-4 h-4" />
@@ -742,14 +742,14 @@ export const HomePage: React.FC = () => {
           HOW WE WORK
       ========================================================= */}
 
-      <section className="gold-balls py-24 bg-[#1c1019] text-[#fbf4ee]">
+      <section className="gold-balls py-24 bg-[#12202f] text-[#ffffff]">
 <GoldBalls />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="text-center max-w-2xl mx-auto">
 
-            <span className="text-sm font-bold uppercase tracking-[0.26em] text-[#e08858]">
+            <span className="text-sm font-bold uppercase tracking-[0.26em] text-[#0b4f9c]">
               How We Work
             </span>
 
@@ -806,14 +806,14 @@ export const HomePage: React.FC = () => {
 
                 <div
                   key={step.number}
-                  className="workflow-zigzag-card relative p-7 rounded-3xl border border-[#e08858]/20 bg-[#1e1220]/70 hover:bg-[#1e1220] transition-colors"
+                  className="workflow-zigzag-card relative p-7 rounded-3xl border border-[#0b4f9c]/20 bg-[#12202f]/70 hover:bg-[#12202f] transition-colors"
                 >
 
                   <div className="flex items-center justify-between">
 
-                    <Icon className="w-6 h-6 text-[#e08858]" />
+                    <Icon className="w-6 h-6 text-[#0b4f9c]" />
 
-                    <span className="text-xs font-serif text-[#e08858]/50">
+                    <span className="text-xs font-serif text-[#0b4f9c]/50">
                       {step.number}
                     </span>
 
@@ -853,13 +853,13 @@ export const HomePage: React.FC = () => {
 
             <div>
 
-              <span className="text-sm font-bold uppercase tracking-[0.26em] text-[#c45139] dark:text-[#e08858]">
+              <span className="text-sm font-bold uppercase tracking-[0.26em] text-[#0b4f9c] ">
                 Featured Work
               </span>
 
               <h2 className="mt-4 text-4xl sm:text-5xl font-serif font-bold">
                 Turning ideas into
-                <span className="text-[#c45139] dark:text-[#e08858]">
+                <span className="text-[#0b4f9c] ">
                   {' '}digital reality.
                 </span>
               </h2>
@@ -868,7 +868,7 @@ export const HomePage: React.FC = () => {
 
             <Link
               to="/portfolio"
-              className="inline-flex items-center gap-2 text-sm font-bold text-[#5e4650] dark:text-[#e08858]"
+              className="inline-flex items-center gap-2 text-sm font-bold text-[#4a5a6a] "
             >
               View All Projects
               <ArrowRight className="w-4 h-4" />
@@ -878,7 +878,7 @@ export const HomePage: React.FC = () => {
 
 
           {/* Featured project */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 rounded-[2rem] overflow-hidden bg-[#1c1019] text-[#fbf4ee] shadow-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 rounded-xl overflow-hidden bg-[#12202f] text-[#ffffff] shadow-2xl">
 
             <div className="relative min-h-[350px] lg:min-h-[480px] overflow-hidden group">
 
@@ -888,11 +888,11 @@ export const HomePage: React.FC = () => {
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1c1019]/80 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#12202f]/80 to-transparent" />
 
               <div className="absolute bottom-6 left-6">
 
-                <span className="px-3 py-1.5 rounded-full bg-[#e08858] text-[#1c1019] text-[10px] font-bold uppercase tracking-wider">
+                <span className="px-3 py-1.5 rounded-full bg-[#0b4f9c] text-white text-[10px] font-bold uppercase tracking-wider">
                   Featured Project
                 </span>
 
@@ -903,7 +903,7 @@ export const HomePage: React.FC = () => {
 
             <div className="p-8 sm:p-12 flex flex-col justify-center">
 
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#e08858]">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0b4f9c]">
                 {projects[0].type}
               </span>
 
@@ -923,7 +923,7 @@ export const HomePage: React.FC = () => {
 
                   <span
                     key={tag}
-                    className="px-3 py-1.5 rounded-full border border-[#e08858]/20 text-[10px] text-[#e08858]"
+                    className="px-3 py-1.5 rounded-full border border-[#0b4f9c]/20 text-[10px] text-[#0b4f9c]"
                   >
                     {tag}
                   </span>
@@ -934,7 +934,7 @@ export const HomePage: React.FC = () => {
 
               <Link
                 to="/portfolio"
-                className="mt-9 inline-flex items-center gap-2 text-sm font-bold text-[#e08858]"
+                className="mt-9 inline-flex items-center gap-2 text-sm font-bold text-[#0b4f9c]"
               >
                 Explore Project
                 <ArrowRight className="w-4 h-4" />
@@ -953,7 +953,7 @@ export const HomePage: React.FC = () => {
               <Link
                 key={project.name}
                 to="/portfolio"
-                className="group rounded-3xl overflow-hidden bg-white dark:bg-[#1e1220] border border-[#e08858]/20 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="group rounded-3xl overflow-hidden bg-white  border border-[#0b4f9c]/20 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
 
                 <div className="h-52 overflow-hidden">
@@ -968,7 +968,7 @@ export const HomePage: React.FC = () => {
 
                 <div className="p-5">
 
-                  <div className="text-[10px] font-bold text-[#c45139] dark:text-[#e08858] uppercase tracking-wider">
+                  <div className="text-[10px] font-bold text-[#0b4f9c]  uppercase tracking-wider">
                     {project.type}
                   </div>
 
@@ -978,7 +978,7 @@ export const HomePage: React.FC = () => {
                       {project.name}
                     </h3>
 
-                    <ArrowRight className="w-4 h-4 text-[#c45139] dark:text-[#e08858] group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-4 h-4 text-[#0b4f9c]  group-hover:translate-x-1 transition-transform" />
 
                   </div>
 
@@ -999,14 +999,14 @@ export const HomePage: React.FC = () => {
           TECHNOLOGY STACK
       ========================================================= */}
 
-      <section className="gold-balls py-24 bg-[#fbf4ee] dark:bg-[#140a14]">
+      <section className="gold-balls py-24 bg-[#ffffff] ">
 <GoldBalls />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="text-center max-w-2xl mx-auto">
 
-            <span className="text-sm font-bold uppercase tracking-[0.26em] text-[#c45139] dark:text-[#e08858]">
+            <span className="text-sm font-bold uppercase tracking-[0.26em] text-[#0b4f9c] ">
               Technology
             </span>
 
@@ -1014,7 +1014,7 @@ export const HomePage: React.FC = () => {
               Powered by modern technology.
             </h2>
 
-            <p className="mt-5 text-base sm:text-lg text-[#5e4650]/75 dark:text-[#e08858]/65 leading-7">
+            <p className="mt-5 text-base sm:text-lg text-[#4a5a6a]/75  leading-7">
               A flexible technology ecosystem for building reliable,
               maintainable and scalable digital products.
             </p>
@@ -1028,7 +1028,7 @@ export const HomePage: React.FC = () => {
 
               <div
                 key={technology}
-                className="px-5 py-3.5 rounded-full bg-[#fbf4ee] dark:bg-[#1e1220] border border-[#e08858]/25 text-base font-semibold text-[#5e4650] dark:text-[#e08858] hover:border-[#e08858] hover:-translate-y-1 hover:shadow-md transition-all duration-300 shadow-sm"
+                className="px-5 py-3.5 rounded-full bg-[#ffffff]  border border-[#0b4f9c]/25 text-base font-semibold text-[#4a5a6a]  hover:border-[#0b4f9c] hover:-translate-y-1 hover:shadow-md transition-all duration-300 shadow-sm"
               >
                 {technology}
               </div>
@@ -1051,15 +1051,15 @@ export const HomePage: React.FC = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div className="relative rounded-[2rem] overflow-hidden bg-[#1c1019] text-[#fbf4ee] p-8 sm:p-12 lg:p-16">
+          <div className="relative rounded-xl overflow-hidden bg-[#12202f] text-[#ffffff] p-8 sm:p-12 lg:p-16">
 
-            <div className="absolute -top-40 -right-40 w-[450px] h-[450px] rounded-full bg-[#e08858]/15 blur-[120px]" />
+            <div className="absolute -top-40 -right-40 w-[450px] h-[450px] rounded-full bg-[#0b4f9c]/15 blur-[120px]" />
 
             <div className="relative">
 
               <div className="text-center">
 
-                <span className="text-sm font-bold uppercase tracking-[0.26em] text-[#e08858]">
+                <span className="text-sm font-bold uppercase tracking-[0.26em] text-[#0b4f9c]">
                   Our Impact
                 </span>
 
@@ -1070,11 +1070,11 @@ export const HomePage: React.FC = () => {
               </div>
 
 
-              <div className="mt-14 grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e08858]/20">
+              <div className="mt-14 grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#0b4f9c]/20">
 
                 <div className="py-7 sm:py-0 sm:px-8 text-center">
 
-                  <Award className="w-6 h-6 mx-auto text-[#e08858]" />
+                  <Award className="w-6 h-6 mx-auto text-[#0b4f9c]" />
 
                   <div className="mt-4 text-4xl sm:text-5xl font-serif font-bold">
                     50+
@@ -1089,7 +1089,7 @@ export const HomePage: React.FC = () => {
 
                 <div className="py-7 sm:py-0 sm:px-8 text-center">
 
-                  <Building2 className="w-6 h-6 mx-auto text-[#e08858]" />
+                  <Building2 className="w-6 h-6 mx-auto text-[#0b4f9c]" />
 
                   <div className="mt-4 text-4xl sm:text-5xl font-serif font-bold">
                     30+
@@ -1104,7 +1104,7 @@ export const HomePage: React.FC = () => {
 
                 <div className="py-7 sm:py-0 sm:px-8 text-center">
 
-                  <TrendingUp className="w-6 h-6 mx-auto text-[#e08858]" />
+                  <TrendingUp className="w-6 h-6 mx-auto text-[#0b4f9c]" />
 
                   <div className="mt-4 text-4xl sm:text-5xl font-serif font-bold">
                     100%
@@ -1136,11 +1136,11 @@ export const HomePage: React.FC = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#e08858] via-[#c45139] to-[#5e4650] text-white shadow-2xl">
+          <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-[#0b4f9c] via-[#0b4f9c] to-[#1a63b5] text-white shadow-2xl">
 
             <div className="absolute -top-40 -right-40 w-[450px] h-[450px] rounded-full bg-white/10 blur-[100px]" />
 
-            <div className="absolute -bottom-40 -left-40 w-[400px] h-[400px] rounded-full bg-[#1c1019]/20 blur-[100px]" />
+            <div className="absolute -bottom-40 -left-40 w-[400px] h-[400px] rounded-full bg-[#12202f]/20 blur-[100px]" />
 
             <div className="relative px-7 py-14 sm:px-12 sm:py-16 lg:px-16 lg:py-20 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
 
@@ -1171,7 +1171,7 @@ export const HomePage: React.FC = () => {
                   <Button
                     variant="primary"
                     size="lg"
-                    className="bg-[#1c1019] hover:bg-[#1a0e16] text-white border-none"
+                    className="!bg-white hover:!bg-[#e6eef8] !text-[#0b4f9c] border-none"
                   >
                     Start a Conversation
                     <ArrowRight className="w-4 h-4 ml-2" />

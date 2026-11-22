@@ -46,10 +46,10 @@ export const AuthCallbackPage: React.FC = () => {
           className="
             relative
             overflow-hidden
-            rounded-[28px]
+            rounded-xl
             border
-            border-[#dcc6b4]/70
-            bg-[#fbf4ee]
+            border-[#dbe2e9]/70
+            bg-[#ffffff]
             shadow-[0_24px_70px_rgba(40,20,32,0.12)]
           "
         >
@@ -62,9 +62,9 @@ export const AuthCallbackPage: React.FC = () => {
               top-0
               h-1.5
               bg-gradient-to-r
-              from-[#a63d2a]
-              via-[#e08858]
-              to-[#a63d2a]
+              from-[#083b75]
+              via-[#0b4f9c]
+              to-[#083b75]
             "
           />
 
@@ -79,9 +79,9 @@ export const AuthCallbackPage: React.FC = () => {
                   className="
                     absolute
                     inset-[-8px]
-                    rounded-[25px]
+                    rounded-xl
                     border
-                    border-[#e08858]/30
+                    border-[#0b4f9c]/30
                     animate-ping
                   "
                   style={{
@@ -98,11 +98,11 @@ export const AuthCallbackPage: React.FC = () => {
                     w-20
                     items-center
                     justify-center
-                    rounded-[24px]
+                    rounded-xl
                     border
-                    border-[#e08858]/50
-                    bg-[#f6e9de]
-                    text-[#5e4650]
+                    border-[#0b4f9c]/50
+                    bg-[#f3f6f9]
+                    text-[#4a5a6a]
                     shadow-[0_12px_30px_rgba(40,20,32,0.12)]
                   "
                 >
@@ -121,8 +121,8 @@ export const AuthCallbackPage: React.FC = () => {
                       w-3
                       rounded-full
                       border-2
-                      border-[#f6e9de]
-                      bg-[#a63d2a]
+                      border-[#f3f6f9]
+                      bg-[#083b75]
                     "
                   />
                 </div>
@@ -138,7 +138,7 @@ export const AuthCallbackPage: React.FC = () => {
                   font-semibold
                   uppercase
                   tracking-[0.28em]
-                  text-[#a63d2a]
+                  text-[#083b75]
                 "
               >
                 Secure authentication
@@ -150,7 +150,7 @@ export const AuthCallbackPage: React.FC = () => {
                   text-[27px]
                   font-bold
                   tracking-[-0.03em]
-                  text-[#33202b]
+                  text-[#2a3a4c]
                   sm:text-[29px]
                 "
               >
@@ -164,7 +164,7 @@ export const AuthCallbackPage: React.FC = () => {
                   max-w-sm
                   text-[13px]
                   leading-6
-                  text-[#765F4E]
+                  text-[#4a5a6a]
                 "
               >
                 We are securely verifying your
@@ -184,7 +184,7 @@ export const AuthCallbackPage: React.FC = () => {
                     font-semibold
                     uppercase
                     tracking-[0.16em]
-                    text-[#a63d2a]
+                    text-[#083b75]
                   "
                 >
                   Verification
@@ -194,7 +194,7 @@ export const AuthCallbackPage: React.FC = () => {
                   className="
                     text-[10px]
                     font-medium
-                    text-[#b98a78]
+                    text-[#8aa0b8]
                   "
                 >
                   In progress
@@ -207,7 +207,7 @@ export const AuthCallbackPage: React.FC = () => {
                   h-1.5
                   overflow-hidden
                   rounded-full
-                  bg-[#f6e9de]
+                  bg-[#f3f6f9]
                 "
               >
                 <div
@@ -216,8 +216,8 @@ export const AuthCallbackPage: React.FC = () => {
                     w-2/3
                     rounded-full
                     bg-gradient-to-r
-                    from-[#a63d2a]
-                    to-[#e08858]
+                    from-[#083b75]
+                    to-[#0b4f9c]
                     animate-pulse
                   "
                 />
@@ -235,8 +235,8 @@ export const AuthCallbackPage: React.FC = () => {
                 gap-3
                 rounded-2xl
                 border
-                border-[#eadccf]
-                bg-[#f6ece2]
+                border-[#e3eaf1]
+                bg-[#f3f6f9]
                 px-5
                 py-4
               "
@@ -251,7 +251,7 @@ export const AuthCallbackPage: React.FC = () => {
                   items-center
                   justify-center
                   rounded-xl
-                  bg-[#f6e9de]
+                  bg-[#f3f6f9]
                 "
               >
                 <Loader2
@@ -259,7 +259,7 @@ export const AuthCallbackPage: React.FC = () => {
                     h-4
                     w-4
                     animate-spin
-                    text-[#5e4650]
+                    text-[#4a5a6a]
                   "
                   strokeWidth={2}
                 />
@@ -271,7 +271,7 @@ export const AuthCallbackPage: React.FC = () => {
                   className="
                     text-[11px]
                     font-semibold
-                    text-[#4a3340]
+                    text-[#2a3a4c]
                   "
                 >
                   Establishing secure session
@@ -281,7 +281,7 @@ export const AuthCallbackPage: React.FC = () => {
                   className="
                     mt-0.5
                     text-[10px]
-                    text-[#8A7463]
+                    text-[#6b7b8c]
                   "
                 >
                   Please wait while we complete verification.
@@ -300,8 +300,8 @@ export const AuthCallbackPage: React.FC = () => {
                 gap-3
                 rounded-2xl
                 border
-                border-[#eadccf]
-                bg-[#fbf4ee]
+                border-[#e3eaf1]
+                bg-[#ffffff]
                 px-4
                 py-3.5
               "
@@ -312,7 +312,7 @@ export const AuthCallbackPage: React.FC = () => {
                   h-4
                   w-4
                   shrink-0
-                  text-[#a63d2a]
+                  text-[#083b75]
                 "
                 strokeWidth={1.8}
               />
@@ -321,7 +321,7 @@ export const AuthCallbackPage: React.FC = () => {
                 className="
                   text-[10px]
                   leading-5
-                  text-[#806B5A]
+                  text-[#6b7b8c]
                 "
               >
                 Your authentication credentials are handled
@@ -341,7 +341,7 @@ export const AuthCallbackPage: React.FC = () => {
             text-[10px]
             uppercase
             tracking-[0.2em]
-            text-[#b98a78]
+            text-[#8aa0b8]
           "
         >
           Secure authentication portal

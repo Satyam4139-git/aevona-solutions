@@ -19,69 +19,69 @@ import { analyticsDataMock } from '../../data/mockData';
 export const AnalyticsPage: React.FC = () => {
   // AEVONA Palette colors for charts
   const colors = {
-    gold: '#e08858',
-    bronze: '#c45139',
-    brown: '#5e4650',
-    dark: '#1c1019',
-    cream: '#f6e9de',
-    lightGold: '#f3b58f',
+    gold: '#0b4f9c',
+    bronze: '#0b4f9c',
+    brown: '#4a5a6a',
+    dark: '#12202f',
+    cream: '#f3f6f9',
+    lightGold: '#6ea8dc',
   };
 
-  const pieColors = ['#e08858', '#c45139', '#5e4650', '#3b2a35'];
+  const pieColors = ['#0b4f9c', '#0b4f9c', '#4a5a6a', '#2a3a4c'];
 
   return (
     <div className="space-y-8">
       {/* Title */}
       <div>
-        <h1 className="text-2xl  Clarkson font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+        <h1 className="text-2xl  Clarkson font-bold text-[#12202f] ">
           Platform Analytics
         </h1>
-        <p className="text-xs text-[#5e4650] dark:text-[#e08858]/80 mt-1">
+        <p className="text-xs text-[#4a5a6a]  mt-1">
           Real-time API traffic telemetry, cloud infrastructure throughput, and milestone metrics.
         </p>
       </div>
 
       {/* Overview Stat Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div className="p-5 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/30 shadow-md">
+        <div className="p-5 rounded-2xl bg-white  border border-[#0b4f9c]/30 shadow-md">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold text-[#5e4650] dark:text-[#e08858]/80">System Uptime</span>
-            <Zap className="w-4 h-4 text-[#e08858]" />
+            <span className="text-xs font-semibold text-[#4a5a6a] ">System Uptime</span>
+            <Zap className="w-4 h-4 text-[#0b4f9c]" />
           </div>
-          <div className="text-2xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee] mt-2">
+          <div className="text-2xl font-serif font-bold text-[#12202f]  mt-2">
             {analyticsDataMock.performanceMetrics.uptime}
           </div>
           <div className="text-[11px] text-emerald-600 font-semibold mt-1">SLA Compliant</div>
         </div>
 
-        <div className="p-5 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/30 shadow-md">
+        <div className="p-5 rounded-2xl bg-white  border border-[#0b4f9c]/30 shadow-md">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold text-[#5e4650] dark:text-[#e08858]/80">Avg Response Time</span>
-            <Activity className="w-4 h-4 text-[#e08858]" />
+            <span className="text-xs font-semibold text-[#4a5a6a] ">Avg Response Time</span>
+            <Activity className="w-4 h-4 text-[#0b4f9c]" />
           </div>
-          <div className="text-2xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee] mt-2">
+          <div className="text-2xl font-serif font-bold text-[#12202f]  mt-2">
             {analyticsDataMock.performanceMetrics.avgResponseMs}
           </div>
           <div className="text-[11px] text-emerald-600 font-semibold mt-1">Sub-150ms Performance</div>
         </div>
 
-        <div className="p-5 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/30 shadow-md">
+        <div className="p-5 rounded-2xl bg-white  border border-[#0b4f9c]/30 shadow-md">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold text-[#5e4650] dark:text-[#e08858]/80">Tasks Completed</span>
-            <TrendingUp className="w-4 h-4 text-[#e08858]" />
+            <span className="text-xs font-semibold text-[#4a5a6a] ">Tasks Completed</span>
+            <TrendingUp className="w-4 h-4 text-[#0b4f9c]" />
           </div>
-          <div className="text-2xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee] mt-2">
+          <div className="text-2xl font-serif font-bold text-[#12202f]  mt-2">
             {analyticsDataMock.performanceMetrics.tasksCompletedThisMonth}
           </div>
-          <div className="text-[11px] text-[#c45139] font-semibold mt-1">+18% vs last month</div>
+          <div className="text-[11px] text-[#0b4f9c] font-semibold mt-1">+18% vs last month</div>
         </div>
 
-        <div className="p-5 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/30 shadow-md">
+        <div className="p-5 rounded-2xl bg-white  border border-[#0b4f9c]/30 shadow-md">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold text-[#5e4650] dark:text-[#e08858]/80">Active Deployments</span>
-            <Server className="w-4 h-4 text-[#e08858]" />
+            <span className="text-xs font-semibold text-[#4a5a6a] ">Active Deployments</span>
+            <Server className="w-4 h-4 text-[#0b4f9c]" />
           </div>
-          <div className="text-2xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee] mt-2">
+          <div className="text-2xl font-serif font-bold text-[#12202f]  mt-2">
             {analyticsDataMock.performanceMetrics.activeDeployments}
           </div>
           <div className="text-[11px] text-emerald-600 font-semibold mt-1">100% Healthy</div>
@@ -91,12 +91,12 @@ export const AnalyticsPage: React.FC = () => {
       {/* Main Charts Row 1: API Usage Area Chart + Project Completion Bar Chart */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Usage Area Chart */}
-        <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-3xl p-6 shadow-md space-y-4">
+        <div className="bg-white  border border-[#0b4f9c]/30 rounded-3xl p-6 shadow-md space-y-4">
           <div>
-            <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+            <h3 className="text-base font-serif font-bold text-[#12202f] ">
               Weekly API Calls & Bandwidth
             </h3>
-            <p className="text-xs text-[#5e4650]/80 dark:text-[#e08858]/70">
+            <p className="text-xs text-[#4a5a6a]/80 ">
               Total requests processed across global edge routers.
             </p>
           </div>
@@ -110,11 +110,11 @@ export const AnalyticsPage: React.FC = () => {
                     <stop offset="95%" stopColor={colors.gold} stopOpacity={0.05} />
                   </linearGradient>
                 </defs>
-                <CartesianGrid strokeDasharray="3 3" stroke="#f6e9de" opacity={0.3} />
-                <XAxis dataKey="day" stroke="#5e4650" fontSize={11} />
-                <YAxis stroke="#5e4650" fontSize={11} />
+                <CartesianGrid strokeDasharray="3 3" stroke="#f3f6f9" opacity={0.3} />
+                <XAxis dataKey="day" stroke="#4a5a6a" fontSize={11} />
+                <YAxis stroke="#4a5a6a" fontSize={11} />
                 <Tooltip
-                  contentStyle={{ backgroundColor: '#1c1019', color: '#fbf4ee', borderRadius: '12px', border: '1px solid #e08858' }}
+                  contentStyle={{ backgroundColor: '#12202f', color: '#ffffff', borderRadius: '12px', border: '1px solid #0b4f9c' }}
                 />
                 <Area type="monotone" dataKey="apiCalls" stroke={colors.gold} fillOpacity={1} fill="url(#colorCalls)" />
               </AreaChart>
@@ -123,12 +123,12 @@ export const AnalyticsPage: React.FC = () => {
         </div>
 
         {/* Project Completion Bar Chart */}
-        <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-3xl p-6 shadow-md space-y-4">
+        <div className="bg-white  border border-[#0b4f9c]/30 rounded-3xl p-6 shadow-md space-y-4">
           <div>
-            <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+            <h3 className="text-base font-serif font-bold text-[#12202f] ">
               Monthly Project Completion Rate
             </h3>
-            <p className="text-xs text-[#5e4650]/80 dark:text-[#e08858]/70">
+            <p className="text-xs text-[#4a5a6a]/80 ">
               Completed vs active in-progress initiatives.
             </p>
           </div>
@@ -136,11 +136,11 @@ export const AnalyticsPage: React.FC = () => {
           <div className="h-64 w-full">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={analyticsDataMock.projectCompletion}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#f6e9de" opacity={0.3} />
-                <XAxis dataKey="month" stroke="#5e4650" fontSize={11} />
-                <YAxis stroke="#5e4650" fontSize={11} />
+                <CartesianGrid strokeDasharray="3 3" stroke="#f3f6f9" opacity={0.3} />
+                <XAxis dataKey="month" stroke="#4a5a6a" fontSize={11} />
+                <YAxis stroke="#4a5a6a" fontSize={11} />
                 <Tooltip
-                  contentStyle={{ backgroundColor: '#1c1019', color: '#fbf4ee', borderRadius: '12px', border: '1px solid #e08858' }}
+                  contentStyle={{ backgroundColor: '#12202f', color: '#ffffff', borderRadius: '12px', border: '1px solid #0b4f9c' }}
                 />
                 <Bar dataKey="completed" fill={colors.gold} radius={[6, 6, 0, 0]} />
                 <Bar dataKey="inProgress" fill={colors.bronze} radius={[6, 6, 0, 0]} />
@@ -153,8 +153,8 @@ export const AnalyticsPage: React.FC = () => {
       {/* Row 2: Service Distribution Pie + Performance Audit Table */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Pie Chart */}
-        <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-3xl p-6 shadow-md space-y-4">
-          <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+        <div className="bg-white  border border-[#0b4f9c]/30 rounded-3xl p-6 shadow-md space-y-4">
+          <h3 className="text-base font-serif font-bold text-[#12202f] ">
             Service Share Breakdown
           </h3>
           <div className="h-48 w-full flex items-center justify-center">
@@ -174,33 +174,33 @@ export const AnalyticsPage: React.FC = () => {
                     <Cell key={`cell-${index}`} fill={pieColors[index % pieColors.length]} />
                   ))}
                 </Pie>
-                <Tooltip contentStyle={{ backgroundColor: '#1c1019', color: '#fbf4ee', borderRadius: '12px' }} />
+                <Tooltip contentStyle={{ backgroundColor: '#12202f', color: '#ffffff', borderRadius: '12px' }} />
               </PieChart>
             </ResponsiveContainer>
           </div>
 
-          <div className="space-y-2 pt-2 border-t border-[#f6e9de] dark:border-[#33222c]">
+          <div className="space-y-2 pt-2 border-t border-[#f3f6f9] ">
             {analyticsDataMock.serviceDistribution.map((item, idx) => (
               <div key={item.name} className="flex items-center justify-between text-xs">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full" style={{ backgroundColor: pieColors[idx] }} />
-                  <span className="text-[#1c1019] dark:text-[#fbf4ee] font-medium">{item.name}</span>
+                  <span className="text-[#12202f]  font-medium">{item.name}</span>
                 </div>
-                <span className="font-bold text-[#5e4650] dark:text-[#e08858]">{item.percentage}%</span>
+                <span className="font-bold text-[#4a5a6a] ">{item.percentage}%</span>
               </div>
             ))}
           </div>
         </div>
 
         {/* Technical Infrastructure Health Table */}
-        <div className="lg:col-span-2 bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-3xl p-6 shadow-md space-y-4">
-          <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+        <div className="lg:col-span-2 bg-white  border border-[#0b4f9c]/30 rounded-3xl p-6 shadow-md space-y-4">
+          <h3 className="text-base font-serif font-bold text-[#12202f] ">
             Cloud Node Health & Latency Telemetry
           </h3>
 
           <div className="overflow-x-auto">
             <table className="w-full text-left text-xs">
-              <thead className="bg-[#fbf4ee] dark:bg-[#140a14] text-[#5e4650] dark:text-[#e08858] uppercase tracking-wider font-semibold">
+              <thead className="bg-[#ffffff]  text-[#4a5a6a]  uppercase tracking-wider font-semibold">
                 <tr>
                   <th className="p-3">Node Region</th>
                   <th className="p-3">Status</th>
@@ -209,23 +209,23 @@ export const AnalyticsPage: React.FC = () => {
                   <th className="p-3">Uptime</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#f6e9de] dark:divide-[#33222c]">
+              <tbody className="divide-y divide-[#f3f6f9] ">
                 <tr>
-                  <td className="p-3 font-bold text-[#1c1019] dark:text-[#fbf4ee]">us-east-1 (N. Virginia)</td>
+                  <td className="p-3 font-bold text-[#12202f] ">us-east-1 (N. Virginia)</td>
                   <td className="p-3"><span className="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-semibold">Operational</span></td>
                   <td className="p-3 font-mono">18ms</td>
                   <td className="p-3">34%</td>
                   <td className="p-3">99.99%</td>
                 </tr>
                 <tr>
-                  <td className="p-3 font-bold text-[#1c1019] dark:text-[#fbf4ee]">eu-west-1 (Frankfurt)</td>
+                  <td className="p-3 font-bold text-[#12202f] ">eu-west-1 (Frankfurt)</td>
                   <td className="p-3"><span className="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-semibold">Operational</span></td>
                   <td className="p-3 font-mono">42ms</td>
                   <td className="p-3">52%</td>
                   <td className="p-3">99.98%</td>
                 </tr>
                 <tr>
-                  <td className="p-3 font-bold text-[#1c1019] dark:text-[#fbf4ee]">ap-southeast-1 (Singapore)</td>
+                  <td className="p-3 font-bold text-[#12202f] ">ap-southeast-1 (Singapore)</td>
                   <td className="p-3"><span className="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-semibold">Operational</span></td>
                   <td className="p-3 font-mono">88ms</td>
                   <td className="p-3">28%</td>

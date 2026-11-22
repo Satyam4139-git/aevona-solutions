@@ -197,7 +197,7 @@ export const LegalPage: React.FC = () => {
   const Icon = doc.icon;
 
   return (
-    <div className="min-h-screen bg-[#fbf4ee] dark:bg-[#140a14] text-[#1c1019] dark:text-[#fbf4ee]">
+    <div className="min-h-screen bg-[#ffffff]  text-[#12202f] ">
 
       {/* =====================================================
           HEADER
@@ -206,7 +206,7 @@ export const LegalPage: React.FC = () => {
       <section className="gold-balls relative overflow-hidden">
 <GoldBalls />
 
-        <div className="absolute top-[-160px] left-1/2 -translate-x-1/2 w-[700px] h-[400px] rounded-full bg-[#e08858]/10 blur-[130px] pointer-events-none" />
+        <div className="absolute top-[-160px] left-1/2 -translate-x-1/2 w-[700px] h-[400px] rounded-full bg-[#0b4f9c]/10 blur-[130px] pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 sm:pt-20 pb-12">
 
@@ -214,21 +214,21 @@ export const LegalPage: React.FC = () => {
 
             <div className="max-w-3xl">
 
-              <div className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#e08858]/10 border border-[#e08858]/30">
+              <div className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#0b4f9c]/10 border border-[#0b4f9c]/30">
 
-                <Icon className="w-3.5 h-3.5 text-[#e08858]" />
+                <Icon className="w-3.5 h-3.5 text-[#0b4f9c]" />
 
-                <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#5e4650] dark:text-[#e08858]">
+                <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#4a5a6a] ">
                   Aevona Solution
                 </span>
 
               </div>
 
-              <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-Clarkson font-bold tracking-[-0.055em] leading-[1.02] text-[#1c1019] dark:text-[#fbf4ee]">
+              <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-Clarkson font-bold tracking-[-0.055em] leading-[1.02] text-[#12202f] ">
                 {doc.title}
               </h1>
 
-              <p className="mt-5 max-w-2xl text-sm sm:text-base leading-7 font-Clarkson text-[#5e4650]/70 dark:text-[#e08858]/65">
+              <p className="mt-5 max-w-2xl text-sm sm:text-base leading-7 font-Clarkson text-[#4a5a6a]/70 ">
                 {doc.description}
               </p>
 
@@ -236,11 +236,11 @@ export const LegalPage: React.FC = () => {
 
             <div className="shrink-0">
 
-              <div className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm">
+              <div className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white  border border-[#0b4f9c]/25 shadow-sm">
 
-                <LockKeyhole className="w-3.5 h-3.5 text-[#e08858]" />
+                <LockKeyhole className="w-3.5 h-3.5 text-[#0b4f9c]" />
 
-                <span className="text-[9px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+                <span className="text-[9px] font-Clarkson font-semibold text-[#4a5a6a] ">
                   {doc.subtitle}
                 </span>
 
@@ -271,9 +271,9 @@ export const LegalPage: React.FC = () => {
 
             <div className="sticky top-24">
 
-              <div className="rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/25 p-5 shadow-sm">
+              <div className="rounded-2xl bg-white  border border-[#0b4f9c]/25 p-5 shadow-sm">
 
-                <div className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#c45139]">
+                <div className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#0b4f9c]">
                   On this page
                 </div>
 
@@ -284,12 +284,12 @@ export const LegalPage: React.FC = () => {
                     <a
                       key={index}
                       href={`#section-${index}`}
-                      className="group flex items-start gap-2 px-2.5 py-2 rounded-lg hover:bg-[#e08858]/10 transition-colors"
+                      className="group flex items-start gap-2 px-2.5 py-2 rounded-lg hover:bg-[#0b4f9c]/10 transition-colors"
                     >
 
-                      <ChevronRight className="w-3 h-3 mt-0.5 shrink-0 text-[#e08858] group-hover:translate-x-0.5 transition-transform" />
+                      <ChevronRight className="w-3 h-3 mt-0.5 shrink-0 text-[#0b4f9c] group-hover:translate-x-0.5 transition-transform" />
 
-                      <span className="text-[9px] leading-4 font-Clarkson text-[#5e4650]/70 dark:text-[#e08858]/65">
+                      <span className="text-[9px] leading-4 font-Clarkson text-[#4a5a6a]/70 ">
                         {section.title.replace(/^\d+\.\s*/, '')}
                       </span>
 
@@ -320,12 +320,12 @@ export const LegalPage: React.FC = () => {
 
                 <div
                   key={index}
-                  className="flex items-start gap-3 p-4 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/20"
+                  className="flex items-start gap-3 p-4 rounded-2xl bg-white  border border-[#0b4f9c]/20"
                 >
 
-                  <CheckCircle2 className="w-4 h-4 mt-0.5 shrink-0 text-[#a63d2a] dark:text-[#e0a07a]" />
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 shrink-0 text-[#083b75] " />
 
-                  <span className="text-[9px] leading-5 font-Clarkson font-semibold text-[#5e4650]/75 dark:text-[#e08858]/65">
+                  <span className="text-[9px] leading-5 font-Clarkson font-semibold text-[#4a5a6a]/75 ">
                     {highlight}
                   </span>
 
@@ -338,27 +338,27 @@ export const LegalPage: React.FC = () => {
 
             {/* Main document */}
 
-            <article className="rounded-[2rem] bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-lg overflow-hidden">
+            <article className="rounded-xl bg-white  border border-[#0b4f9c]/25 shadow-lg overflow-hidden">
 
               {/* Document top bar */}
 
-              <div className="px-6 sm:px-8 lg:px-10 py-5 border-b border-[#f6e9de] dark:border-[#33222c] flex items-center justify-between">
+              <div className="px-6 sm:px-8 lg:px-10 py-5 border-b border-[#f3f6f9]  flex items-center justify-between">
 
                 <div className="flex items-center gap-2">
 
-                  <div className="w-7 h-7 rounded-lg bg-[#e08858]/15 flex items-center justify-center">
+                  <div className="w-7 h-7 rounded-lg bg-[#0b4f9c]/15 flex items-center justify-center">
 
-                    <Icon className="w-3.5 h-3.5 text-[#5e4650] dark:text-[#e08858]" />
+                    <Icon className="w-3.5 h-3.5 text-[#4a5a6a] " />
 
                   </div>
 
-                  <span className="text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#5e4650]/70 dark:text-[#e08858]/65">
+                  <span className="text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#4a5a6a]/70 ">
                     Legal Documentation
                   </span>
 
                 </div>
 
-                <span className="hidden sm:block text-[8px] font-Clarkson text-[#5e4650]/45 dark:text-[#e08858]/45">
+                <span className="hidden sm:block text-[8px] font-Clarkson text-[#4a5a6a]/45 ">
                   AEVONA SOLUTION
                 </span>
 
@@ -374,14 +374,14 @@ export const LegalPage: React.FC = () => {
                   <section
                     key={index}
                     id={`section-${index}`}
-                    className="py-7 sm:py-8 border-b last:border-b-0 border-[#f6e9de] dark:border-[#33222c] scroll-mt-24"
+                    className="py-7 sm:py-8 border-b last:border-b-0 border-[#f3f6f9]  scroll-mt-24"
                   >
 
                     <div className="flex gap-4">
 
-                      <div className="hidden sm:flex w-8 h-8 rounded-lg bg-[#e08858]/10 border border-[#e08858]/20 items-center justify-center shrink-0">
+                      <div className="hidden sm:flex w-8 h-8 rounded-lg bg-[#0b4f9c]/10 border border-[#0b4f9c]/20 items-center justify-center shrink-0">
 
-                        <span className="text-[9px] font-Clarkson font-bold text-[#c45139]">
+                        <span className="text-[9px] font-Clarkson font-bold text-[#0b4f9c]">
                           {String(index + 1).padStart(2, '0')}
                         </span>
 
@@ -389,11 +389,11 @@ export const LegalPage: React.FC = () => {
 
                       <div className="flex-1">
 
-                        <h2 className="text-base sm:text-lg font-Clarkson font-bold tracking-[-0.025em] text-[#1c1019] dark:text-[#fbf4ee]">
+                        <h2 className="text-base sm:text-lg font-Clarkson font-bold tracking-[-0.025em] text-[#12202f] ">
                           {section.title}
                         </h2>
 
-                        <p className="mt-3 text-[11px] sm:text-xs leading-7 font-Clarkson text-[#5e4650]/75 dark:text-[#e08858]/65">
+                        <p className="mt-3 text-[11px] sm:text-xs leading-7 font-Clarkson text-[#4a5a6a]/75 ">
                           {section.content}
                         </p>
 
@@ -406,12 +406,12 @@ export const LegalPage: React.FC = () => {
 
                               <div
                                 key={pointIndex}
-                                className="flex items-start gap-2.5 p-3 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/15"
+                                className="flex items-start gap-2.5 p-3 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/15"
                               >
 
-                                <CheckCircle2 className="w-3.5 h-3.5 mt-0.5 shrink-0 text-[#e08858]" />
+                                <CheckCircle2 className="w-3.5 h-3.5 mt-0.5 shrink-0 text-[#0b4f9c]" />
 
-                                <span className="text-[9px] leading-5 font-Clarkson text-[#5e4650]/70 dark:text-[#e08858]/60">
+                                <span className="text-[9px] leading-5 font-Clarkson text-[#4a5a6a]/70 ">
                                   {point}
                                 </span>
 
@@ -436,23 +436,23 @@ export const LegalPage: React.FC = () => {
 
               {/* Document footer */}
 
-              <div className="px-6 sm:px-8 lg:px-10 py-6 bg-[#fbf4ee]/70 dark:bg-[#140a14]/60 border-t border-[#e08858]/15">
+              <div className="px-6 sm:px-8 lg:px-10 py-6 bg-[#ffffff]/70  border-t border-[#0b4f9c]/15">
 
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
 
                   <div>
 
-                    <div className="text-[9px] font-Clarkson font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+                    <div className="text-[9px] font-Clarkson font-bold text-[#12202f] ">
                       AEVONA SOLUTION
                     </div>
 
-                    <div className="mt-1 text-[8px] font-Clarkson text-[#5e4650]/50 dark:text-[#e08858]/50">
+                    <div className="mt-1 text-[8px] font-Clarkson text-[#4a5a6a]/50 ">
                       Technology. People. A brighter tomorrow.
                     </div>
 
                   </div>
 
-                  <div className="text-[8px] font-Clarkson text-[#5e4650]/50 dark:text-[#e08858]/50">
+                  <div className="text-[8px] font-Clarkson text-[#4a5a6a]/50 ">
                     {doc.subtitle}
                   </div>
 

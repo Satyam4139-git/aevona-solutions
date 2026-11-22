@@ -49,21 +49,21 @@ export const SearchModal: React.FC = () => {
       <div className="space-y-4">
         {/* Input */}
         <div className="relative">
-          <Search className="absolute left-3.5 top-3.5 w-5 h-5 text-[#a63d2a] dark:text-[#e08858]" />
+          <Search className="absolute left-3.5 top-3.5 w-5 h-5 text-[#083b75] " />
           <input
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search projects, tasks, files, messages..."
             autoFocus
-            className="w-full pl-11 pr-4 py-3 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-[#1c1019] dark:text-[#fbf4ee] focus:outline-none focus:ring-2 focus:ring-[#e08858]"
+            className="w-full pl-11 pr-4 py-3 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-[#12202f]  focus:outline-none focus:ring-2 focus:ring-[#0b4f9c]"
           />
         </div>
 
         {/* Shortcut indicator */}
-        <div className="flex items-center justify-between text-xs text-[#a63d2a] dark:text-[#e08858]/70 px-1">
+        <div className="flex items-center justify-between text-xs text-[#083b75]  px-1">
           <span>{query ? `Results matching "${query}"` : 'Recent & Suggested Items'}</span>
-          <span className="flex items-center gap-1 font-mono bg-[#f6e9de] dark:bg-[#2a1a25] px-2 py-0.5 rounded">
+          <span className="flex items-center gap-1 font-mono bg-[#f3f6f9]  px-2 py-0.5 rounded">
             <kbd>ESC</kbd> to close
           </span>
         </div>
@@ -73,7 +73,7 @@ export const SearchModal: React.FC = () => {
           {/* Projects */}
           {filteredProjects.length > 0 && (
             <div>
-              <div className="flex items-center gap-2 text-xs font-semibold text-[#a63d2a] dark:text-[#e08858] uppercase tracking-wider mb-2">
+              <div className="flex items-center gap-2 text-xs font-semibold text-[#083b75]  uppercase tracking-wider mb-2">
                 <FolderKanban className="w-3.5 h-3.5" />
                 Projects ({filteredProjects.length})
               </div>
@@ -82,17 +82,17 @@ export const SearchModal: React.FC = () => {
                   <button
                     key={p.id}
                     onClick={() => handleNavigate(`/dashboard/projects/${p.id}`)}
-                    className="w-full flex items-center justify-between p-2.5 rounded-lg hover:bg-[#f6e9de]/60 dark:hover:bg-[#2a1a25] text-left transition-colors group"
+                    className="w-full flex items-center justify-between p-2.5 rounded-lg hover:bg-[#f3f6f9]/60  text-left transition-colors group"
                   >
                     <div>
-                      <div className="text-sm font-medium text-[#1c1019] dark:text-[#fbf4ee] group-hover:text-[#5e4650] dark:group-hover:text-[#e08858]">
+                      <div className="text-sm font-medium text-[#12202f]  group-hover:text-[#4a5a6a] ">
                         {p.name}
                       </div>
-                      <div className="text-xs text-[#5e4650]/70 dark:text-[#e08858]/60 line-clamp-1">
+                      <div className="text-xs text-[#4a5a6a]/70  line-clamp-1">
                         {p.serviceType} • {p.status}
                       </div>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-[#a63d2a] opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowRight className="w-4 h-4 text-[#083b75] opacity-0 group-hover:opacity-100 transition-opacity" />
                   </button>
                 ))}
               </div>
@@ -102,7 +102,7 @@ export const SearchModal: React.FC = () => {
           {/* Tasks */}
           {filteredTasks.length > 0 && (
             <div>
-              <div className="flex items-center gap-2 text-xs font-semibold text-[#a63d2a] dark:text-[#e08858] uppercase tracking-wider mb-2">
+              <div className="flex items-center gap-2 text-xs font-semibold text-[#083b75]  uppercase tracking-wider mb-2">
                 <CheckSquare className="w-3.5 h-3.5" />
                 Tasks ({filteredTasks.length})
               </div>
@@ -111,17 +111,17 @@ export const SearchModal: React.FC = () => {
                   <button
                     key={t.id}
                     onClick={() => handleNavigate('/dashboard/tasks')}
-                    className="w-full flex items-center justify-between p-2.5 rounded-lg hover:bg-[#f6e9de]/60 dark:hover:bg-[#2a1a25] text-left transition-colors group"
+                    className="w-full flex items-center justify-between p-2.5 rounded-lg hover:bg-[#f3f6f9]/60  text-left transition-colors group"
                   >
                     <div>
-                      <div className="text-sm font-medium text-[#1c1019] dark:text-[#fbf4ee]">
+                      <div className="text-sm font-medium text-[#12202f] ">
                         {t.title}
                       </div>
-                      <div className="text-xs text-[#5e4650]/70 dark:text-[#e08858]/60">
+                      <div className="text-xs text-[#4a5a6a]/70 ">
                         Priority: {t.priority} • Due {t.dueDate}
                       </div>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-[#a63d2a] opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowRight className="w-4 h-4 text-[#083b75] opacity-0 group-hover:opacity-100 transition-opacity" />
                   </button>
                 ))}
               </div>
@@ -131,7 +131,7 @@ export const SearchModal: React.FC = () => {
           {/* Files */}
           {filteredFiles.length > 0 && (
             <div>
-              <div className="flex items-center gap-2 text-xs font-semibold text-[#a63d2a] dark:text-[#e08858] uppercase tracking-wider mb-2">
+              <div className="flex items-center gap-2 text-xs font-semibold text-[#083b75]  uppercase tracking-wider mb-2">
                 <FileText className="w-3.5 h-3.5" />
                 Files ({filteredFiles.length})
               </div>
@@ -140,17 +140,17 @@ export const SearchModal: React.FC = () => {
                   <button
                     key={f.id}
                     onClick={() => handleNavigate('/dashboard/files')}
-                    className="w-full flex items-center justify-between p-2.5 rounded-lg hover:bg-[#f6e9de]/60 dark:hover:bg-[#2a1a25] text-left transition-colors group"
+                    className="w-full flex items-center justify-between p-2.5 rounded-lg hover:bg-[#f3f6f9]/60  text-left transition-colors group"
                   >
                     <div>
-                      <div className="text-sm font-medium text-[#1c1019] dark:text-[#fbf4ee]">
+                      <div className="text-sm font-medium text-[#12202f] ">
                         {f.name}
                       </div>
-                      <div className="text-xs text-[#5e4650]/70 dark:text-[#e08858]/60">
+                      <div className="text-xs text-[#4a5a6a]/70 ">
                         {f.size} • Uploaded by {f.uploadedBy}
                       </div>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-[#a63d2a] opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowRight className="w-4 h-4 text-[#083b75] opacity-0 group-hover:opacity-100 transition-opacity" />
                   </button>
                 ))}
               </div>
@@ -160,7 +160,7 @@ export const SearchModal: React.FC = () => {
           {/* Messages */}
           {filteredConversations.length > 0 && (
             <div>
-              <div className="flex items-center gap-2 text-xs font-semibold text-[#a63d2a] dark:text-[#e08858] uppercase tracking-wider mb-2">
+              <div className="flex items-center gap-2 text-xs font-semibold text-[#083b75]  uppercase tracking-wider mb-2">
                 <MessageSquare className="w-3.5 h-3.5" />
                 Messages ({filteredConversations.length})
               </div>
@@ -169,17 +169,17 @@ export const SearchModal: React.FC = () => {
                   <button
                     key={c.id}
                     onClick={() => handleNavigate('/dashboard/messages')}
-                    className="w-full flex items-center justify-between p-2.5 rounded-lg hover:bg-[#f6e9de]/60 dark:hover:bg-[#2a1a25] text-left transition-colors group"
+                    className="w-full flex items-center justify-between p-2.5 rounded-lg hover:bg-[#f3f6f9]/60  text-left transition-colors group"
                   >
                     <div>
-                      <div className="text-sm font-medium text-[#1c1019] dark:text-[#fbf4ee]">
+                      <div className="text-sm font-medium text-[#12202f] ">
                         {c.participant.name} ({c.participant.role})
                       </div>
-                      <div className="text-xs text-[#5e4650]/70 dark:text-[#e08858]/60 line-clamp-1">
+                      <div className="text-xs text-[#4a5a6a]/70  line-clamp-1">
                         "{c.lastMessage}"
                       </div>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-[#a63d2a] opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowRight className="w-4 h-4 text-[#083b75] opacity-0 group-hover:opacity-100 transition-opacity" />
                   </button>
                 ))}
               </div>
@@ -187,7 +187,7 @@ export const SearchModal: React.FC = () => {
           )}
 
           {filteredProjects.length === 0 && filteredTasks.length === 0 && filteredFiles.length === 0 && (
-            <div className="py-8 text-center text-sm text-[#a63d2a] dark:text-[#e08858]/70">
+            <div className="py-8 text-center text-sm text-[#083b75] ">
               No matching results found for "{query}".
             </div>
           )}

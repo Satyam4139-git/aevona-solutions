@@ -1,83 +1,37 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        aevona: {
-          50: '#FFFFFF',
-          100: '#fbf4ee',
-          200: '#f6e9de',
-          300: '#ebdacd',
-          400: '#e08858',
-          500: '#c45139',
-          600: '#a63d2a',
-          700: '#5e4650',
-          800: '#3b2a35',
-          900: '#1c1019',
-          950: '#140a14',
-        },
-        cream: {
-          DEFAULT: '#fbf4ee',
-          light: '#FFFFFF',
-          dark: '#f6e9de',
-        },
-        gold: {
-          light: '#f3b58f',
-          DEFAULT: '#e08858',
-          dark: '#a63d2a',
-        },
-        bronze: {
-          DEFAULT: '#c45139',
-          dark: '#a63d2a',
-        },
-        brown: {
-          light: '#7a6270',
-          DEFAULT: '#5e4650',
-          dark: '#4a3340',
-          coffee: '#1c1019',
-        },
-        darkbg: {
-          base: '#100810',
-          surface: '#1e1220',
-          card: '#2a1520',
-          border: '#3a2530',
-        }
+        aevona: { 50:'#ffffff',100:'#f3f6f9',200:'#e6eef8',300:'#dbe2e9',400:'#3a78bd',500:'#0b4f9c',600:'#083b75',700:'#4a5a6a',800:'#2a3a4c',900:'#12202f',950:'#0c1824' },
+        cream: { DEFAULT:'#ffffff', light:'#ffffff', dark:'#f3f6f9' },
+        gold: { light:'#6ea8dc', DEFAULT:'#0b4f9c', dark:'#083b75' },
+        bronze: { DEFAULT:'#0b4f9c', dark:'#083b75' },
+        brown: { light:'#6b7b8c', DEFAULT:'#4a5a6a', dark:'#2a3a4c', coffee:'#12202f' },
+        darkbg: { base:'#0c1824', surface:'#12202f', card:'#1b2b3d', border:'#2a3a4c' },
       },
       fontFamily: {
-        sans: ['Space Grotesk', 'system-ui', 'sans-serif'],
-        serif: ['Space Grotesk', 'system-ui', 'sans-serif'],
-        mono: ['DM Mono', 'ui-monospace', 'monospace'],
+        sans: ['IBM Plex Sans', 'system-ui', 'sans-serif'],
+        serif: ['Schibsted Grotesk', 'IBM Plex Sans', 'system-ui', 'sans-serif'],
+        heading: ['Schibsted Grotesk', 'IBM Plex Sans', 'system-ui', 'sans-serif'],
+        mono: ['IBM Plex Mono', 'ui-monospace', 'monospace'],
       },
+      /* corporate look: tighter corners, soft neutral shadows */
+      borderRadius: { lg: '4px', xl: '6px', '2xl': '8px', '3xl': '10px' },
       boxShadow: {
-        'gold': '0 4px 20px -2px rgba(224, 136, 88, 0.25)',
-        'gold-glow': '0 0 25px rgba(224, 136, 88, 0.35)',
-        'brown-soft': '0 10px 30px -5px rgba(40, 20, 32, 0.08)',
-        'dark-soft': '0 10px 30px -5px rgba(0, 0, 0, 0.4)',
+        'gold': '0 2px 10px -2px rgba(11, 79, 156, 0.25)',
+        'gold-glow': '0 4px 16px rgba(11, 79, 156, 0.18)',
+        'brown-soft': '0 2px 14px -4px rgba(18, 32, 47, 0.10)',
+        'dark-soft': '0 8px 24px -6px rgba(18, 32, 47, 0.18)',
       },
-      animation: {
-        'fade-in': 'fadeIn 0.3s ease-in-out',
-        'slide-up': 'slideUp 0.4s ease-out',
-        'pulse-subtle': 'pulseSubtle 3s infinite ease-in-out',
-      },
+      animation: { 'fade-in':'fadeIn 0.3s ease-in-out', 'slide-up':'slideUp 0.4s ease-out', 'pulse-subtle':'pulseSubtle 3s infinite ease-in-out' },
       keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        slideUp: {
-          '0%': { transform: 'translateY(12px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
-        pulseSubtle: {
-          '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '0.75' },
-        },
-      }
+        fadeIn: { '0%':{opacity:'0'}, '100%':{opacity:'1'} },
+        slideUp: { '0%':{transform:'translateY(12px)',opacity:'0'}, '100%':{transform:'translateY(0)',opacity:'1'} },
+        pulseSubtle: { '0%, 100%':{opacity:'1'}, '50%':{opacity:'0.75'} },
+      },
     },
   },
   plugins: [],

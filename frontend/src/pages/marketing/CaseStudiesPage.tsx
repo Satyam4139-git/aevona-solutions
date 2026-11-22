@@ -69,7 +69,7 @@ export const CaseStudiesPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#fbf4ee] dark:bg-[#140a14] text-[#1c1019] dark:text-[#fbf4ee] overflow-hidden">
+    <div className="min-h-screen bg-[#ffffff]  text-[#12202f]  overflow-hidden">
 
       {/* =====================================================
           HERO
@@ -79,21 +79,21 @@ export const CaseStudiesPage: React.FC = () => {
 <GoldBalls />
 
         {/* Ambient background */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#e08858]/10 blur-[140px] rounded-full pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#0b4f9c]/10 blur-[140px] rounded-full pointer-events-none" />
 
-        <div className="absolute left-[8%] top-48 w-40 h-40 rounded-full bg-[#a63d2a]/5 blur-3xl" />
+        <div className="absolute left-[8%] top-48 w-40 h-40 rounded-full bg-[#083b75]/5 blur-3xl" />
 
-        <div className="absolute right-[8%] top-64 w-40 h-40 rounded-full bg-[#a63d2a]/5 blur-3xl" />
+        <div className="absolute right-[8%] top-64 w-40 h-40 rounded-full bg-[#083b75]/5 blur-3xl" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
           <div className="text-center lg:text-left lg:[&_p]:mx-0 lg:[&_.justify-center]:justify-start lg:[&_h1]:!text-5xl xl:[&_h1]:!text-6xl">
 
           {/* Eyebrow */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#e08858]/10 border border-[#e08858]/35">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0b4f9c]/10 border border-[#0b4f9c]/35">
 
-            <Sparkles className="w-3.5 h-3.5 text-[#e08858]" />
+            <Sparkles className="w-3.5 h-3.5 text-[#0b4f9c]" />
 
-            <span className="text-[10px] font-Clarkson font-bold uppercase tracking-[0.22em] text-[#5e4650] dark:text-[#e08858]">
+            <span className="text-[10px] font-Clarkson font-bold uppercase tracking-[0.22em] text-[#4a5a6a] ">
               Case Studies
             </span>
 
@@ -102,55 +102,55 @@ export const CaseStudiesPage: React.FC = () => {
           {/* Heading */}
           <h1 className="mt-7 font-Clarkson font-bold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl tracking-[-0.055em] leading-[1.02]">
 
-            <span className="text-[#1c1019] dark:text-[#fbf4ee]">
+            <span className="text-[#12202f] ">
               Problems solved.
             </span>
 
             <br />
 
-            <span className="text-[#5e4650] dark:text-[#e08858]">
+            <span className="text-[#4a5a6a] ">
               Results measured.
             </span>
 
           </h1>
 
-          <p className="mt-7 max-w-2xl mx-auto text-sm sm:text-base leading-8 font-Clarkson text-[#5e4650]/75 dark:text-[#e08858]/70">
+          <p className="mt-7 max-w-2xl mx-auto text-sm sm:text-base leading-8 font-Clarkson text-[#4a5a6a]/75 ">
             A closer look at how we turn complex technical challenges into
             scalable products, reliable systems, and measurable business
             outcomes.
           </p>
-          <p className="mt-3 text-[10px] uppercase tracking-wider text-[#5e4650]/60 dark:text-[#e08858]/60">
+          <p className="mt-3 text-[10px] uppercase tracking-wider text-[#4a5a6a]/60 ">
             Case-study metrics in this preview are sample claims from the brief and need verification.
           </p>
 
           {/* Mini metrics */}
           <div className="mt-10 flex flex-wrap justify-center gap-3">
 
-            <div className="flex items-center gap-2 px-5 py-3 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm">
+            <div className="flex items-center gap-2 px-5 py-3 rounded-2xl bg-white  border border-[#0b4f9c]/25 shadow-sm">
 
-              <TrendingUp className="w-4 h-4 text-[#e08858]" />
+              <TrendingUp className="w-4 h-4 text-[#0b4f9c]" />
 
-              <span className="text-[10px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+              <span className="text-[10px] font-Clarkson font-semibold text-[#4a5a6a] ">
                 Performance Driven
               </span>
 
             </div>
 
-            <div className="flex items-center gap-2 px-5 py-3 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm">
+            <div className="flex items-center gap-2 px-5 py-3 rounded-2xl bg-white  border border-[#0b4f9c]/25 shadow-sm">
 
-              <ShieldCheck className="w-4 h-4 text-[#a63d2a]" />
+              <ShieldCheck className="w-4 h-4 text-[#083b75]" />
 
-              <span className="text-[10px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+              <span className="text-[10px] font-Clarkson font-semibold text-[#4a5a6a] ">
                 Production Ready
               </span>
 
             </div>
 
-            <div className="flex items-center gap-2 px-5 py-3 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm">
+            <div className="flex items-center gap-2 px-5 py-3 rounded-2xl bg-white  border border-[#0b4f9c]/25 shadow-sm">
 
-              <Zap className="w-4 h-4 text-[#a63d2a]" />
+              <Zap className="w-4 h-4 text-[#083b75]" />
 
-              <span className="text-[10px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+              <span className="text-[10px] font-Clarkson font-semibold text-[#4a5a6a] ">
                 Built to Scale
               </span>
 
@@ -160,8 +160,8 @@ export const CaseStudiesPage: React.FC = () => {
 
         </div>
           <figure className="relative mx-auto w-full max-w-[520px] lg:ml-auto">
-            <div className="absolute -inset-2 rounded-[2rem] border border-[#e08858]/25" />
-            <img src="/images/casestudies.jpg" alt="Leaders reviewing an AI ethics framework on a glass display" className="relative aspect-[7/5] w-full rounded-[1.75rem] border border-[#e08858]/20 object-cover object-[center_30%] shadow-[0_24px_60px_rgba(28,16,28,.25)]" />
+            <div className="absolute -inset-2 rounded-xl border border-[#0b4f9c]/25" />
+            <img src="/images/casestudies.jpg" alt="Leaders reviewing an AI ethics framework on a glass display" className="relative aspect-[7/5] w-full rounded-xl border border-[#0b4f9c]/20 object-cover object-[center_30%] shadow-[0_24px_60px_rgba(28,16,28,.25)]" />
           </figure>
         </div>
       </section>
@@ -181,11 +181,11 @@ export const CaseStudiesPage: React.FC = () => {
           return (
             <article
               key={cs.id}
-              className="group relative overflow-hidden rounded-[2rem] bg-white dark:bg-[#1e1220] border border-[#e08858]/30 shadow-md hover:shadow-2xl transition-all duration-500"
+              className="group relative overflow-hidden rounded-xl bg-white  border border-[#0b4f9c]/30 shadow-md hover:shadow-2xl transition-all duration-500"
             >
 
               {/* Decorative glow */}
-              <div className="absolute -right-32 -top-32 w-80 h-80 rounded-full bg-[#e08858]/8 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              <div className="absolute -right-32 -top-32 w-80 h-80 rounded-full bg-[#0b4f9c]/8 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
               {/* =================================================
                   TOP BAR
@@ -197,19 +197,19 @@ export const CaseStudiesPage: React.FC = () => {
 
                   <div className="flex items-center gap-3">
 
-                    <div className="w-10 h-10 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/20 flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/20 flex items-center justify-center">
 
-                      <Icon className="w-5 h-5 text-[#5e4650] dark:text-[#e08858]" />
+                      <Icon className="w-5 h-5 text-[#4a5a6a] " />
 
                     </div>
 
                     <div>
 
-                      <div className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#e08858]">
+                      <div className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#0b4f9c]">
                         {cs.client}
                       </div>
 
-                      <div className="mt-1 text-[8px] font-Clarkson tracking-wider text-[#5e4650]/45 dark:text-[#e08858]/45">
+                      <div className="mt-1 text-[8px] font-Clarkson tracking-wider text-[#4a5a6a]/45 ">
                         {cs.category}
                       </div>
 
@@ -219,7 +219,7 @@ export const CaseStudiesPage: React.FC = () => {
 
                   <div className="flex items-center gap-2">
 
-                    <span className="text-[9px] font-Clarkson font-semibold text-[#5e4650]/35 dark:text-[#e08858]/35">
+                    <span className="text-[9px] font-Clarkson font-semibold text-[#4a5a6a]/35 ">
                       CASE 0{index + 1}
                     </span>
 
@@ -239,7 +239,7 @@ export const CaseStudiesPage: React.FC = () => {
                 {/* LEFT */}
                 <div>
 
-                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-Clarkson font-bold tracking-[-0.045em] leading-tight text-[#1c1019] dark:text-[#fbf4ee] max-w-3xl">
+                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-Clarkson font-bold tracking-[-0.045em] leading-tight text-[#12202f]  max-w-3xl">
                     {cs.title}
                   </h2>
 
@@ -251,15 +251,15 @@ export const CaseStudiesPage: React.FC = () => {
 
                       <div className="flex items-center gap-2 mb-3">
 
-                        <div className="w-2 h-2 rounded-full bg-[#a63d2a]" />
+                        <div className="w-2 h-2 rounded-full bg-[#083b75]" />
 
-                        <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#a63d2a]">
+                        <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#083b75]">
                           The Challenge
                         </span>
 
                       </div>
 
-                      <p className="text-xs sm:text-sm leading-7 font-Clarkson text-[#5e4650]/70 dark:text-[#e08858]/65">
+                      <p className="text-xs sm:text-sm leading-7 font-Clarkson text-[#4a5a6a]/70 ">
                         {cs.challenge}
                       </p>
 
@@ -271,15 +271,15 @@ export const CaseStudiesPage: React.FC = () => {
 
                       <div className="flex items-center gap-2 mb-3">
 
-                        <div className="w-2 h-2 rounded-full bg-[#a63d2a]" />
+                        <div className="w-2 h-2 rounded-full bg-[#083b75]" />
 
-                        <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#c8805e] dark:text-[#e0a07a]">
+                        <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#2f6db5] ">
                           Our Solution
                         </span>
 
                       </div>
 
-                      <p className="text-xs sm:text-sm leading-7 font-Clarkson text-[#5e4650]/70 dark:text-[#e08858]/65">
+                      <p className="text-xs sm:text-sm leading-7 font-Clarkson text-[#4a5a6a]/70 ">
                         {cs.solution}
                       </p>
 
@@ -293,29 +293,29 @@ export const CaseStudiesPage: React.FC = () => {
                 {/* RIGHT: HERO METRIC */}
                 <div className="relative">
 
-                  <div className="h-full min-h-[230px] rounded-[1.5rem] bg-[#1c1019] dark:bg-[#140a14] border border-[#e08858]/20 p-7 flex flex-col justify-between overflow-hidden">
+                  <div className="h-full min-h-[230px] rounded-xl bg-[#12202f]  border border-[#0b4f9c]/20 p-7 flex flex-col justify-between overflow-hidden">
 
-                    <div className="absolute -right-20 -top-20 w-48 h-48 rounded-full bg-[#e08858]/10 blur-3xl" />
+                    <div className="absolute -right-20 -top-20 w-48 h-48 rounded-full bg-[#0b4f9c]/10 blur-3xl" />
 
                     <div className="relative">
 
                       <div className="flex items-center justify-between">
 
-                        <span className="text-[9px] font-Clarkson uppercase tracking-[0.18em] text-[#fbf4ee]/45">
+                        <span className="text-[9px] font-Clarkson uppercase tracking-[0.18em] text-[#ffffff]/45">
                           Primary Impact
                         </span>
 
-                        <ArrowUpRight className="w-4 h-4 text-[#e08858]" />
+                        <ArrowUpRight className="w-4 h-4 text-[#0b4f9c]" />
 
                       </div>
 
                       <div className="mt-7">
 
-                        <div className="text-5xl sm:text-6xl font-Clarkson font-bold tracking-[-0.06em] text-[#e08858]">
+                        <div className="text-5xl sm:text-6xl font-Clarkson font-bold tracking-[-0.06em] text-[#0b4f9c]">
                           {cs.metric}
                         </div>
 
-                        <div className="mt-2 text-xs font-Clarkson text-[#fbf4ee]/60">
+                        <div className="mt-2 text-xs font-Clarkson text-[#ffffff]/60">
                           {cs.metricLabel}
                         </div>
 
@@ -327,9 +327,9 @@ export const CaseStudiesPage: React.FC = () => {
 
                       <div className="flex items-center gap-2">
 
-                        <CheckCircle2 className="w-4 h-4 text-[#a63d2a]" />
+                        <CheckCircle2 className="w-4 h-4 text-[#083b75]" />
 
-                        <span className="text-[9px] font-Clarkson font-semibold text-[#fbf4ee]/55">
+                        <span className="text-[9px] font-Clarkson font-semibold text-[#ffffff]/55">
                           Measurable business impact
                         </span>
 
@@ -348,7 +348,7 @@ export const CaseStudiesPage: React.FC = () => {
                   STATS
               ================================================== */}
 
-              <div className="relative mx-6 sm:mx-10 lg:mx-12 mb-8 rounded-[1.5rem] bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/20 overflow-hidden">
+              <div className="relative mx-6 sm:mx-10 lg:mx-12 mb-8 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/20 overflow-hidden">
 
                 <div className="grid grid-cols-1 sm:grid-cols-3">
 
@@ -360,7 +360,7 @@ export const CaseStudiesPage: React.FC = () => {
                         p-5 sm:p-6
                         ${
                           statIndex !== cs.stats.length - 1
-                            ? 'border-b sm:border-b-0 sm:border-r border-[#e08858]/20'
+                            ? 'border-b sm:border-b-0 sm:border-r border-[#0b4f9c]/20'
                             : ''
                         }
                       `}
@@ -369,24 +369,24 @@ export const CaseStudiesPage: React.FC = () => {
                       <div className="flex items-center gap-2">
 
                         {statIndex === 0 && (
-                          <Clock3 className="w-3.5 h-3.5 text-[#e08858]" />
+                          <Clock3 className="w-3.5 h-3.5 text-[#0b4f9c]" />
                         )}
 
                         {statIndex === 1 && (
-                          <TrendingUp className="w-3.5 h-3.5 text-[#a63d2a]" />
+                          <TrendingUp className="w-3.5 h-3.5 text-[#083b75]" />
                         )}
 
                         {statIndex === 2 && (
-                          <Zap className="w-3.5 h-3.5 text-[#a63d2a]" />
+                          <Zap className="w-3.5 h-3.5 text-[#083b75]" />
                         )}
 
-                        <span className="text-[8px] font-Clarkson uppercase tracking-wider text-[#5e4650]/45 dark:text-[#e08858]/45">
+                        <span className="text-[8px] font-Clarkson uppercase tracking-wider text-[#4a5a6a]/45 ">
                           {stat.label}
                         </span>
 
                       </div>
 
-                      <div className="mt-2 text-lg font-Clarkson font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+                      <div className="mt-2 text-lg font-Clarkson font-bold text-[#12202f] ">
                         {stat.value}
                       </div>
 
@@ -403,17 +403,17 @@ export const CaseStudiesPage: React.FC = () => {
                   RESULTS
               ================================================== */}
 
-              <div className="relative border-t border-[#f6e9de] dark:border-[#33222c] px-6 sm:px-10 lg:px-12 py-7">
+              <div className="relative border-t border-[#f3f6f9]  px-6 sm:px-10 lg:px-12 py-7">
 
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-5">
 
                   <div>
 
-                    <div className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#e08858]">
+                    <div className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#0b4f9c]">
                       Key Results
                     </div>
 
-                    <div className="mt-1 text-xs font-Clarkson text-[#5e4650]/50 dark:text-[#e08858]/50">
+                    <div className="mt-1 text-xs font-Clarkson text-[#4a5a6a]/50 ">
                       Quantifiable outcomes delivered through the engagement.
                     </div>
 
@@ -427,16 +427,16 @@ export const CaseStudiesPage: React.FC = () => {
 
                     <div
                       key={resultIndex}
-                      className="group/result flex items-start gap-3 p-4 rounded-xl bg-[#fbf4ee]/70 dark:bg-[#140a14] border border-[#e08858]/15 hover:border-[#e08858]/40 transition-colors"
+                      className="group/result flex items-start gap-3 p-4 rounded-xl bg-[#ffffff]/70  border border-[#0b4f9c]/15 hover:border-[#0b4f9c]/40 transition-colors"
                     >
 
-                      <div className="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-[#e08858]/15 flex items-center justify-center">
+                      <div className="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-[#0b4f9c]/15 flex items-center justify-center">
 
-                        <CheckCircle2 className="w-3 h-3 text-[#e08858]" />
+                        <CheckCircle2 className="w-3 h-3 text-[#0b4f9c]" />
 
                       </div>
 
-                      <span className="text-[10px] sm:text-[11px] leading-5 font-Clarkson font-medium text-[#5e4650]/75 dark:text-[#e08858]/70">
+                      <span className="text-[10px] sm:text-[11px] leading-5 font-Clarkson font-medium text-[#4a5a6a]/75 ">
                         {result}
                       </span>
 
@@ -463,19 +463,19 @@ export const CaseStudiesPage: React.FC = () => {
       <section className="gold-balls max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
 <GoldBalls />
 
-        <div className="rounded-[2rem] bg-white dark:bg-[#1e1220] border border-[#e08858]/30 p-7 sm:p-10 lg:p-12">
+        <div className="rounded-xl bg-white  border border-[#0b4f9c]/30 p-7 sm:p-10 lg:p-12">
 
           <div className="text-center max-w-2xl mx-auto">
 
-            <span className="text-[10px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#e08858]">
+            <span className="text-[10px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#0b4f9c]">
               Our Approach
             </span>
 
-            <h2 className="mt-3 text-2xl sm:text-3xl font-Clarkson font-bold tracking-[-0.04em] text-[#1c1019] dark:text-[#fbf4ee]">
+            <h2 className="mt-3 text-2xl sm:text-3xl font-Clarkson font-bold tracking-[-0.04em] text-[#12202f] ">
               From complexity to clarity.
             </h2>
 
-            <p className="mt-4 text-xs sm:text-sm leading-7 font-Clarkson text-[#5e4650]/65 dark:text-[#e08858]/60">
+            <p className="mt-4 text-xs sm:text-sm leading-7 font-Clarkson text-[#4a5a6a]/65 ">
               Every engagement follows a structured engineering process
               designed to reduce uncertainty and create measurable outcomes.
             </p>
@@ -510,18 +510,18 @@ export const CaseStudiesPage: React.FC = () => {
 
               <div
                 key={step.number}
-                className="p-5 rounded-2xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/15"
+                className="p-5 rounded-2xl bg-[#ffffff]  border border-[#0b4f9c]/15"
               >
 
-                <div className="text-[10px] font-Clarkson font-bold text-[#e08858]">
+                <div className="text-[10px] font-Clarkson font-bold text-[#0b4f9c]">
                   {step.number}
                 </div>
 
-                <h3 className="mt-4 text-sm font-Clarkson font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+                <h3 className="mt-4 text-sm font-Clarkson font-bold text-[#12202f] ">
                   {step.title}
                 </h3>
 
-                <p className="mt-2 text-[10px] leading-5 font-Clarkson text-[#5e4650]/60 dark:text-[#e08858]/55">
+                <p className="mt-2 text-[10px] leading-5 font-Clarkson text-[#4a5a6a]/60 ">
                   {step.text}
                 </p>
 
@@ -543,24 +543,24 @@ export const CaseStudiesPage: React.FC = () => {
       <section className="gold-balls max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
 <GoldBalls />
 
-        <div className="relative overflow-hidden rounded-[2rem] bg-[#1c1019] dark:bg-[#1e1220] border border-[#e08858]/30 px-7 py-14 sm:px-12 sm:py-16 text-center">
+        <div className="relative overflow-hidden rounded-xl bg-[#12202f]  border border-[#0b4f9c]/30 px-7 py-14 sm:px-12 sm:py-16 text-center">
 
-          <div className="absolute left-[15%] top-0 w-52 h-52 rounded-full bg-[#e08858]/10 blur-3xl" />
+          <div className="absolute left-[15%] top-0 w-52 h-52 rounded-full bg-[#0b4f9c]/10 blur-3xl" />
 
-          <div className="absolute right-[15%] bottom-0 w-52 h-52 rounded-full bg-[#a63d2a]/10 blur-3xl" />
+          <div className="absolute right-[15%] bottom-0 w-52 h-52 rounded-full bg-[#083b75]/10 blur-3xl" />
 
           <div className="relative">
 
-            <span className="text-[10px] font-Clarkson uppercase tracking-[0.25em] text-[#e08858]">
+            <span className="text-[10px] font-Clarkson uppercase tracking-[0.25em] text-[#0b4f9c]">
               Your Challenge
             </span>
 
-            <h2 className="mt-5 max-w-3xl mx-auto text-2xl sm:text-3xl lg:text-4xl font-Clarkson font-bold tracking-[-0.04em] text-[#fbf4ee]">
+            <h2 className="mt-5 max-w-3xl mx-auto text-2xl sm:text-3xl lg:text-4xl font-Clarkson font-bold tracking-[-0.04em] text-[#ffffff]">
               Have a problem worth
-              <span className="text-[#e08858]"> solving?</span>
+              <span className="text-[#0b4f9c]"> solving?</span>
             </h2>
 
-            <p className="mt-5 max-w-xl mx-auto text-xs sm:text-sm leading-7 font-Clarkson text-[#fbf4ee]/60">
+            <p className="mt-5 max-w-xl mx-auto text-xs sm:text-sm leading-7 font-Clarkson text-[#ffffff]/60">
               Let's turn your technical challenge into a clear,
               scalable, measurable solution.
             </p>
@@ -569,7 +569,7 @@ export const CaseStudiesPage: React.FC = () => {
 
               <Link to="/signup">
 
-                <button className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#e08858] text-[#1c1019] text-xs font-Clarkson font-bold hover:bg-[#f0c4a4] hover:-translate-y-0.5 transition-all shadow-lg">
+                <button className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#0b4f9c] text-white text-xs font-Clarkson font-bold hover:bg-[#9cc0e6] hover:-translate-y-0.5 transition-all shadow-lg">
 
                   Start a Conversation
 

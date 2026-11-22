@@ -8,24 +8,25 @@ interface LogoProps {
   to?: string;
 }
 
-/* Wordmark built in CSS/SVG so it reads clearly on the light theme.
-   (images/logo.png is a light-on-dark asset and is left untouched in the repo.) */
-export const Logo: React.FC<LogoProps> = ({ size = 'md', to = '/', variant = 'auto' }) => {
-  const text = { sm: 'text-lg', md: 'text-[22px]', lg: 'text-3xl' }[size];
-  const box = { sm: 'w-6 h-6', md: 'w-8 h-8', lg: 'w-11 h-11' }[size];
-  const onDark = variant === 'light';
+/* Uses the existing AEVONA logo at public/images/logo.png.
+   The artwork is light-on-transparent, so it sits on a dark rounded
+   badge that stays readable on both light and dark parts of the site. */
+export const Logo: React.FC<LogoProps> = ({ size = 'md', to = '/' }) => {
+  const height = { sm: 'h-5', md: 'h-7', lg: 'h-10' }[size];
+  const padding = { sm: 'px-2.5 py-1.5', md: 'px-3 py-2', lg: 'px-4 py-3' }[size];
 
   const Content = (
-    <div className="inline-flex items-center gap-2.5 group cursor-pointer" aria-label="Aevona Solution">
-      <span className={`${box} inline-grid place-items-center rounded-md ${onDark ? 'bg-white text-[#0b4f9c]' : 'bg-[#0b4f9c] text-white'}`}>
-        <svg viewBox="0 0 24 24" className="w-[62%] h-[62%]" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-          <path d="M4 20L12 4l8 16M7.5 14h9" />
-        </svg>
-      </span>
-      <span className={`font-heading font-bold tracking-tight ${text} ${onDark ? 'text-white' : 'text-[#0b4f9c]'}`}>
-        Aevona<span className={`font-medium ${onDark ? 'text-white/70' : 'text-[#12202f]'}`}> Solution</span>
-      </span>
-    </div>
+    <span
+      className={`inline-flex items-center rounded-lg bg-[#1e1220] cursor-pointer ${padding}`}
+      aria-label="Aevona Solution"
+    >
+      <img
+        src="/images/logo.png"
+        alt="Aevona"
+        className={`${height} w-auto block`}
+        draggable={false}
+      />
+    </span>
   );
 
   return to ? <Link to={to}>{Content}</Link> : Content;

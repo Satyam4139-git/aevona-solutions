@@ -2,12 +2,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Logo } from '../ui/Logo';
+import { downloadBrochure } from '../../lib/brochure';
 import {
   Mail,
   Phone,
   MapPin,
   Linkedin,
-  Github,
 } from 'lucide-react';
 
 export const PublicFooter: React.FC = () => {
@@ -42,16 +42,6 @@ export const PublicFooter: React.FC = () => {
                 className="w-9 h-9 rounded-lg bg-[#2a3a4c] hover:bg-[#0b4f9c] hover:text-white flex items-center justify-center transition-colors"
               >
                 <Linkedin className="w-4 h-4" />
-              </a>
-
-              <a
-                href="https://github.com/Dimple-11"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-                className="w-9 h-9 rounded-lg bg-[#2a3a4c] hover:bg-[#0b4f9c] hover:text-white flex items-center justify-center transition-colors"
-              >
-                <Github className="w-4 h-4" />
               </a>
 
             </div>
@@ -97,6 +87,12 @@ export const PublicFooter: React.FC = () => {
               <li>
                 <Link to="/careers" className="hover:text-[#0b4f9c] transition-colors">
                   Careers
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/brochure" onClick={downloadBrochure} className="hover:text-[#0b4f9c] transition-colors">
+                  Pricing Brochure (PDF)
                 </Link>
               </li>
             </ul>

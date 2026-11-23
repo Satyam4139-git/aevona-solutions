@@ -1,169 +1,41 @@
 import { GoldBalls } from '../../components/ui/GoldBalls';
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import {
   ArrowRight,
-  ExternalLink,
   Filter,
   Search,
   Sparkles,
   X,
   Layers3,
   Code2,
-  Github,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { api } from '../../lib/api';
+import { SHOWCASE_PROJECTS, PROJECT_CATEGORIES } from '../../data/projects';
 
 type Project = {
   id: number;
   name: string;
   description: string;
   serviceType: string;
-  github: string;
+  highlights: string[];
+  tech: string[];
 };
 
 export const PortfolioPage: React.FC = () => {
   const [filter, setFilter] = useState('All');
   const [search, setSearch] = useState('');
-  const [backendProjects, setBackendProjects] = useState<Project[]>([]);
 
-  useEffect(() => {
-    let active = true;
-    api.portfolio.list()
-      .then((items) => {
-        if (!active) return;
-        setBackendProjects(items.map((item, index) => ({
-          id: index + 1,
-          name: item.name,
-          description: item.description,
-          serviceType: item.category,
-          github: item.projectUrl || '',
-        })));
-      })
-      .catch(() => {
-        // Keep the supplied portfolio available if the API is offline.
-      });
-    return () => { active = false; };
-  }, []);
+  /* Projects come from src/data/projects.ts (names + details only, no repository links). */
+  const displayProjects: Project[] = SHOWCASE_PROJECTS.map((p) => ({
+    id: p.id,
+    name: p.name,
+    description: p.details,
+    serviceType: p.category,
+    highlights: p.highlights,
+    tech: p.tech,
+  }));
 
-  /*
-   * ============================================================
-   * PROJECTS
-   * ============================================================
-   * Static fallback while the public portfolio endpoint is unavailable.
-   */
-
-  const projects: Project[] = [
-    {
-      id: 1,
-      name: 'Jap-Earthquake-ml',
-      serviceType: 'AI & ML',
-      description:
-        'An intelligent post-earthquake damage assessment system using swarm intelligence-based optimization to prioritize structurally vulnerable bridge regions. Graph Neural Networks model connectivity between bridge components to identify damage-prone sections.',
-      github:
-        'https://github.com/HarshRajSahu007/Jap-Earthquake-ml',
-    },
-
-    {
-      id: 2,
-      name: 'MultiAgent_Real_Estate_CB',
-      serviceType: 'AI & ML',
-      description:
-        'A multi-agent real estate platform with an intelligent router that directs queries to specialized agents for property issue detection and tenancy FAQs. Computer vision and NLP enable automated property assessment and tenant query resolution.',
-      github:
-        'https://github.com/HarshRajSahu007/MultiAgent_Real_Estate_CB',
-    },
-
-    {
-      id: 3,
-      name: 'AI-Powered Insurance Claim Analysis System',
-      serviceType: 'AI & ML',
-      description:
-        'An AI pipeline combining OCR, PDF parsing, NLP summarization, embeddings, and XGBoost for automated insurance claim analysis. A FastAPI backend processes structured and unstructured claim data for automated risk classification.',
-      github:
-        'https://github.com/Dimple-11/Ai_claim_model_1',
-    },
-
-    {
-      id: 4,
-      name: 'Sentiment Analysis on Social Media Posts',
-      serviceType: 'AI & ML',
-      description:
-        'A Simple RNN-based sentiment classifier supported by an NLTK preprocessing pipeline for tokenization, stopword removal, and stemming with real-time Flask predictions.',
-      github:
-        'https://github.com/Dimple-11/Sentimental-Analysis',
-    },
-
-    {
-      id: 5,
-      name: 'Smart Travel Reservation System',
-      serviceType: 'Web & Application Development',
-      description:
-        'A full-stack travel reservation platform for booking bus and railway tickets through a unified system. Users can search routes, check seat availability, book tickets, and manage reservations, while administrators manage schedules, vehicles, bookings, and records.',
-      github:
-        'https://github.com/mukunda6751/JAVA-PROJECT',
-    },
-
-    {
-      id: 6,
-      name: 'Phishing URL Detection',
-      serviceType: 'Data & Analytics',
-      description:
-        'A machine learning pipeline that classifies URLs as phishing or legitimate using engineered URL-based features and a LightGBM classifier. The project includes data analysis, model evaluation, exported predictions, and a deployable trained-model bundle.',
-      github:
-        'https://github.com/Satyam4139-git/phishing_project',
-    },
-
-    {
-      id: 7,
-      name: 'Superstore Sales Dataset Analysis',
-      serviceType: 'Data & Analytics',
-      description:
-        'A business analytics project focused on profitability, ROI, and regional margin analysis. Dynamic KPI dashboards and standardized metric definitions were developed to improve reporting consistency and identify operational efficiency gaps.',
-      github:
-        'https://github.com/sanskarsinha677/superstore-sql-analysis',
-    },
-
-    {
-      id: 8,
-      name: 'Digital Onboarding System',
-      serviceType: 'Business Automation',
-      description:
-        'A KYC/KYB and CRM integration requirements system covering BRD, FRS, RTM, use cases, and structured test scenarios. Includes an idempotent webhook architecture and a PASS / REVIEW / FAIL rule engine for audit and compliance traceability.',
-      github:
-        'https://github.com/sanskarsinha677/digital-onboarding-kyc-kyb-crm-requirements-pack',
-    },
-
-    {
-      id: 9,
-      name: 'CascadeX – Early Information Cascade Prediction',
-      serviceType: 'AI & ML',
-      description:
-        'A machine learning project focused on predicting information cascades at an early stage within social networks, exploring how information propagates through connected users and network structures.',
-      github:
-        'https://github.com/Dimple-11/CascadeX-Early-Information-Cascade-Prediction-in-Social-Networks',
-    },
-
-    {
-      id: 10,
-      name: 'EduFlow – Modern Educational Platform',
-      serviceType: 'Web & Application Development',
-      description:
-        'A modern mobile-first educational platform built with React, Vite, TypeScript, and Tailwind CSS. EduFlow provides an interactive learning experience across mobile, tablet, and desktop with a startup-inspired EdTech interface.',
-      github:
-        'https://github.com/Dimple-11/EduFlow',
-    },
-  ];
-
-  const displayProjects = backendProjects.length > 0 ? backendProjects : projects;
-
-  const categories = [
-    'All',
-    'AI & ML',
-    'Web & Application Development',
-    'Data & Analytics',
-    'Business Automation',
-  ];
+  const categories = PROJECT_CATEGORIES;
 
   const filtered = useMemo(() => {
     const query = search.toLowerCase().trim();
@@ -182,15 +54,13 @@ export const PortfolioPage: React.FC = () => {
     });
   }, [filter, search, displayProjects]);
 
-  const featuredProject = displayProjects[0];
-
   const clearFilters = () => {
     setFilter('All');
     setSearch('');
   };
 
   return (
-    <div className="min-h-screen bg-[#ffffff]  text-[#12202f]  overflow-hidden">
+    <div className="hl-borders min-h-screen bg-[#ffffff]  text-[#12202f]  overflow-hidden">
 
       {/* =====================================================
           HERO
@@ -283,137 +153,6 @@ export const PortfolioPage: React.FC = () => {
           </figure>
         </div>
       </section>
-
-
-      {/* =====================================================
-          FEATURED PROJECT
-      ====================================================== */}
-
-      {featuredProject && (
-        <section className="gold-balls max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pb-16">
-<GoldBalls />
-
-          <div className="relative overflow-hidden rounded-xl bg-[#12202f]  border border-[#0b4f9c]/30 shadow-xl">
-
-            {/* Decorative glow */}
-            <div className="absolute -right-28 -top-28 w-96 h-96 rounded-full bg-[#0b4f9c]/10 blur-3xl" />
-
-            <div className="absolute -left-24 -bottom-24 w-80 h-80 rounded-full bg-[#083b75]/10 blur-3xl" />
-
-            <div className="relative grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-12 p-8 sm:p-12 lg:p-16">
-
-              {/* Content */}
-              <div className="flex flex-col justify-center">
-
-                <span className="inline-flex w-fit items-center gap-2 px-4 py-2 rounded-full bg-[#0b4f9c]/10 border border-[#0b4f9c]/20">
-
-                  <Sparkles className="w-4 h-4 text-[#0b4f9c]" />
-
-                  <span className="text-[11px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#0b4f9c]">
-                    Featured Project
-                  </span>
-
-                </span>
-
-                <h2 className="mt-7 text-4xl sm:text-5xl lg:text-6xl font-Clarkson font-bold tracking-[-0.045em] text-[#ffffff]">
-                  {featuredProject.name}
-                </h2>
-
-                <p className="mt-6 max-w-2xl text-base sm:text-lg leading-8 font-Clarkson text-[#ffffff]/70">
-                  {featuredProject.description}
-                </p>
-
-                <div className="mt-8 flex flex-wrap gap-3">
-
-                  <span className="px-4 py-2 rounded-full bg-[#ffffff]/5 border border-[#ffffff]/10 text-xs font-Clarkson text-[#ffffff]/70">
-                    {featuredProject.serviceType}
-                  </span>
-
-                  <span className="px-4 py-2 rounded-full bg-[#ffffff]/5 border border-[#ffffff]/10 text-xs font-Clarkson text-[#ffffff]/70">
-                    Machine Learning
-                  </span>
-
-                  <span className="px-4 py-2 rounded-full bg-[#ffffff]/5 border border-[#ffffff]/10 text-xs font-Clarkson text-[#ffffff]/70">
-                    Graph Neural Networks
-                  </span>
-
-                </div>
-
-                <a
-                  href={featuredProject.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-9 inline-flex w-fit items-center gap-3 px-6 py-3.5 rounded-xl bg-[#0b4f9c] text-white text-sm font-Clarkson font-bold hover:bg-[#9cc0e6] hover:-translate-y-1 transition-all shadow-lg"
-                >
-                  <Github className="w-5 h-5" />
-                  View on GitHub
-                  <ExternalLink className="w-4 h-4" />
-                </a>
-
-              </div>
-
-
-              {/* Project visual */}
-              <div className="flex items-center justify-center">
-
-                <div className="relative w-full max-w-md aspect-[4/3] rounded-xl bg-[#ffffff]/5 border border-[#ffffff]/10 overflow-hidden">
-
-                  {/* Fake dashboard visual */}
-                  <div className="absolute top-0 left-0 right-0 h-12 border-b border-[#ffffff]/10 flex items-center gap-2 px-5">
-
-                    <span className="w-3 h-3 rounded-full bg-[#083b75]" />
-                    <span className="w-3 h-3 rounded-full bg-[#0b4f9c]" />
-                    <span className="w-3 h-3 rounded-full bg-[#083b75]" />
-
-                  </div>
-
-                  <div className="absolute top-20 left-6 right-6">
-
-                    <div className="grid grid-cols-3 gap-3">
-
-                      {[1, 2, 3].map((item) => (
-                        <div
-                          key={item}
-                          className="h-16 rounded-xl bg-[#0b4f9c]/10 border border-[#0b4f9c]/10"
-                        />
-                      ))}
-
-                    </div>
-
-                    <div className="mt-4 h-32 rounded-xl bg-[#0b4f9c]/5 border border-[#0b4f9c]/10 flex items-end gap-2 px-5 pb-5">
-
-                      {[35, 60, 45, 80, 55, 90, 70].map(
-                        (height, index) => (
-                          <div
-                            key={index}
-                            className="flex-1 rounded-t-md bg-[#0b4f9c]/40"
-                            style={{ height: `${height}%` }}
-                          />
-                        )
-                      )}
-
-                    </div>
-
-                    <div className="mt-4 grid grid-cols-2 gap-3">
-
-                      <div className="h-12 rounded-xl bg-[#083b75]/10" />
-
-                      <div className="h-12 rounded-xl bg-[#083b75]/10" />
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
-      )}
 
 
       {/* =====================================================
@@ -574,27 +313,25 @@ export const PortfolioPage: React.FC = () => {
                   </p>
 
 
-                  {/* GitHub link */}
-                  <div className="mt-8 pt-6 border-t border-[#f3f6f9] ">
+                  {/* Highlights + technologies */}
+                  <div className="mt-6 pt-5 border-t border-[#0b4f9c]/20 space-y-4">
 
-                    <a
-                      href={proj.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-between w-full gap-3 px-5 py-3.5 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/20 text-[#4a5a6a]  text-sm font-Clarkson font-semibold hover:bg-[#0b4f9c]/15 hover:border-[#0b4f9c]/50 transition-all group/github"
-                    >
+                    <ul className="space-y-2">
+                      {proj.highlights.map((h) => (
+                        <li key={h} className="flex items-center gap-2 text-xs sm:text-[13px] font-Clarkson font-medium text-[#12202f]">
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#0b4f9c] shrink-0" />
+                          {h}
+                        </li>
+                      ))}
+                    </ul>
 
-                      <span className="inline-flex items-center gap-3">
-
-                        <Github className="w-5 h-5" />
-
-                        View GitHub Repository
-
-                      </span>
-
-                      <ExternalLink className="w-4 h-4 group-hover/github:translate-x-1 group-hover/github:-translate-y-1 transition-transform" />
-
-                    </a>
+                    <div className="flex flex-wrap gap-2">
+                      {proj.tech.map((t) => (
+                        <span key={t} className="px-3 py-1 rounded-md border border-[#0b4f9c]/40 bg-white text-[11px] font-Clarkson font-semibold text-[#0b4f9c]">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
 
                   </div>
 

@@ -47,11 +47,8 @@ export const PublicNavbar: React.FC = () => {
       "
     >
       <div className="aenova-utility-bar">
-        <div className="aenova-utility-inner">
-          <span>Studio 51, Birmingham B4 7AH</span>
+        <div className="aenova-utility-inner" style={{ justifyContent: 'flex-end' }}>
           <div>
-            <a href="mailto:info@aevonasolution.com">info@aevonasolution.com</a>
-            <a href="tel:+447404010483">+44 7404 010483</a>
             <Link to="/contact#estimate">Cost calculator ↗</Link>
           </div>
         </div>

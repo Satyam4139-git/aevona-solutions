@@ -8,24 +8,17 @@ interface LogoProps {
   to?: string;
 }
 
-/* Uses the existing AEVONA logo at public/images/logo.png.
-   The artwork is light-on-transparent, so it sits on a dark rounded
-   badge that stays readable on both light and dark parts of the site. */
-export const Logo: React.FC<LogoProps> = ({ size = 'md', to = '/' }) => {
-  const height = { sm: 'h-5', md: 'h-7', lg: 'h-10' }[size];
-  const padding = { sm: 'px-2.5 py-1.5', md: 'px-3 py-2', lg: 'px-4 py-3' }[size];
+/* AEVONA orbital logo.
+   - default / "dark" / "auto": navy lettering for light backgrounds
+   - variant="light": white lettering for dark backgrounds (footer, auth side panel)
+   Files: public/images/aevona-logo.png and public/images/aevona-logo-light.png */
+export const Logo: React.FC<LogoProps> = ({ size = 'md', to = '/', variant = 'auto' }) => {
+  const height = { sm: 'h-6', md: 'h-8', lg: 'h-12' }[size];
+  const src = variant === 'light' ? '/images/aevona-logo-light.png' : '/images/aevona-logo.png';
 
   const Content = (
-    <span
-      className={`inline-flex items-center rounded-lg bg-[#1e1220] cursor-pointer ${padding}`}
-      aria-label="Aevona Solution"
-    >
-      <img
-        src="/images/logo.png"
-        alt="Aevona"
-        className={`${height} w-auto block`}
-        draggable={false}
-      />
+    <span className="inline-flex items-center cursor-pointer" aria-label="Aevona Solution">
+      <img src={src} alt="Aevona" className={`${height} w-auto block`} draggable={false} />
     </span>
   );
 

@@ -26,6 +26,8 @@ import {
 } from 'lucide-react';
 
 import { Button } from '../../components/ui/Button';
+import { PromoVideoSection } from '../../components/ui/PromoVideoSection';
+import { ProjectShowcase } from '../../components/ui/ProjectShowcase';
 
 export const HomePage: React.FC = () => {
   const services = [
@@ -88,28 +90,6 @@ export const HomePage: React.FC = () => {
     },
   ];
 
-  const projects = [
-    {
-      name: 'Jap-Earthquake-ml',
-      type: 'AI & Graph Neural Networks',
-      img: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=85&w=900',
-    },
-    {
-      name: 'MultiAgent_Real_Estate_CB',
-      type: 'Multi-Agent AI',
-      img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=85&w=900',
-    },
-    {
-      name: 'AI-Powered Insurance Claim Analysis',
-      type: 'FastAPI · OCR · NLP',
-      img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=85&w=900',
-    },
-    {
-      name: 'EduFlow – Modern Educational Platform',
-      type: 'Mobile-First EdTech',
-      img: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=85&w=900',
-    },
-  ];
 
   const technologies = [
     'React',
@@ -133,7 +113,7 @@ export const HomePage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#ffffff]  text-[#12202f] ">
+    <div className="hl-borders min-h-screen bg-[#ffffff]  text-[#12202f] ">
 
       {/* =========================================================
           HERO
@@ -316,6 +296,9 @@ export const HomePage: React.FC = () => {
       </section>
 
 
+      {/* PROMO VIDEO */}
+      <PromoVideoSection />
+
       {/* =========================================================
           TRUST / CAPABILITIES STRIP
       ========================================================= */}
@@ -357,6 +340,9 @@ export const HomePage: React.FC = () => {
 
       </section>
 
+
+      {/* PROJECT SHOWCASE (names + details, animated) */}
+      <ProjectShowcase />
 
       {/* =========================================================
           SERVICES
@@ -832,161 +818,6 @@ export const HomePage: React.FC = () => {
               );
 
             })}
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* =========================================================
-          FEATURED PORTFOLIO
-      ========================================================= */}
-
-      <section className="gold-balls py-24 lg:py-32">
-<GoldBalls />
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
-
-            <div>
-
-              <span className="text-sm font-bold uppercase tracking-[0.26em] text-[#0b4f9c] ">
-                Featured Work
-              </span>
-
-              <h2 className="mt-4 text-4xl sm:text-5xl font-serif font-bold">
-                Turning ideas into
-                <span className="text-[#0b4f9c] ">
-                  {' '}digital reality.
-                </span>
-              </h2>
-
-            </div>
-
-            <Link
-              to="/portfolio"
-              className="inline-flex items-center gap-2 text-sm font-bold text-[#4a5a6a] "
-            >
-              View All Projects
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-
-          </div>
-
-
-          {/* Featured project */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 rounded-xl overflow-hidden bg-[#12202f] text-[#ffffff] shadow-2xl">
-
-            <div className="relative min-h-[350px] lg:min-h-[480px] overflow-hidden group">
-
-              <img
-                src={projects[0].img}
-                alt={projects[0].name}
-                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-[#12202f]/80 to-transparent" />
-
-              <div className="absolute bottom-6 left-6">
-
-                <span className="px-3 py-1.5 rounded-full bg-[#0b4f9c] text-white text-[10px] font-bold uppercase tracking-wider">
-                  Featured Project
-                </span>
-
-              </div>
-
-            </div>
-
-
-            <div className="p-8 sm:p-12 flex flex-col justify-center">
-
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0b4f9c]">
-                {projects[0].type}
-              </span>
-
-              <h3 className="mt-4 text-3xl sm:text-4xl font-Clarkson font-bold">
-                {projects[0].name}
-              </h3>
-
-              <p className="mt-5 text-sm text-white/60 leading-7">
-                A modern digital platform designed to simplify complex
-                workflows and create a better experience for users and
-                organizations.
-              </p>
-
-              <div className="mt-7 flex flex-wrap gap-2">
-
-                {['Product Engineering', 'SaaS', 'Web'].map((tag) => (
-
-                  <span
-                    key={tag}
-                    className="px-3 py-1.5 rounded-full border border-[#0b4f9c]/20 text-[10px] text-[#0b4f9c]"
-                  >
-                    {tag}
-                  </span>
-
-                ))}
-
-              </div>
-
-              <Link
-                to="/portfolio"
-                className="mt-9 inline-flex items-center gap-2 text-sm font-bold text-[#0b4f9c]"
-              >
-                Explore Project
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-
-            </div>
-
-          </div>
-
-
-          {/* Other projects */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-
-            {projects.slice(1).map((project) => (
-
-              <Link
-                key={project.name}
-                to="/portfolio"
-                className="group rounded-3xl overflow-hidden bg-white  border border-[#0b4f9c]/20 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-              >
-
-                <div className="h-52 overflow-hidden">
-
-                  <img
-                    src={project.img}
-                    alt={project.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-
-                </div>
-
-                <div className="p-5">
-
-                  <div className="text-[10px] font-bold text-[#0b4f9c]  uppercase tracking-wider">
-                    {project.type}
-                  </div>
-
-                  <div className="mt-2 flex items-center justify-between">
-
-                    <h3 className="font-serif font-bold">
-                      {project.name}
-                    </h3>
-
-                    <ArrowRight className="w-4 h-4 text-[#0b4f9c]  group-hover:translate-x-1 transition-transform" />
-
-                  </div>
-
-                </div>
-
-              </Link>
-
-            ))}
 
           </div>
 

@@ -59,3 +59,31 @@ main section .grid > a:hover, main section .grid > div.hover-lift:hover { box-sh
 footer .text-\[\#0b4f9c\], .aenova-utility-bar .text-\[\#0b4f9c\] { color: #7fb0e0; }
 .bg-\[\#0b4f9c\] .text-\[\#0b4f9c\], .bg-\[\#083b75\] .text-\[\#0b4f9c\] { color: #cfe0f4; }
 .from-\[\#12202f\] .text-\[\#0b4f9c\], .from-\[\#12202f\] .text-\[\#083b75\] { color: #7fb0e0; }
+
+/* ---------------------------------------------------------------
+   Highlighted borders: every box (and boxes inside boxes) on pages
+   that use the .hl-borders wrapper gets a clear blue outline + soft
+   glow that intensifies on hover.
+---------------------------------------------------------------- */
+.hl-borders [class*="rounded-"][class*="border"]:not([class*="border-transparent"]):not([class*="border-0"]):not(img):not(video) {
+  border-width: 1.5px;
+  border-color: rgba(11, 79, 156, 0.55);
+  box-shadow: 0 0 0 3px rgba(11, 79, 156, 0.07);
+  transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease;
+}
+.hl-borders [class*="rounded-"][class*="border"]:not([class*="border-transparent"]):not([class*="border-0"]):not(img):not(video):hover {
+  border-color: #0b4f9c;
+  box-shadow: 0 0 0 4px rgba(11, 79, 156, 0.16), 0 10px 28px -12px rgba(11, 79, 156, 0.45);
+}
+/* boxes on dark navy bands: lighter blue so the outline stays visible */
+.hl-borders .bg-\[\#12202f\] [class*="rounded-"][class*="border"]:not([class*="border-transparent"]),
+.hl-borders [class*="rounded-"][class*="border"].bg-\[\#12202f\] {
+  border-color: rgba(127, 176, 224, 0.6);
+  box-shadow: 0 0 0 3px rgba(127, 176, 224, 0.1);
+}
+.hl-borders .bg-\[\#12202f\] [class*="rounded-"][class*="border"]:not([class*="border-transparent"]):hover {
+  border-color: #7fb0e0;
+  box-shadow: 0 0 0 4px rgba(127, 176, 224, 0.2);
+}
+@keyframes promoRing { 0%,100% { opacity:.35; } 50% { opacity:1; } }
+.promo-ring { animation: promoRing 3.2s ease-in-out infinite; }

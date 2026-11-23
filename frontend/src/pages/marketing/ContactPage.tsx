@@ -1,6 +1,6 @@
 import { GoldBalls } from '../../components/ui/GoldBalls';
 
-import React, { useMemo, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Mail,
@@ -16,21 +16,12 @@ import {
 } from 'lucide-react';
 import { Button } from '../../components/ui/Button';
 import { api } from '../../lib/api';
-
-const estimateBases: Record<string, number> = { web: 12000, ai: 18000, mobile: 14000, cloud: 16000, design: 8000 };
+import { PricingEstimator } from '../../components/ui/PricingEstimator';
 
 export const ContactPage: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [submitError, setSubmitError] = useState('');
-  const [estimateService, setEstimateService] = useState('web');
-  const [estimateScope, setEstimateScope] = useState(1);
-  const [estimateMonths, setEstimateMonths] = useState(3);
-  const estimate = useMemo(() => {
-    const low = Math.round((estimateBases[estimateService] * estimateScope * estimateMonths / 3) / 1000) * 1000;
-    return { low, high: low * 2 };
-  }, [estimateService, estimateScope, estimateMonths]);
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitError('');
@@ -302,36 +293,7 @@ export const ContactPage: React.FC = () => {
           </div>
 
 
-          <section id="estimate" className="rounded-xl border border-[#0b4f9c]/30 bg-white  p-7 sm:p-10 shadow-xl scroll-mt-28">
-            <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_.8fr] gap-8 items-center">
-              <div>
-                <span className="text-[10px] font-bold uppercase tracking-[.2em] text-[#0b4f9c]">Project planning</span>
-                <h2 className="mt-3 text-2xl sm:text-3xl font-bold text-[#12202f] ">A first project estimate.</h2>
-                <p className="mt-2 text-sm text-[#4a5a6a] ">Choose a service and delivery scope for a directional USD range.</p>
-                <div className="mt-5 grid sm:grid-cols-2 gap-4">
-                  <label className="text-xs font-semibold">Service
-                    <select value={estimateService} onChange={(e) => setEstimateService(e.target.value)} className="mt-2 block w-full rounded-xl border border-[#0b4f9c]/30 bg-[#ffffff]  p-3 text-sm">
-                      <option value="web">Web &amp; SaaS</option><option value="ai">AI &amp; Data</option><option value="mobile">Mobile application</option><option value="cloud">Cloud &amp; DevOps</option><option value="design">Product design</option>
-                    </select>
-                  </label>
-                  <label className="text-xs font-semibold">Scope
-                    <select value={estimateScope} onChange={(e) => setEstimateScope(Number(e.target.value))} className="mt-2 block w-full rounded-xl border border-[#0b4f9c]/30 bg-[#ffffff]  p-3 text-sm">
-                      <option value={1}>MVP launch</option><option value={3}>Growth SaaS</option><option value={7}>Enterprise programme</option>
-                    </select>
-                  </label>
-                </div>
-                <label className="mt-5 block text-xs font-semibold">Timeline: {estimateMonths} month{estimateMonths === 1 ? '' : 's'}
-                  <input aria-label="Estimate timeline in months" type="range" min="1" max="12" value={estimateMonths} onChange={(e) => setEstimateMonths(Number(e.target.value))} className="mt-3 block w-full accent-[#0b4f9c]" />
-                </label>
-                <p className="mt-3 text-[10px] text-[#4a5a6a]/70 ">Directional estimate only; not a quote. Final fees depend on agreed scope and delivery plan.</p>
-              </div>
-              <div className="rounded-2xl border border-[#0b4f9c]/25 bg-[#ffffff] p-6">
-                <span className="text-[10px] uppercase tracking-wider text-[#4a5a6a]">Estimated project range</span>
-                <div className="mt-3 text-3xl font-bold text-[#0b4f9c]">${(estimate.low / 1000).toLocaleString()}k – ${(estimate.high / 1000).toLocaleString()}k</div>
-                <Link to="/login" className="mt-6 inline-flex rounded-xl bg-[#0b4f9c] px-4 py-3 text-sm font-bold text-white">DISCUSS THIS ESTIMATE ↗</Link>
-              </div>
-            </div>
-          </section>
+          <PricingEstimator />
 
           {/* =================================================
               FORM

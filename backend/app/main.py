@@ -43,7 +43,8 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-
+# Allow the deployed Aevona frontend plus anything listed in CORS_ORIGINS
+# (defaults include http://localhost:3000 and :5173 for local development).
 app.add_middleware(
     CORSMiddleware,
     allow_origins=list(

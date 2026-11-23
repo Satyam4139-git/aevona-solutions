@@ -169,7 +169,7 @@ export const CareersPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#fbf4ee] dark:bg-[#140a14] text-[#1c1019] dark:text-[#fbf4ee] overflow-hidden">
+    <div className="min-h-screen bg-[#ffffff]  text-[#12202f]  overflow-hidden">
 
       {/* =====================================================
           HERO
@@ -178,19 +178,19 @@ export const CareersPage: React.FC = () => {
       <section className="gold-balls relative pt-16 sm:pt-20 lg:pt-24 pb-20">
 <GoldBalls />
 
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[420px] bg-[#e08858]/10 blur-[150px] rounded-full pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[420px] bg-[#0b4f9c]/10 blur-[150px] rounded-full pointer-events-none" />
 
-        <div className="absolute left-[5%] top-44 w-40 h-40 rounded-full bg-[#a63d2a]/5 blur-3xl" />
+        <div className="absolute left-[5%] top-44 w-40 h-40 rounded-full bg-[#083b75]/5 blur-3xl" />
 
-        <div className="absolute right-[5%] top-56 w-48 h-48 rounded-full bg-[#a63d2a]/5 blur-3xl" />
+        <div className="absolute right-[5%] top-56 w-48 h-48 rounded-full bg-[#083b75]/5 blur-3xl" />
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#e08858]/10 border border-[#e08858]/35">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0b4f9c]/10 border border-[#0b4f9c]/35">
 
-            <Sparkles className="w-3.5 h-3.5 text-[#e08858]" />
+            <Sparkles className="w-3.5 h-3.5 text-[#0b4f9c]" />
 
-            <span className="text-[10px] font-Clarkson font-bold uppercase tracking-[0.22em] text-[#5e4650] dark:text-[#e08858]">
+            <span className="text-[10px] font-Clarkson font-bold uppercase tracking-[0.22em] text-[#4a5a6a] ">
               Careers at Aevona
             </span>
 
@@ -198,19 +198,19 @@ export const CareersPage: React.FC = () => {
 
           <h1 className="mt-7 font-Clarkson font-bold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl tracking-[-0.055em] leading-[1.02]">
 
-            <span className="text-[#1c1019] dark:text-[#fbf4ee]">
+            <span className="text-[#12202f] ">
               Build things
             </span>
 
             <br />
 
-            <span className="text-[#5e4650] dark:text-[#e08858]">
+            <span className="text-[#4a5a6a] ">
               worth building.
             </span>
 
           </h1>
 
-          <p className="mt-7 max-w-2xl mx-auto text-sm sm:text-base leading-8 font-Clarkson text-[#5e4650]/75 dark:text-[#e08858]/70">
+          <p className="mt-7 max-w-2xl mx-auto text-sm sm:text-base leading-8 font-Clarkson text-[#4a5a6a]/75 ">
             We're building a team of engineers, designers, strategists,
             and curious humans who enjoy solving difficult problems without
             making everything unnecessarily complicated.
@@ -218,20 +218,20 @@ export const CareersPage: React.FC = () => {
 
           <div className="mt-9 flex flex-wrap justify-center gap-3">
 
-            <div className="px-4 py-2.5 rounded-xl bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm">
-              <span className="text-[9px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+            <div className="px-4 py-2.5 rounded-xl bg-white  border border-[#0b4f9c]/25 shadow-sm">
+              <span className="text-[9px] font-Clarkson font-semibold text-[#4a5a6a] ">
                 Remote-friendly
               </span>
             </div>
 
-            <div className="px-4 py-2.5 rounded-xl bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm">
-              <span className="text-[9px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+            <div className="px-4 py-2.5 rounded-xl bg-white  border border-[#0b4f9c]/25 shadow-sm">
+              <span className="text-[9px] font-Clarkson font-semibold text-[#4a5a6a] ">
                 Product-focused
               </span>
             </div>
 
-            <div className="px-4 py-2.5 rounded-xl bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm">
-              <span className="text-[9px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+            <div className="px-4 py-2.5 rounded-xl bg-white  border border-[#0b4f9c]/25 shadow-sm">
+              <span className="text-[9px] font-Clarkson font-semibold text-[#4a5a6a] ">
                 Growth-minded
               </span>
             </div>
@@ -249,19 +249,19 @@ export const CareersPage: React.FC = () => {
       <section className="gold-balls max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
 <GoldBalls />
 
-        <div className="relative overflow-hidden rounded-[2rem] bg-[#1c1019] dark:bg-[#1e1220] border border-[#e08858]/30 p-8 sm:p-12">
+        <div className="relative overflow-hidden rounded-xl bg-[#12202f]  border border-[#0b4f9c]/30 p-8 sm:p-12">
 
-          <div className="absolute -right-32 -top-32 w-80 h-80 rounded-full bg-[#e08858]/10 blur-3xl" />
+          <div className="absolute -right-32 -top-32 w-80 h-80 rounded-full bg-[#0b4f9c]/10 blur-3xl" />
 
           <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
             <div>
 
-              <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#e08858]">
+              <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#0b4f9c]">
                 Life at Aevona
               </span>
 
-              <h2 className="mt-4 text-3xl sm:text-4xl font-Clarkson font-bold tracking-[-0.045em] text-[#fbf4ee]">
+              <h2 className="mt-4 text-3xl sm:text-4xl font-Clarkson font-bold tracking-[-0.045em] text-[#ffffff]">
                 Good work needs
                 <br />
                 good people.
@@ -269,7 +269,7 @@ export const CareersPage: React.FC = () => {
 
             </div>
 
-            <div className="text-xs sm:text-sm leading-7 font-Clarkson text-[#fbf4ee]/60">
+            <div className="text-xs sm:text-sm leading-7 font-Clarkson text-[#ffffff]/60">
               We believe great products come from teams that communicate
               clearly, take ownership, stay curious, and aren't afraid to
               question the obvious solution. We care about quality without
@@ -292,11 +292,11 @@ export const CareersPage: React.FC = () => {
 
         <div className="text-center mb-10">
 
-          <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#e08858]">
+          <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#0b4f9c]">
             Why Aevona
           </span>
 
-          <h2 className="mt-3 text-3xl sm:text-4xl font-Clarkson font-bold tracking-[-0.045em] text-[#1c1019] dark:text-[#fbf4ee]">
+          <h2 className="mt-3 text-3xl sm:text-4xl font-Clarkson font-bold tracking-[-0.045em] text-[#12202f] ">
             More than just a job.
           </h2>
 
@@ -310,20 +310,20 @@ export const CareersPage: React.FC = () => {
             return (
               <div
                 key={index}
-                className="group p-6 rounded-[1.6rem] bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="group p-6 rounded-xl bg-white  border border-[#0b4f9c]/25 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
 
-                <div className="w-11 h-11 rounded-xl bg-[#e08858]/12 border border-[#e08858]/20 flex items-center justify-center group-hover:bg-[#e08858]/20 transition-colors">
+                <div className="w-11 h-11 rounded-xl bg-[#0b4f9c]/12 border border-[#0b4f9c]/20 flex items-center justify-center group-hover:bg-[#0b4f9c]/20 transition-colors">
 
-                  <Icon className="w-5 h-5 text-[#5e4650] dark:text-[#e08858]" />
+                  <Icon className="w-5 h-5 text-[#4a5a6a] " />
 
                 </div>
 
-                <h3 className="mt-5 text-base font-Clarkson font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+                <h3 className="mt-5 text-base font-Clarkson font-bold text-[#12202f] ">
                   {benefit.title}
                 </h3>
 
-                <p className="mt-2 text-[11px] leading-6 font-Clarkson text-[#5e4650]/65 dark:text-[#e08858]/60">
+                <p className="mt-2 text-[11px] leading-6 font-Clarkson text-[#4a5a6a]/65 ">
                   {benefit.description}
                 </p>
 
@@ -340,7 +340,7 @@ export const CareersPage: React.FC = () => {
           OPEN POSITIONS
       ====================================================== */}
 
-      <section className="gold-balls bg-white/60 dark:bg-[#1e1220]/40 border-y border-[#e08858]/15">
+      <section className="gold-balls bg-white/60  border-y border-[#0b4f9c]/15">
 <GoldBalls />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
@@ -349,17 +349,17 @@ export const CareersPage: React.FC = () => {
 
             <div>
 
-              <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#e08858]">
+              <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#0b4f9c]">
                 Opportunities
               </span>
 
-              <h2 className="mt-3 text-3xl sm:text-4xl font-Clarkson font-bold tracking-[-0.045em] text-[#1c1019] dark:text-[#fbf4ee]">
+              <h2 className="mt-3 text-3xl sm:text-4xl font-Clarkson font-bold tracking-[-0.045em] text-[#12202f] ">
                 Open positions
               </h2>
 
             </div>
 
-            <div className="text-[10px] font-Clarkson text-[#5e4650]/60 dark:text-[#e08858]/60">
+            <div className="text-[10px] font-Clarkson text-[#4a5a6a]/60 ">
               {openRoles.length} roles currently available
             </div>
 
@@ -372,18 +372,18 @@ export const CareersPage: React.FC = () => {
 
               <div
                 key={role.id}
-                className="group p-6 sm:p-7 rounded-[1.7rem] bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm hover:shadow-xl hover:border-[#e08858]/60 transition-all duration-300"
+                className="group p-6 sm:p-7 rounded-xl bg-white  border border-[#0b4f9c]/25 shadow-sm hover:shadow-xl hover:border-[#0b4f9c]/60 transition-all duration-300"
               >
 
                 <div className="flex items-start justify-between gap-4">
 
-                  <div className="w-11 h-11 rounded-xl bg-[#e08858]/12 border border-[#e08858]/20 flex items-center justify-center shrink-0">
+                  <div className="w-11 h-11 rounded-xl bg-[#0b4f9c]/12 border border-[#0b4f9c]/20 flex items-center justify-center shrink-0">
 
-                    <Briefcase className="w-5 h-5 text-[#5e4650] dark:text-[#e08858]" />
+                    <Briefcase className="w-5 h-5 text-[#4a5a6a] " />
 
                   </div>
 
-                  <span className="px-3 py-1.5 rounded-full bg-[#a63d2a]/10 border border-[#a63d2a]/20 text-[8px] font-Clarkson font-bold uppercase tracking-wider text-[#c8805e] dark:text-[#e0a07a]">
+                  <span className="px-3 py-1.5 rounded-full bg-[#083b75]/10 border border-[#083b75]/20 text-[8px] font-Clarkson font-bold uppercase tracking-wider text-[#2f6db5] ">
                     {role.type}
                   </span>
 
@@ -392,15 +392,15 @@ export const CareersPage: React.FC = () => {
 
                 <div className="mt-6">
 
-                  <span className="text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#c45139]">
+                  <span className="text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#0b4f9c]">
                     {role.dept}
                   </span>
 
-                  <h3 className="mt-2 text-lg sm:text-xl font-Clarkson font-bold tracking-[-0.03em] text-[#1c1019] dark:text-[#fbf4ee]">
+                  <h3 className="mt-2 text-lg sm:text-xl font-Clarkson font-bold tracking-[-0.03em] text-[#12202f] ">
                     {role.title}
                   </h3>
 
-                  <p className="mt-3 text-[11px] leading-6 font-Clarkson text-[#5e4650]/65 dark:text-[#e08858]/60">
+                  <p className="mt-3 text-[11px] leading-6 font-Clarkson text-[#4a5a6a]/65 ">
                     {role.description}
                   </p>
 
@@ -415,7 +415,7 @@ export const CareersPage: React.FC = () => {
 
                     <span
                       key={tag}
-                      className="px-2.5 py-1.5 rounded-lg bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/15 text-[8px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]"
+                      className="px-2.5 py-1.5 rounded-lg bg-[#ffffff]  border border-[#0b4f9c]/15 text-[8px] font-Clarkson font-semibold text-[#4a5a6a] "
                     >
                       {tag}
                     </span>
@@ -427,17 +427,17 @@ export const CareersPage: React.FC = () => {
 
                 {/* Meta + Button */}
 
-                <div className="mt-6 pt-5 border-t border-[#f6e9de] dark:border-[#33222c] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div className="mt-6 pt-5 border-t border-[#f3f6f9]  flex flex-col sm:flex-row sm:items-center justify-between gap-4">
 
-                  <div className="flex flex-wrap gap-4 text-[9px] font-Clarkson text-[#5e4650]/60 dark:text-[#e08858]/60">
+                  <div className="flex flex-wrap gap-4 text-[9px] font-Clarkson text-[#4a5a6a]/60 ">
 
                     <span className="flex items-center gap-1.5">
-                      <MapPin className="w-3.5 h-3.5 text-[#e08858]" />
+                      <MapPin className="w-3.5 h-3.5 text-[#0b4f9c]" />
                       {role.location}
                     </span>
 
                     <span className="flex items-center gap-1.5">
-                      <Clock className="w-3.5 h-3.5 text-[#e08858]" />
+                      <Clock className="w-3.5 h-3.5 text-[#0b4f9c]" />
                       {role.experience}
                     </span>
 
@@ -445,7 +445,7 @@ export const CareersPage: React.FC = () => {
 
                   <button
                     onClick={() => setSelectedRole(role.title)}
-                    className="group/btn flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#5e4650] dark:bg-[#e08858] text-white dark:text-[#140a14] text-[9px] font-Clarkson font-bold hover:-translate-y-0.5 transition-all"
+                    className="group/btn flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#4a5a6a]  text-white  text-[9px] font-Clarkson font-bold hover:-translate-y-0.5 transition-all"
                   >
                     Apply Now
                     <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
@@ -473,11 +473,11 @@ export const CareersPage: React.FC = () => {
 
         <div className="text-center mb-12">
 
-          <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#e08858]">
+          <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#0b4f9c]">
             How We Hire
           </span>
 
-          <h2 className="mt-3 text-3xl sm:text-4xl font-Clarkson font-bold tracking-[-0.045em] text-[#1c1019] dark:text-[#fbf4ee]">
+          <h2 className="mt-3 text-3xl sm:text-4xl font-Clarkson font-bold tracking-[-0.045em] text-[#12202f] ">
             A simple process.
           </h2>
 
@@ -490,18 +490,18 @@ export const CareersPage: React.FC = () => {
 
             <div
               key={step.number}
-              className="relative p-5 rounded-[1.5rem] bg-white dark:bg-[#1e1220] border border-[#e08858]/25"
+              className="relative p-5 rounded-xl bg-white  border border-[#0b4f9c]/25"
             >
 
-              <span className="text-3xl font-Clarkson font-bold text-[#e08858]/35">
+              <span className="text-3xl font-Clarkson font-bold text-[#0b4f9c]/35">
                 {step.number}
               </span>
 
-              <h3 className="mt-5 text-sm font-Clarkson font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+              <h3 className="mt-5 text-sm font-Clarkson font-bold text-[#12202f] ">
                 {step.title}
               </h3>
 
-              <p className="mt-2 text-[10px] leading-5 font-Clarkson text-[#5e4650]/60 dark:text-[#e08858]/55">
+              <p className="mt-2 text-[10px] leading-5 font-Clarkson text-[#4a5a6a]/60 ">
                 {step.description}
               </p>
 
@@ -521,26 +521,26 @@ export const CareersPage: React.FC = () => {
       <section className="gold-balls max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
 <GoldBalls />
 
-        <div className="relative overflow-hidden rounded-[2rem] bg-[#1c1019] dark:bg-[#1e1220] border border-[#e08858]/30 px-7 py-12 sm:px-12 text-center">
+        <div className="relative overflow-hidden rounded-xl bg-[#12202f]  border border-[#0b4f9c]/30 px-7 py-12 sm:px-12 text-center">
 
-          <div className="absolute -right-24 -top-24 w-72 h-72 rounded-full bg-[#e08858]/10 blur-3xl" />
+          <div className="absolute -right-24 -top-24 w-72 h-72 rounded-full bg-[#0b4f9c]/10 blur-3xl" />
 
           <div className="relative">
 
-            <Sparkles className="w-6 h-6 mx-auto text-[#e08858]" />
+            <Sparkles className="w-6 h-6 mx-auto text-[#0b4f9c]" />
 
-            <h2 className="mt-5 text-2xl sm:text-3xl font-Clarkson font-bold tracking-[-0.04em] text-[#fbf4ee]">
+            <h2 className="mt-5 text-2xl sm:text-3xl font-Clarkson font-bold tracking-[-0.04em] text-[#ffffff]">
               Don't see your role?
             </h2>
 
-            <p className="mt-3 max-w-xl mx-auto text-xs leading-6 font-Clarkson text-[#fbf4ee]/55">
+            <p className="mt-3 max-w-xl mx-auto text-xs leading-6 font-Clarkson text-[#ffffff]/55">
               We're always interested in meeting talented people who can
               bring something valuable to the team.
             </p>
 
             <a
               href="mailto:info@aevonasolution.com"
-              className="inline-flex items-center gap-2 mt-7 px-5 py-3 rounded-xl bg-[#e08858] text-[#140a14] text-[9px] font-Clarkson font-bold hover:-translate-y-0.5 transition-all"
+              className="inline-flex items-center gap-2 mt-7 px-5 py-3 rounded-xl bg-[#0b4f9c] text-[#0c1824] text-[9px] font-Clarkson font-bold hover:-translate-y-0.5 transition-all"
             >
               Send Your Profile
               <ArrowRight className="w-3.5 h-3.5" />
@@ -570,26 +570,26 @@ export const CareersPage: React.FC = () => {
 
           <div className="text-center py-8 px-3">
 
-            <div className="w-16 h-16 mx-auto rounded-full bg-[#a63d2a]/10 border border-[#a63d2a]/25 flex items-center justify-center">
+            <div className="w-16 h-16 mx-auto rounded-full bg-[#083b75]/10 border border-[#083b75]/25 flex items-center justify-center">
 
-              <CheckCircle2 className="w-8 h-8 text-[#c8805e]" />
+              <CheckCircle2 className="w-8 h-8 text-[#2f6db5]" />
 
             </div>
 
-            <h3 className="mt-6 text-xl font-Clarkson font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+            <h3 className="mt-6 text-xl font-Clarkson font-bold text-[#12202f] ">
               Application Submitted
             </h3>
 
-            <p className="mt-3 text-xs leading-6 font-Clarkson text-[#5e4650]/65 dark:text-[#e08858]/65">
+            <p className="mt-3 text-xs leading-6 font-Clarkson text-[#4a5a6a]/65 ">
               Thanks for your interest in Aevona Solution. Our talent
               team will review your application and get back to you.
             </p>
 
-            <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/20">
+            <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/20">
 
-              <CheckCircle2 className="w-3.5 h-3.5 text-[#a63d2a]" />
+              <CheckCircle2 className="w-3.5 h-3.5 text-[#083b75]" />
 
-              <span className="text-[8px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+              <span className="text-[8px] font-Clarkson font-semibold text-[#4a5a6a] ">
                 Application received
               </span>
 
@@ -603,15 +603,15 @@ export const CareersPage: React.FC = () => {
 
             <div>
 
-              <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#e08858]">
+              <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#0b4f9c]">
                 Career Application
               </span>
 
-              <h3 className="mt-2 text-xl font-Clarkson font-bold tracking-[-0.035em] text-[#1c1019] dark:text-[#fbf4ee]">
+              <h3 className="mt-2 text-xl font-Clarkson font-bold tracking-[-0.035em] text-[#12202f] ">
                 {selectedRole}
               </h3>
 
-              <p className="mt-2 text-[10px] leading-5 font-Clarkson text-[#5e4650]/55 dark:text-[#e08858]/55">
+              <p className="mt-2 text-[10px] leading-5 font-Clarkson text-[#4a5a6a]/55 ">
                 Tell us a little about yourself and your experience.
               </p>
 
@@ -620,7 +620,7 @@ export const CareersPage: React.FC = () => {
 
             <div>
 
-              <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#1c1019] dark:text-[#fbf4ee]">
+              <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#12202f] ">
                 Full Name *
               </label>
 
@@ -628,7 +628,7 @@ export const CareersPage: React.FC = () => {
                 type="text"
                 required
                 placeholder="Alex Morgan"
-                className="w-full h-11 px-4 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/30 text-xs font-Clarkson text-[#1c1019] dark:text-[#fbf4ee] placeholder:text-[#5e4650]/35 outline-none focus:border-[#e08858] focus:ring-2 focus:ring-[#e08858]/10 transition-all"
+                className="w-full h-11 px-4 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/30 text-xs font-Clarkson text-[#12202f]  placeholder:text-[#4a5a6a]/35 outline-none focus:border-[#0b4f9c] focus:ring-2 focus:ring-[#0b4f9c]/10 transition-all"
               />
 
             </div>
@@ -636,7 +636,7 @@ export const CareersPage: React.FC = () => {
 
             <div>
 
-              <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#1c1019] dark:text-[#fbf4ee]">
+              <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#12202f] ">
                 Email Address *
               </label>
 
@@ -644,7 +644,7 @@ export const CareersPage: React.FC = () => {
                 type="email"
                 required
                 placeholder="alex@domain.com"
-                className="w-full h-11 px-4 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/30 text-xs font-Clarkson text-[#1c1019] dark:text-[#fbf4ee] placeholder:text-[#5e4650]/35 outline-none focus:border-[#e08858] focus:ring-2 focus:ring-[#e08858]/10 transition-all"
+                className="w-full h-11 px-4 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/30 text-xs font-Clarkson text-[#12202f]  placeholder:text-[#4a5a6a]/35 outline-none focus:border-[#0b4f9c] focus:ring-2 focus:ring-[#0b4f9c]/10 transition-all"
               />
 
             </div>
@@ -652,14 +652,14 @@ export const CareersPage: React.FC = () => {
 
             <div>
 
-              <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#1c1019] dark:text-[#fbf4ee]">
+              <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#12202f] ">
                 LinkedIn / Portfolio
               </label>
 
               <input
                 type="url"
                 placeholder="https://linkedin.com/in/..."
-                className="w-full h-11 px-4 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/30 text-xs font-Clarkson text-[#1c1019] dark:text-[#fbf4ee] placeholder:text-[#5e4650]/35 outline-none focus:border-[#e08858] focus:ring-2 focus:ring-[#e08858]/10 transition-all"
+                className="w-full h-11 px-4 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/30 text-xs font-Clarkson text-[#12202f]  placeholder:text-[#4a5a6a]/35 outline-none focus:border-[#0b4f9c] focus:ring-2 focus:ring-[#0b4f9c]/10 transition-all"
               />
 
             </div>
@@ -667,14 +667,14 @@ export const CareersPage: React.FC = () => {
 
             <div>
 
-              <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#1c1019] dark:text-[#fbf4ee]">
+              <label className="block mb-2 text-[9px] font-Clarkson font-bold uppercase tracking-wider text-[#12202f] ">
                 Short Introduction
               </label>
 
               <textarea
                 rows={4}
                 placeholder="Tell us about your experience, skills, or why you'd like to join Aevona..."
-                className="w-full px-4 py-3 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/30 text-xs leading-5 font-Clarkson text-[#1c1019] dark:text-[#fbf4ee] placeholder:text-[#5e4650]/35 outline-none resize-none focus:border-[#e08858] focus:ring-2 focus:ring-[#e08858]/10 transition-all"
+                className="w-full px-4 py-3 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/30 text-xs leading-5 font-Clarkson text-[#12202f]  placeholder:text-[#4a5a6a]/35 outline-none resize-none focus:border-[#0b4f9c] focus:ring-2 focus:ring-[#0b4f9c]/10 transition-all"
               />
 
             </div>

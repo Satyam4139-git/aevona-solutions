@@ -49,16 +49,16 @@ export const LoginPage: React.FC = () => {
     <div className="space-y-6">
       {/* Header */}
       <div>
-        <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+        <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#12202f] ">
           Welcome back
         </h2>
-        <p className="text-sm text-[#5e4650] dark:text-[#e08858]/80 mt-1">
+        <p className="text-sm text-[#4a5a6a]  mt-1">
           Access your Aevona enterprise dashboard & services.
         </p>
       </div>
 
       {error && (
-        <div className="p-3.5 rounded-xl bg-rose-100 dark:bg-rose-950/60 border border-rose-300 dark:border-rose-800 text-xs text-rose-800 dark:text-rose-200">
+        <div className="p-3.5 rounded-xl bg-rose-100  border border-rose-300  text-xs text-rose-800 ">
           {error}
         </div>
       )}
@@ -66,48 +66,48 @@ export const LoginPage: React.FC = () => {
       {/* Form */}
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1.5">
+          <label className="block text-xs font-semibold text-[#12202f]  mb-1.5">
             Work Email Address
           </label>
           <div className="relative">
-            <Mail className="absolute left-3.5 top-3.5 w-4 h-4 text-[#c45139]" />
+            <Mail className="absolute left-3.5 top-3.5 w-4 h-4 text-[#0b4f9c]" />
             <input
               type="text"
               required
               value={identifier}
               onChange={(e) => setIdentifier(e.target.value)}
               placeholder="name@company.com"
-              className="w-full pl-10 pr-4 py-2.5 bg-white dark:bg-[#1e1220] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-sm text-[#1c1019] dark:text-[#fbf4ee] focus:outline-none focus:ring-2 focus:ring-[#e08858]"
+              className="w-full pl-10 pr-4 py-2.5 bg-white  border border-[#0b4f9c]/50  rounded-xl text-sm text-[#12202f]  focus:outline-none focus:ring-2 focus:ring-[#0b4f9c]"
             />
           </div>
         </div>
 
         <div>
           <div className="flex items-center justify-between mb-1.5">
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee]">
+            <label className="block text-xs font-semibold text-[#12202f] ">
               Password
             </label>
             <Link
               to="/forgot-password"
-              className="text-xs font-semibold text-[#5e4650] dark:text-[#e08858] hover:underline"
+              className="text-xs font-semibold text-[#4a5a6a]  hover:underline"
             >
               Forgot Password?
             </Link>
           </div>
           <div className="relative">
-            <Lock className="absolute left-3.5 top-3.5 w-4 h-4 text-[#c45139]" />
+            <Lock className="absolute left-3.5 top-3.5 w-4 h-4 text-[#0b4f9c]" />
             <input
               type={showPassword ? 'text' : 'password'}
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••••••"
-              className="w-full pl-10 pr-10 py-2.5 bg-white dark:bg-[#1e1220] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-sm text-[#1c1019] dark:text-[#fbf4ee] focus:outline-none focus:ring-2 focus:ring-[#e08858]"
+              className="w-full pl-10 pr-10 py-2.5 bg-white  border border-[#0b4f9c]/50  rounded-xl text-sm text-[#12202f]  focus:outline-none focus:ring-2 focus:ring-[#0b4f9c]"
             />
             <button
               type="button"
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute right-3 top-3 text-[#c45139] hover:text-[#1c1019] dark:hover:text-[#fbf4ee]"
+              className="absolute right-3 top-3 text-[#0b4f9c] hover:text-[#12202f] "
             >
               {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
             </button>
@@ -120,9 +120,9 @@ export const LoginPage: React.FC = () => {
               type="checkbox"
               checked={rememberMe}
               onChange={(e) => setRememberMe(e.target.checked)}
-              className="w-4 h-4 accent-[#5e4650] dark:accent-[#e08858] rounded border-[#e08858]"
+              className="w-4 h-4 accent-[#4a5a6a]  rounded border-[#0b4f9c]"
             />
-            <span className="text-xs text-[#5e4650] dark:text-[#e08858]/90 font-medium">Remember this browser</span>
+            <span className="text-xs text-[#4a5a6a]  font-medium">Remember this browser</span>
           </label>
         </div>
 
@@ -141,8 +141,8 @@ export const LoginPage: React.FC = () => {
 
       {/* Divider */}
       <div className="relative flex items-center justify-center my-6">
-        <div className="border-t border-[#e08858]/30 dark:border-[#3a2530] w-full" />
-        <span className="absolute bg-[#fbf4ee] dark:bg-[#100810] px-3 text-xs text-[#a63d2a] dark:text-[#e08858]/60 uppercase tracking-wider font-semibold">
+        <div className="border-t border-[#0b4f9c]/30  w-full" />
+        <span className="absolute bg-[#ffffff]  px-3 text-xs text-[#083b75]  uppercase tracking-wider font-semibold">
           Or continue with
         </span>
       </div>
@@ -169,13 +169,13 @@ export const LoginPage: React.FC = () => {
       </div>
 
       {/* Footer Link */}
-      <p className="text-center text-xs text-[#5e4650] dark:text-[#e08858]/80 pt-2">
+      <p className="text-center text-xs text-[#4a5a6a]  pt-2">
         Don't have an enterprise account?{' '}
-        <Link to="/signup" className="font-bold text-[#5e4650] dark:text-[#e08858] hover:underline">
+        <Link to="/signup" className="font-bold text-[#4a5a6a]  hover:underline">
           Create Account
         </Link>
       </p>
-      <p className="text-center text-xs text-[#5e4650] dark:text-[#e08858]/80">
+      <p className="text-center text-xs text-[#4a5a6a] ">
         Aevona staff? <Link to="/admin/login" className="font-bold underline">Admin sign-in</Link>
       </p>
     </div>

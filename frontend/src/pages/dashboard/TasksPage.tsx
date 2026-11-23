@@ -65,23 +65,23 @@ export const TasksPage: React.FC = () => {
       {/* Title & Top Controls */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+          <h1 className="text-2xl font-serif font-bold text-[#12202f] ">
             Task Management
           </h1>
-          <p className="text-xs text-[#5e4650] dark:text-[#e08858]/80 mt-1">
+          <p className="text-xs text-[#4a5a6a]  mt-1">
             Track agile deliverables, technical assignments, and project tasks.
           </p>
         </div>
 
         <div className="flex items-center gap-3">
           {/* View Mode Toggle */}
-          <div className="flex items-center p-1 bg-white dark:bg-[#1e1220] border border-[#e08858]/40 rounded-xl">
+          <div className="flex items-center p-1 bg-white  border border-[#0b4f9c]/40 rounded-xl">
             <button
               onClick={() => setViewMode('kanban')}
               className={`p-2 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-colors ${
                 viewMode === 'kanban'
-                  ? 'bg-[#5e4650] text-white dark:bg-[#e08858] dark:text-[#140a14]'
-                  : 'text-[#5e4650] dark:text-[#e08858] hover:bg-[#f6e9de]'
+                  ? 'bg-[#4a5a6a] text-white  '
+                  : 'text-[#4a5a6a]  hover:bg-[#f3f6f9]'
               }`}
             >
               <LayoutGrid className="w-4 h-4" /> Kanban
@@ -90,8 +90,8 @@ export const TasksPage: React.FC = () => {
               onClick={() => setViewMode('list')}
               className={`p-2 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-colors ${
                 viewMode === 'list'
-                  ? 'bg-[#5e4650] text-white dark:bg-[#e08858] dark:text-[#140a14]'
-                  : 'text-[#5e4650] dark:text-[#e08858] hover:bg-[#f6e9de]'
+                  ? 'bg-[#4a5a6a] text-white  '
+                  : 'text-[#4a5a6a]  hover:bg-[#f3f6f9]'
               }`}
             >
               <List className="w-4 h-4" /> List
@@ -105,19 +105,19 @@ export const TasksPage: React.FC = () => {
       </div>
 
       {/* Filter Bar */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-white dark:bg-[#1e1220] p-3.5 rounded-2xl border border-[#e08858]/30">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-white  p-3.5 rounded-2xl border border-[#0b4f9c]/30">
         <div className="relative w-full sm:w-80">
-          <Search className="absolute left-3.5 top-3 w-4 h-4 text-[#c45139]" />
+          <Search className="absolute left-3.5 top-3 w-4 h-4 text-[#0b4f9c]" />
           <input
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search tasks..."
-            className="w-full pl-9 pr-4 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/40 rounded-xl text-xs text-[#1c1019] dark:text-[#fbf4ee]"
+            className="w-full pl-9 pr-4 py-2 bg-[#ffffff]  border border-[#0b4f9c]/40 rounded-xl text-xs text-[#12202f] "
           />
         </div>
 
-        <div className="flex items-center space-x-2 text-xs font-semibold text-[#5e4650]">
+        <div className="flex items-center space-x-2 text-xs font-semibold text-[#4a5a6a]">
           <span>Priority Filter:</span>
           {['All', 'Low', 'Medium', 'High', 'Urgent'].map((pr) => (
             <button
@@ -125,8 +125,8 @@ export const TasksPage: React.FC = () => {
               onClick={() => setPriorityFilter(pr)}
               className={`px-3 py-1 rounded-lg transition-colors ${
                 priorityFilter === pr
-                  ? 'bg-[#e08858] text-[#1c1019]'
-                  : 'bg-[#fbf4ee] dark:bg-[#140a14] text-[#5e4650] dark:text-[#e08858]'
+                  ? 'bg-[#0b4f9c] text-white'
+                  : 'bg-[#ffffff]  text-[#4a5a6a] '
               }`}
             >
               {pr}
@@ -143,13 +143,13 @@ export const TasksPage: React.FC = () => {
             return (
               <div
                 key={colStatus}
-                className="bg-[#fbf4ee]/70 dark:bg-[#1a0e16] border border-[#e08858]/30 rounded-3xl p-4 flex flex-col min-h-[500px]"
+                className="bg-[#ffffff]/70  border border-[#0b4f9c]/30 rounded-3xl p-4 flex flex-col min-h-[500px]"
               >
                 {/* Column Header */}
-                <div className="flex items-center justify-between pb-3 mb-3 border-b border-[#e08858]/30">
+                <div className="flex items-center justify-between pb-3 mb-3 border-b border-[#0b4f9c]/30">
                   <div className="flex items-center gap-2">
                     <StatusBadge status={colStatus} />
-                    <span className="text-xs font-bold text-[#5e4650] dark:text-[#e08858]">
+                    <span className="text-xs font-bold text-[#4a5a6a] ">
                       ({colTasks.length})
                     </span>
                   </div>
@@ -160,7 +160,7 @@ export const TasksPage: React.FC = () => {
                   {colTasks.map((task) => (
                     <div
                       key={task.id}
-                      className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-2xl p-4 shadow-sm hover:shadow-md transition-shadow space-y-3 group"
+                      className="bg-white  border border-[#0b4f9c]/30 rounded-2xl p-4 shadow-sm hover:shadow-md transition-shadow space-y-3 group"
                     >
                       <div className="flex items-start justify-between gap-2">
                         <span className={`text-[10px] font-bold px-2 py-0.5 rounded ${task.priority === 'Urgent' ? 'bg-rose-100 text-rose-800' : 'bg-amber-100 text-amber-800'}`}>
@@ -178,16 +178,16 @@ export const TasksPage: React.FC = () => {
                       </div>
 
                       <div>
-                        <h4 className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee] leading-snug">
+                        <h4 className="text-xs font-bold text-[#12202f]  leading-snug">
                           {task.title}
                         </h4>
-                        <p className="text-[11px] text-[#5e4650]/80 dark:text-[#e08858]/70 mt-1 line-clamp-2">
+                        <p className="text-[11px] text-[#4a5a6a]/80  mt-1 line-clamp-2">
                           {task.description}
                         </p>
                       </div>
 
-                      <div className="flex items-center justify-between pt-2 border-t border-[#f6e9de] dark:border-[#33222c]">
-                        <div className="flex items-center gap-1.5 text-[10px] text-[#5e4650] dark:text-[#e08858]">
+                      <div className="flex items-center justify-between pt-2 border-t border-[#f3f6f9] ">
+                        <div className="flex items-center gap-1.5 text-[10px] text-[#4a5a6a] ">
                           <Clock className="w-3 h-3" />
                           <span>Due {task.dueDate}</span>
                         </div>
@@ -195,14 +195,14 @@ export const TasksPage: React.FC = () => {
                           src={task.assignee.avatar}
                           alt={task.assignee.name}
                           title={task.assignee.name}
-                          className="w-6 h-6 rounded-full object-cover border border-[#e08858]"
+                          className="w-6 h-6 rounded-full object-cover border border-[#0b4f9c]"
                         />
                       </div>
                     </div>
                   ))}
 
                   {colTasks.length === 0 && (
-                    <div className="py-8 text-center text-xs text-[#5e4650]/60 italic">
+                    <div className="py-8 text-center text-xs text-[#4a5a6a]/60 italic">
                       No tasks in {colStatus}
                     </div>
                   )}
@@ -215,23 +215,23 @@ export const TasksPage: React.FC = () => {
 
       {/* LIST VIEW */}
       {viewMode === 'list' && (
-        <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-3xl shadow-sm overflow-hidden divide-y divide-[#f6e9de] dark:divide-[#33222c]">
+        <div className="bg-white  border border-[#0b4f9c]/30 rounded-3xl shadow-sm overflow-hidden divide-y divide-[#f3f6f9] ">
           {filteredTasks.map((t) => (
-            <div key={t.id} className="p-4 flex items-center justify-between gap-4 hover:bg-[#fbf4ee]/50 dark:hover:bg-[#2a1a25]/50 transition-colors">
+            <div key={t.id} className="p-4 flex items-center justify-between gap-4 hover:bg-[#ffffff]/50  transition-colors">
               <div className="flex items-center gap-3">
                 <button onClick={() => toggleTaskComplete(t.id)}>
                   <CheckCircle2 className={`w-5 h-5 ${t.status === 'Completed' ? 'text-emerald-600' : 'text-gray-400 hover:text-emerald-600'}`} />
                 </button>
                 <div>
-                  <div className={`text-xs font-bold ${t.status === 'Completed' ? 'line-through text-gray-400' : 'text-[#1c1019] dark:text-[#fbf4ee]'}`}>
+                  <div className={`text-xs font-bold ${t.status === 'Completed' ? 'line-through text-gray-400' : 'text-[#12202f] '}`}>
                     {t.title}
                   </div>
-                  <div className="text-[11px] text-[#5e4650] dark:text-[#e08858]/70">{t.description}</div>
+                  <div className="text-[11px] text-[#4a5a6a] ">{t.description}</div>
                 </div>
               </div>
 
               <div className="flex items-center gap-4">
-                <span className="text-xs text-[#5e4650]">Due {t.dueDate}</span>
+                <span className="text-xs text-[#4a5a6a]">Due {t.dueDate}</span>
                 <StatusBadge status={t.status} />
                 <button onClick={() => deleteTask(t.id)} className="text-rose-500 hover:text-rose-700">
                   <Trash2 className="w-4 h-4" />
@@ -246,7 +246,7 @@ export const TasksPage: React.FC = () => {
       <Modal isOpen={isCreateModalOpen} onClose={() => setIsCreateModalOpen(false)} title="Create New Task">
         <form onSubmit={handleCreateSubmit} className="space-y-4">
           <div>
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+            <label className="block text-xs font-semibold text-[#12202f]  mb-1">
               Task Title *
             </label>
             <input
@@ -255,12 +255,12 @@ export const TasksPage: React.FC = () => {
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               placeholder="e.g. Optimize Database Indexes"
-              className="w-full px-3.5 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 rounded-xl text-sm"
+              className="w-full px-3.5 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50 rounded-xl text-sm"
             />
           </div>
 
           <div>
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+            <label className="block text-xs font-semibold text-[#12202f]  mb-1">
               Description
             </label>
             <textarea
@@ -268,19 +268,19 @@ export const TasksPage: React.FC = () => {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Task instructions and details..."
-              className="w-full px-3.5 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 rounded-xl text-sm"
+              className="w-full px-3.5 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50 rounded-xl text-sm"
             />
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+              <label className="block text-xs font-semibold text-[#12202f]  mb-1">
                 Priority
               </label>
               <select
                 value={priority}
                 onChange={(e) => setPriority(e.target.value as any)}
-                className="w-full px-3 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 rounded-xl text-xs"
+                className="w-full px-3 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50 rounded-xl text-xs"
               >
                 <option value="Low">Low</option>
                 <option value="Medium">Medium</option>
@@ -290,13 +290,13 @@ export const TasksPage: React.FC = () => {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+              <label className="block text-xs font-semibold text-[#12202f]  mb-1">
                 Assignee
               </label>
               <select
                 value={assigneeName}
                 onChange={(e) => setAssigneeName(e.target.value)}
-                className="w-full px-3 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 rounded-xl text-xs"
+                className="w-full px-3 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50 rounded-xl text-xs"
               >
                 <option value="Alex Morgan">Alex Morgan</option>
                 <option value="Sophia Bennett">Sophia Bennett</option>
@@ -307,14 +307,14 @@ export const TasksPage: React.FC = () => {
           </div>
 
           <div>
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+            <label className="block text-xs font-semibold text-[#12202f]  mb-1">
               Due Date
             </label>
             <input
               type="date"
               value={dueDate}
               onChange={(e) => setDueDate(e.target.value)}
-              className="w-full px-3.5 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 rounded-xl text-xs"
+              className="w-full px-3.5 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50 rounded-xl text-xs"
             />
           </div>
 

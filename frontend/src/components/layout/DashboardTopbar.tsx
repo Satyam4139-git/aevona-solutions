@@ -3,8 +3,6 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import {
   Search,
   Bell,
-  Sun,
-  Moon,
   Menu,
   User as UserIcon,
   Settings,
@@ -14,7 +12,6 @@ import {
   ChevronDown,
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
-import { useTheme } from '../../context/ThemeContext';
 import { useDashboard } from '../../context/DashboardContext';
 import { CursorToggle } from '../ui/MotionEffects';
 
@@ -26,8 +23,7 @@ export const DashboardTopbar: React.FC<DashboardTopbarProps> = ({
   onOpenMobileSidebar,
 }) => {
   const { currentUser, logout } = useAuth();
-  const { setTheme, isDark } = useTheme();
-  const { notifications, markNotificationRead, setIsSearchModalOpen } =
+    const { notifications, markNotificationRead, setIsSearchModalOpen } =
     useDashboard();
   const navigate = useNavigate();
   const location = useLocation();
@@ -87,21 +83,21 @@ export const DashboardTopbar: React.FC<DashboardTopbarProps> = ({
   };
 
   return (
-    <header className="sticky top-0 z-20 flex h-20 items-center justify-between border-b border-[#ebdacd] dark:border-[#3a2530] bg-[#FFFFFF] dark:bg-[#1e1220] px-4 backdrop-blur-md sm:px-6">
+    <header className="sticky top-0 z-20 flex h-20 items-center justify-between border-b border-[#dbe2e9]  bg-[#ffffff]  px-4 backdrop-blur-md sm:px-6">
       <div className="flex items-center gap-3">
         <button
           onClick={onOpenMobileSidebar}
-          className="rounded-lg p-2 text-[#5e4650] dark:text-[#d9b8a4] hover:bg-[#ebdacd] dark:hover:bg-[#3a2530] lg:hidden"
+          className="rounded-lg p-2 text-[#4a5a6a]  hover:bg-[#dbe2e9]  lg:hidden"
           aria-label="Open navigation"
         >
           <Menu className="h-6 w-6" />
         </button>
 
         <div>
-          <h2 className="text-lg font-bold text-[#1c1019] dark:text-[#fbf4ee] sm:text-xl">
+          <h2 className="text-lg font-bold text-[#12202f]  sm:text-xl">
             {getPageTitle()}
           </h2>
-          <div className="hidden text-[11px] text-[#5e4650] dark:text-[#d9b8a4] sm:block">
+          <div className="hidden text-[11px] text-[#4a5a6a]  sm:block">
             AEVONA SaaS Platform • Enterprise Workspace
           </div>
         </div>
@@ -114,53 +110,40 @@ export const DashboardTopbar: React.FC<DashboardTopbarProps> = ({
 
         <button
           onClick={() => setIsSearchModalOpen(true)}
-          className="flex items-center gap-2 rounded-xl border border-[#ebdacd] dark:border-[#3a2530] bg-[#fbf4ee] dark:bg-[#2a1520] px-3 py-2 text-xs font-medium text-[#5e4650] dark:text-[#d9b8a4] transition-colors hover:bg-[#ebdacd] dark:hover:bg-[#3a2530]"
+          className="flex items-center gap-2 rounded-xl border border-[#dbe2e9]  bg-[#ffffff]  px-3 py-2 text-xs font-medium text-[#4a5a6a]  transition-colors hover:bg-[#dbe2e9] "
           aria-label="Search"
         >
-          <Search className="h-4 w-4 text-[#c45139]" />
+          <Search className="h-4 w-4 text-[#0b4f9c]" />
           <span className="hidden md:inline">Search...</span>
-          <kbd className="hidden rounded bg-[#FFFFFF] dark:bg-[#1e1220] px-1.5 py-0.5 font-mono text-[10px] text-[#5e4650] dark:text-[#d9b8a4] shadow-xs md:inline-block">
+          <kbd className="hidden rounded bg-[#ffffff]  px-1.5 py-0.5 font-mono text-[10px] text-[#4a5a6a]  shadow-xs md:inline-block">
             ⌘K
           </kbd>
-        </button>
-
-        <button
-          onClick={() => setTheme(isDark ? 'light' : 'dark')}
-          title="Toggle theme"
-          aria-label="Toggle theme"
-          className="rounded-xl border border-[#ebdacd] dark:border-[#3a2530] bg-[#fbf4ee] dark:bg-[#2a1520] p-2.5 text-[#c45139] transition-colors hover:bg-[#ebdacd] dark:hover:bg-[#3a2530]"
-        >
-          {isDark ? (
-            <Sun className="h-4 w-4" />
-          ) : (
-            <Moon className="h-4 w-4" />
-          )}
         </button>
 
         <div className="relative" ref={notifMenuRef}>
           <button
             onClick={() => setNotifMenuOpen(!notifMenuOpen)}
             aria-label="Notifications"
-            className="relative rounded-xl border border-[#ebdacd] dark:border-[#3a2530] bg-[#fbf4ee] dark:bg-[#2a1520] p-2.5 text-[#c45139] transition-colors hover:bg-[#ebdacd] dark:hover:bg-[#3a2530]"
+            className="relative rounded-xl border border-[#dbe2e9]  bg-[#ffffff]  p-2.5 text-[#0b4f9c] transition-colors hover:bg-[#dbe2e9] "
           >
             <Bell className="h-4 w-4" />
             {unreadNotifs.length > 0 && (
-              <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full border-2 border-[#FFFFFF] dark:border-[#1e1220] bg-[#e08858] text-[10px] font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+              <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full border-2 border-[#ffffff]  bg-[#0b4f9c] text-[10px] font-bold text-white ">
                 {unreadNotifs.length}
               </span>
             )}
           </button>
 
           {notifMenuOpen && (
-            <div className="absolute right-0 z-50 mt-2 w-80 animate-fade-in rounded-2xl border border-[#ebdacd] dark:border-[#3a2530] bg-[#FFFFFF] dark:bg-[#1e1220] p-4 shadow-2xl sm:w-96">
-              <div className="flex items-center justify-between border-b border-[#ebdacd] dark:border-[#3a2530] pb-3">
-                <h4 className="font-serif text-sm font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+            <div className="absolute right-0 z-50 mt-2 w-80 animate-fade-in rounded-2xl border border-[#dbe2e9]  bg-[#ffffff]  p-4 shadow-2xl sm:w-96">
+              <div className="flex items-center justify-between border-b border-[#dbe2e9]  pb-3">
+                <h4 className="font-serif text-sm font-bold text-[#12202f] ">
                   Notifications ({unreadNotifs.length} new)
                 </h4>
                 <Link
                   to="/dashboard/notifications"
                   onClick={() => setNotifMenuOpen(false)}
-                  className="text-xs font-semibold text-[#c45139] hover:underline"
+                  className="text-xs font-semibold text-[#0b4f9c] hover:underline"
                 >
                   View All
                 </Link>
@@ -168,7 +151,7 @@ export const DashboardTopbar: React.FC<DashboardTopbarProps> = ({
 
               <div className="max-h-80 space-y-2 overflow-y-auto py-2">
                 {notifications.length === 0 ? (
-                  <div className="py-6 text-center text-xs text-[#5e4650] dark:text-[#d9b8a4]">
+                  <div className="py-6 text-center text-xs text-[#4a5a6a] ">
                     No notifications
                   </div>
                 ) : (
@@ -182,19 +165,19 @@ export const DashboardTopbar: React.FC<DashboardTopbarProps> = ({
                       }}
                       className={`cursor-pointer rounded-xl p-2.5 text-left transition-colors ${
                         notification.read
-                          ? 'hover:bg-[#fbf4ee]'
-                          : 'bg-[#c45139]/10 hover:bg-[#c45139]/15'
+                          ? 'hover:bg-[#ffffff]'
+                          : 'bg-[#0b4f9c]/10 hover:bg-[#0b4f9c]/15'
                       }`}
                     >
                       <div className="flex items-start justify-between">
-                        <span className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+                        <span className="text-xs font-bold text-[#12202f] ">
                           {notification.title}
                         </span>
-                        <span className="text-[10px] text-[#5e4650] dark:text-[#d9b8a4]">
+                        <span className="text-[10px] text-[#4a5a6a] ">
                           {notification.timestamp}
                         </span>
                       </div>
-                      <p className="mt-1 text-xs text-[#c9b8bc]">
+                      <p className="mt-1 text-xs text-[#b8c4d0]">
                         {notification.message}
                       </p>
                     </div>
@@ -208,7 +191,7 @@ export const DashboardTopbar: React.FC<DashboardTopbarProps> = ({
         <div className="relative" ref={userMenuRef}>
           <button
             onClick={() => setUserMenuOpen(!userMenuOpen)}
-            className="flex items-center gap-2.5 rounded-xl p-1.5 transition-colors hover:bg-[#ebdacd] dark:hover:bg-[#3a2530]"
+            className="flex items-center gap-2.5 rounded-xl p-1.5 transition-colors hover:bg-[#dbe2e9] "
             aria-label="User menu"
           >
             <img
@@ -217,26 +200,26 @@ export const DashboardTopbar: React.FC<DashboardTopbarProps> = ({
                 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200'
               }
               alt={currentUser?.name || 'User profile'}
-              className="h-9 w-9 rounded-full border-2 border-[#c45139] object-cover"
+              className="h-9 w-9 rounded-full border-2 border-[#0b4f9c] object-cover"
             />
             <div className="hidden text-left sm:block">
-              <div className="text-xs font-bold leading-tight text-[#1c1019] dark:text-[#fbf4ee]">
+              <div className="text-xs font-bold leading-tight text-[#12202f] ">
                 {currentUser?.name}
               </div>
-              <div className="text-[10px] text-[#5e4650] dark:text-[#d9b8a4]">
+              <div className="text-[10px] text-[#4a5a6a] ">
                 {currentUser?.role || 'Owner'}
               </div>
             </div>
-            <ChevronDown className="hidden h-4 w-4 text-[#5e4650] dark:text-[#d9b8a4] sm:block" />
+            <ChevronDown className="hidden h-4 w-4 text-[#4a5a6a]  sm:block" />
           </button>
 
           {userMenuOpen && (
-            <div className="absolute right-0 z-50 mt-2 w-56 animate-fade-in space-y-1 rounded-2xl border border-[#ebdacd] dark:border-[#3a2530] bg-[#FFFFFF] dark:bg-[#1e1220] p-2 shadow-2xl">
-              <div className="border-b border-[#ebdacd] dark:border-[#3a2530] p-3">
-                <p className="truncate text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+            <div className="absolute right-0 z-50 mt-2 w-56 animate-fade-in space-y-1 rounded-2xl border border-[#dbe2e9]  bg-[#ffffff]  p-2 shadow-2xl">
+              <div className="border-b border-[#dbe2e9]  p-3">
+                <p className="truncate text-xs font-bold text-[#12202f] ">
                   {currentUser?.name}
                 </p>
-                <p className="truncate text-[10px] text-[#5e4650] dark:text-[#d9b8a4]">
+                <p className="truncate text-[10px] text-[#4a5a6a] ">
                   {currentUser?.email}
                 </p>
               </div>
@@ -244,40 +227,40 @@ export const DashboardTopbar: React.FC<DashboardTopbarProps> = ({
               <Link
                 to="/dashboard/settings?tab=profile"
                 onClick={() => setUserMenuOpen(false)}
-                className="flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-medium text-[#1c1019] dark:text-[#fbf4ee] transition-colors hover:bg-[#ebdacd] dark:hover:bg-[#3a2530]"
+                className="flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-medium text-[#12202f]  transition-colors hover:bg-[#dbe2e9] "
               >
-                <UserIcon className="h-4 w-4 text-[#c45139]" />
+                <UserIcon className="h-4 w-4 text-[#0b4f9c]" />
                 <span>Profile</span>
               </Link>
 
               <Link
                 to="/dashboard/settings"
                 onClick={() => setUserMenuOpen(false)}
-                className="flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-medium text-[#1c1019] dark:text-[#fbf4ee] transition-colors hover:bg-[#ebdacd] dark:hover:bg-[#3a2530]"
+                className="flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-medium text-[#12202f]  transition-colors hover:bg-[#dbe2e9] "
               >
-                <Settings className="h-4 w-4 text-[#c45139]" />
+                <Settings className="h-4 w-4 text-[#0b4f9c]" />
                 <span>Settings</span>
               </Link>
 
               <Link
                 to="/dashboard/billing"
                 onClick={() => setUserMenuOpen(false)}
-                className="flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-medium text-[#1c1019] dark:text-[#fbf4ee] transition-colors hover:bg-[#ebdacd] dark:hover:bg-[#3a2530]"
+                className="flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-medium text-[#12202f]  transition-colors hover:bg-[#dbe2e9] "
               >
-                <CreditCard className="h-4 w-4 text-[#c45139]" />
+                <CreditCard className="h-4 w-4 text-[#0b4f9c]" />
                 <span>Billing</span>
               </Link>
 
               <Link
                 to="/dashboard/support"
                 onClick={() => setUserMenuOpen(false)}
-                className="flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-medium text-[#1c1019] dark:text-[#fbf4ee] transition-colors hover:bg-[#ebdacd] dark:hover:bg-[#3a2530]"
+                className="flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-medium text-[#12202f]  transition-colors hover:bg-[#dbe2e9] "
               >
-                <HelpCircle className="h-4 w-4 text-[#c45139]" />
+                <HelpCircle className="h-4 w-4 text-[#0b4f9c]" />
                 <span>Help & Support</span>
               </Link>
 
-              <div className="border-t border-[#ebdacd] dark:border-[#3a2530] pt-1">
+              <div className="border-t border-[#dbe2e9]  pt-1">
                 <button
                   onClick={handleLogout}
                   className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 text-left text-xs font-medium text-rose-300 transition-colors hover:bg-rose-950/40"

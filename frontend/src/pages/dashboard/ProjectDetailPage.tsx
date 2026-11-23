@@ -77,26 +77,26 @@ export const ProjectDetailPage: React.FC = () => {
       <div>
         <Link
           to="/dashboard/projects"
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#5e4650] dark:text-[#e08858] hover:underline mb-2"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#4a5a6a]  hover:underline mb-2"
         >
           <ArrowLeft className="w-4 h-4" /> Back to Projects Directory
         </Link>
       </div>
 
       {/* Project Header Card */}
-      <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 dark:border-[#3a2530] rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
+      <div className="bg-white  border border-[#0b4f9c]/30  rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-[#c45139] dark:text-[#e08858] px-2.5 py-0.5 rounded-full bg-[#e08858]/15">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-[#0b4f9c]  px-2.5 py-0.5 rounded-full bg-[#0b4f9c]/15">
                 {project.serviceType}
               </span>
               <StatusBadge status={project.status} />
             </div>
-            <h1 className="text-2xl sm:text-3xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+            <h1 className="text-2xl sm:text-3xl font-serif font-bold text-[#12202f] ">
               {project.name}
             </h1>
-            <p className="text-xs sm:text-sm text-[#5e4650]/80 dark:text-[#e08858]/80 mt-1 max-w-2xl">
+            <p className="text-xs sm:text-sm text-[#4a5a6a]/80  mt-1 max-w-2xl">
               {project.description}
             </p>
           </div>
@@ -112,34 +112,34 @@ export const ProjectDetailPage: React.FC = () => {
         </div>
 
         {/* Metrics summary bar */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-2xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/20">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-2xl bg-[#ffffff]  border border-[#0b4f9c]/20">
           <div>
-            <div className="text-[10px] uppercase font-bold text-[#5e4650] dark:text-[#e08858]">Start Date</div>
-            <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee] mt-0.5">{project.startDate}</div>
+            <div className="text-[10px] uppercase font-bold text-[#4a5a6a] ">Start Date</div>
+            <div className="text-xs font-bold text-[#12202f]  mt-0.5">{project.startDate}</div>
           </div>
           <div>
-            <div className="text-[10px] uppercase font-bold text-[#5e4650] dark:text-[#e08858]">Deadline</div>
-            <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee] mt-0.5">{project.deadline}</div>
+            <div className="text-[10px] uppercase font-bold text-[#4a5a6a] ">Deadline</div>
+            <div className="text-xs font-bold text-[#12202f]  mt-0.5">{project.deadline}</div>
           </div>
           <div>
-            <div className="text-[10px] uppercase font-bold text-[#5e4650] dark:text-[#e08858]">Budget</div>
-            <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee] mt-0.5">{project.budget || '$45,000'}</div>
+            <div className="text-[10px] uppercase font-bold text-[#4a5a6a] ">Budget</div>
+            <div className="text-xs font-bold text-[#12202f]  mt-0.5">{project.budget || '$45,000'}</div>
           </div>
           <div>
-            <div className="text-[10px] uppercase font-bold text-[#5e4650] dark:text-[#e08858]">Priority</div>
-            <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee] mt-0.5">{project.priority}</div>
+            <div className="text-[10px] uppercase font-bold text-[#4a5a6a] ">Priority</div>
+            <div className="text-xs font-bold text-[#12202f]  mt-0.5">{project.priority}</div>
           </div>
         </div>
 
         {/* Progress bar */}
         <div className="space-y-1.5">
           <div className="flex justify-between text-xs font-semibold">
-            <span className="text-[#5e4650] dark:text-[#e08858]">Overall Milestone Completion</span>
-            <span className="text-[#1c1019] dark:text-[#fbf4ee] font-bold">{project.progress}%</span>
+            <span className="text-[#4a5a6a] ">Overall Milestone Completion</span>
+            <span className="text-[#12202f]  font-bold">{project.progress}%</span>
           </div>
-          <div className="h-3 w-full bg-[#f6e9de] dark:bg-[#2a1a25] rounded-full overflow-hidden">
+          <div className="h-3 w-full bg-[#f3f6f9]  rounded-full overflow-hidden">
             <div
-              className="h-full bg-gradient-to-r from-[#e08858] via-[#c45139] to-[#5e4650] rounded-full transition-all duration-500"
+              className="h-full bg-gradient-to-r from-[#0b4f9c] via-[#0b4f9c] to-[#1a63b5] rounded-full transition-all duration-500"
               style={{ width: `${project.progress}%` }}
             />
           </div>
@@ -147,15 +147,15 @@ export const ProjectDetailPage: React.FC = () => {
       </div>
 
       {/* Tabs Header */}
-      <div className="border-b border-[#e08858]/30 flex items-center space-x-2">
+      <div className="border-b border-[#0b4f9c]/30 flex items-center space-x-2">
         {(['Overview', 'Tasks', 'Files', 'Activity'] as const).map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
             className={`px-4 py-3 text-sm font-semibold transition-all border-b-2 -mb-px ${
               activeTab === tab
-                ? 'border-[#5e4650] text-[#5e4650] dark:border-[#e08858] dark:text-[#e08858]'
-                : 'border-transparent text-[#1c1019]/60 dark:text-[#fbf4ee]/60 hover:text-[#5e4650] dark:hover:text-[#e08858]'
+                ? 'border-[#4a5a6a] text-[#4a5a6a]  '
+                : 'border-transparent text-[#12202f]/60  hover:text-[#4a5a6a] '
             }`}
           >
             {tab} {tab === 'Tasks' ? `(${projectTasks.length})` : tab === 'Files' ? `(${projectFiles.length})` : ''}
@@ -169,43 +169,43 @@ export const ProjectDetailPage: React.FC = () => {
         {activeTab === 'Overview' && (
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="lg:col-span-2 space-y-6">
-              <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-2xl p-6 space-y-3 shadow-xs">
-                <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+              <div className="bg-white  border border-[#0b4f9c]/30 rounded-2xl p-6 space-y-3 shadow-xs">
+                <h3 className="text-base font-serif font-bold text-[#12202f] ">
                   Project Summary & Goals
                 </h3>
-                <p className="text-xs text-[#5e4650]/90 dark:text-[#e08858]/80 leading-relaxed">
+                <p className="text-xs text-[#4a5a6a]/90  leading-relaxed">
                   This project delivers high-performance digital infrastructure for {project.name}. Our engineering SLA covers architecture design, automated staging environments, security hardening, and deployment.
                 </p>
                 <div className="pt-2 grid grid-cols-2 gap-3 text-xs">
-                  <div className="p-3 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/20">
-                    <div className="font-bold text-[#1c1019] dark:text-[#fbf4ee]">Infrastructure Cluster</div>
-                    <div className="text-[11px] text-[#5e4650]">Multi-region AWS cluster (us-east-1, eu-west-1)</div>
+                  <div className="p-3 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/20">
+                    <div className="font-bold text-[#12202f] ">Infrastructure Cluster</div>
+                    <div className="text-[11px] text-[#4a5a6a]">Multi-region AWS cluster (us-east-1, eu-west-1)</div>
                   </div>
-                  <div className="p-3 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/20">
-                    <div className="font-bold text-[#1c1019] dark:text-[#fbf4ee]">Security Level</div>
-                    <div className="text-[11px] text-[#5e4650]">SOC2 Type II & End-to-End Encryption</div>
+                  <div className="p-3 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/20">
+                    <div className="font-bold text-[#12202f] ">Security Level</div>
+                    <div className="text-[11px] text-[#4a5a6a]">SOC2 Type II & End-to-End Encryption</div>
                   </div>
                 </div>
               </div>
 
               {/* Tasks preview inside overview */}
-              <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-2xl p-6 space-y-3 shadow-xs">
+              <div className="bg-white  border border-[#0b4f9c]/30 rounded-2xl p-6 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+                  <h3 className="text-base font-serif font-bold text-[#12202f] ">
                     Active Project Tasks
                   </h3>
-                  <button onClick={() => setActiveTab('Tasks')} className="text-xs text-[#5e4650] font-semibold hover:underline">
+                  <button onClick={() => setActiveTab('Tasks')} className="text-xs text-[#4a5a6a] font-semibold hover:underline">
                     View All
                   </button>
                 </div>
                 <div className="space-y-2">
                   {projectTasks.slice(0, 3).map(t => (
-                    <div key={t.id} className="p-3 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] flex items-center justify-between">
+                    <div key={t.id} className="p-3 rounded-xl bg-[#ffffff]  flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <button onClick={() => toggleTaskComplete(t.id)}>
                           <CheckCircle2 className={`w-4 h-4 ${t.status === 'Completed' ? 'text-emerald-600' : 'text-gray-400'}`} />
                         </button>
-                        <span className={`text-xs font-semibold ${t.status === 'Completed' ? 'line-through text-gray-400' : 'text-[#1c1019] dark:text-[#fbf4ee]'}`}>
+                        <span className={`text-xs font-semibold ${t.status === 'Completed' ? 'line-through text-gray-400' : 'text-[#12202f] '}`}>
                           {t.title}
                         </span>
                       </div>
@@ -218,17 +218,17 @@ export const ProjectDetailPage: React.FC = () => {
 
             {/* Sidebar: Assigned Team Members */}
             <div className="space-y-6">
-              <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-2xl p-6 space-y-4 shadow-xs">
-                <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+              <div className="bg-white  border border-[#0b4f9c]/30 rounded-2xl p-6 space-y-4 shadow-xs">
+                <h3 className="text-base font-serif font-bold text-[#12202f] ">
                   Assigned Team
                 </h3>
                 <div className="space-y-3">
                   {project.teamMembers.map((m, idx) => (
-                    <div key={idx} className="flex items-center gap-3 p-2.5 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14]">
+                    <div key={idx} className="flex items-center gap-3 p-2.5 rounded-xl bg-[#ffffff] ">
                       <img src={m.avatar} alt={m.name} className="w-8 h-8 rounded-full object-cover" />
                       <div>
-                        <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">{m.name}</div>
-                        <div className="text-[10px] text-[#5e4650] dark:text-[#e08858]">{m.role}</div>
+                        <div className="text-xs font-bold text-[#12202f] ">{m.name}</div>
+                        <div className="text-[10px] text-[#4a5a6a] ">{m.role}</div>
                       </div>
                     </div>
                   ))}
@@ -240,9 +240,9 @@ export const ProjectDetailPage: React.FC = () => {
 
         {/* TASKS TAB */}
         {activeTab === 'Tasks' && (
-          <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-2xl p-6 space-y-4 shadow-xs">
+          <div className="bg-white  border border-[#0b4f9c]/30 rounded-2xl p-6 space-y-4 shadow-xs">
             <div className="flex items-center justify-between">
-              <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+              <h3 className="text-base font-serif font-bold text-[#12202f] ">
                 Tasks & Milestones
               </h3>
               <Button variant="gold" size="sm" onClick={() => setIsAddTaskModalOpen(true)} icon={<Plus className="w-4 h-4" />}>
@@ -252,21 +252,21 @@ export const ProjectDetailPage: React.FC = () => {
 
             <div className="space-y-2">
               {projectTasks.map(t => (
-                <div key={t.id} className="p-4 rounded-2xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div key={t.id} className="p-4 rounded-2xl bg-[#ffffff]  border border-[#0b4f9c]/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
                     <button onClick={() => toggleTaskComplete(t.id)} className="shrink-0">
                       <CheckCircle2 className={`w-5 h-5 ${t.status === 'Completed' ? 'text-emerald-600' : 'text-gray-400 hover:text-emerald-600'}`} />
                     </button>
                     <div>
-                      <div className={`text-sm font-bold ${t.status === 'Completed' ? 'line-through text-gray-400' : 'text-[#1c1019] dark:text-[#fbf4ee]'}`}>
+                      <div className={`text-sm font-bold ${t.status === 'Completed' ? 'line-through text-gray-400' : 'text-[#12202f] '}`}>
                         {t.title}
                       </div>
-                      <div className="text-xs text-[#5e4650] dark:text-[#e08858]/70">{t.description}</div>
+                      <div className="text-xs text-[#4a5a6a] ">{t.description}</div>
                     </div>
                   </div>
 
                   <div className="flex items-center gap-3 text-xs">
-                    <span className="text-[#5e4650]">Due {t.dueDate}</span>
+                    <span className="text-[#4a5a6a]">Due {t.dueDate}</span>
                     <StatusBadge status={t.status} />
                   </div>
                 </div>
@@ -277,9 +277,9 @@ export const ProjectDetailPage: React.FC = () => {
 
         {/* FILES TAB */}
         {activeTab === 'Files' && (
-          <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-2xl p-6 space-y-4 shadow-xs">
+          <div className="bg-white  border border-[#0b4f9c]/30 rounded-2xl p-6 space-y-4 shadow-xs">
             <div className="flex items-center justify-between">
-              <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+              <h3 className="text-base font-serif font-bold text-[#12202f] ">
                 Project Deliverables & Files
               </h3>
               <Button variant="gold" size="sm" onClick={() => setIsAddFileModalOpen(true)} icon={<Plus className="w-4 h-4" />}>
@@ -287,14 +287,14 @@ export const ProjectDetailPage: React.FC = () => {
               </Button>
             </div>
 
-            <div className="divide-y divide-[#f6e9de] dark:divide-[#33222c]">
+            <div className="divide-y divide-[#f3f6f9] ">
               {projectFiles.map(f => (
                 <div key={f.id} className="py-3 flex items-center justify-between gap-4">
                   <div className="flex items-center gap-3">
-                    <FileText className="w-6 h-6 text-[#e08858]" />
+                    <FileText className="w-6 h-6 text-[#0b4f9c]" />
                     <div>
-                      <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">{f.name}</div>
-                      <div className="text-[10px] text-[#5e4650]">{f.size} • Uploaded by {f.uploadedBy} on {f.uploadedAt}</div>
+                      <div className="text-xs font-bold text-[#12202f] ">{f.name}</div>
+                      <div className="text-[10px] text-[#4a5a6a]">{f.size} • Uploaded by {f.uploadedBy} on {f.uploadedAt}</div>
                     </div>
                   </div>
                   <Button variant="outline" size="sm">
@@ -308,27 +308,27 @@ export const ProjectDetailPage: React.FC = () => {
 
         {/* ACTIVITY TAB */}
         {activeTab === 'Activity' && (
-          <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-2xl p-6 space-y-4 shadow-xs">
-            <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+          <div className="bg-white  border border-[#0b4f9c]/30 rounded-2xl p-6 space-y-4 shadow-xs">
+            <h3 className="text-base font-serif font-bold text-[#12202f] ">
               Recent Activity Stream
             </h3>
-            <div className="space-y-4 relative pl-4 border-l-2 border-[#e08858]/40">
+            <div className="space-y-4 relative pl-4 border-l-2 border-[#0b4f9c]/40">
               <div className="relative">
-                <div className="absolute -left-[21px] top-1 w-3.5 h-3.5 rounded-full bg-[#e08858]" />
-                <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">Sophia Bennett updated Terraform multi-region subnets</div>
-                <div className="text-[10px] text-[#5e4650] dark:text-[#e08858]/60">2 hours ago</div>
+                <div className="absolute -left-[21px] top-1 w-3.5 h-3.5 rounded-full bg-[#0b4f9c]" />
+                <div className="text-xs font-bold text-[#12202f] ">Sophia Bennett updated Terraform multi-region subnets</div>
+                <div className="text-[10px] text-[#4a5a6a] ">2 hours ago</div>
               </div>
 
               <div className="relative">
-                <div className="absolute -left-[21px] top-1 w-3.5 h-3.5 rounded-full bg-[#c45139]" />
-                <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">Alex Morgan added milestone task "Implement OAuth 2.0 Callback"</div>
-                <div className="text-[10px] text-[#5e4650] dark:text-[#e08858]/60">1 day ago</div>
+                <div className="absolute -left-[21px] top-1 w-3.5 h-3.5 rounded-full bg-[#0b4f9c]" />
+                <div className="text-xs font-bold text-[#12202f] ">Alex Morgan added milestone task "Implement OAuth 2.0 Callback"</div>
+                <div className="text-[10px] text-[#4a5a6a] ">1 day ago</div>
               </div>
 
               <div className="relative">
                 <div className="absolute -left-[21px] top-1 w-3.5 h-3.5 rounded-full bg-emerald-600" />
-                <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">Daniel Carter completed penetration security audit</div>
-                <div className="text-[10px] text-[#5e4650] dark:text-[#e08858]/60">2 days ago</div>
+                <div className="text-xs font-bold text-[#12202f] ">Daniel Carter completed penetration security audit</div>
+                <div className="text-[10px] text-[#4a5a6a] ">2 days ago</div>
               </div>
             </div>
           </div>
@@ -339,7 +339,7 @@ export const ProjectDetailPage: React.FC = () => {
       <Modal isOpen={isAddTaskModalOpen} onClose={() => setIsAddTaskModalOpen(false)} title="Add Task to Project">
         <form onSubmit={handleAddTaskSubmit} className="space-y-4">
           <div>
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+            <label className="block text-xs font-semibold text-[#12202f]  mb-1">
               Task Title *
             </label>
             <input
@@ -348,17 +348,17 @@ export const ProjectDetailPage: React.FC = () => {
               value={taskTitle}
               onChange={(e) => setTaskTitle(e.target.value)}
               placeholder="e.g. Audit Redis Cache Strategy"
-              className="w-full px-3.5 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 rounded-xl text-sm"
+              className="w-full px-3.5 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50 rounded-xl text-sm"
             />
           </div>
           <div>
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+            <label className="block text-xs font-semibold text-[#12202f]  mb-1">
               Priority
             </label>
             <select
               value={taskPriority}
               onChange={(e) => setTaskPriority(e.target.value as any)}
-              className="w-full px-3 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 rounded-xl text-xs"
+              className="w-full px-3 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50 rounded-xl text-xs"
             >
               <option value="Low">Low</option>
               <option value="Medium">Medium</option>
@@ -377,7 +377,7 @@ export const ProjectDetailPage: React.FC = () => {
       <Modal isOpen={isAddFileModalOpen} onClose={() => setIsAddFileModalOpen(false)} title="Upload Project File">
         <form onSubmit={handleAddFileSubmit} className="space-y-4">
           <div>
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+            <label className="block text-xs font-semibold text-[#12202f]  mb-1">
               File Title *
             </label>
             <input
@@ -386,7 +386,7 @@ export const ProjectDetailPage: React.FC = () => {
               value={fileName}
               onChange={(e) => setFileName(e.target.value)}
               placeholder="e.g. Architecture_Whitepaper.pdf"
-              className="w-full px-3.5 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 rounded-xl text-sm"
+              className="w-full px-3.5 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50 rounded-xl text-sm"
             />
           </div>
           <div className="flex justify-end gap-2 pt-2">

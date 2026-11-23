@@ -66,10 +66,10 @@ export const AdminLoginPage: React.FC = () => {
           className="
             relative
             overflow-hidden
-            rounded-[28px]
+            rounded-xl
             border
-            border-[#dcc6b4]/70
-            bg-[#fbf4ee]
+            border-[#dbe2e9]/70
+            bg-[#ffffff]
             shadow-[0_24px_70px_rgba(40,20,32,0.12)]
           "
         >
@@ -82,9 +82,9 @@ export const AdminLoginPage: React.FC = () => {
               top-0
               h-1.5
               bg-gradient-to-r
-              from-[#a63d2a]
-              via-[#e08858]
-              to-[#a63d2a]
+              from-[#083b75]
+              via-[#0b4f9c]
+              to-[#083b75]
             "
           />
 
@@ -102,9 +102,9 @@ export const AdminLoginPage: React.FC = () => {
                   justify-center
                   rounded-2xl
                   border
-                  border-[#e08858]/50
-                  bg-[#f6e9de]
-                  text-[#5e4650]
+                  border-[#0b4f9c]/50
+                  bg-[#f3f6f9]
+                  text-[#4a5a6a]
                   shadow-[0_10px_25px_rgba(40,20,32,0.10)]
                 "
               >
@@ -122,8 +122,8 @@ export const AdminLoginPage: React.FC = () => {
                     w-3
                     rounded-full
                     border-2
-                    border-[#fbf4ee]
-                    bg-[#a63d2a]
+                    border-[#ffffff]
+                    bg-[#083b75]
                   "
                 />
               </div>
@@ -138,7 +138,7 @@ export const AdminLoginPage: React.FC = () => {
                   font-semibold
                   uppercase
                   tracking-[0.28em]
-                  text-[#a63d2a]
+                  text-[#083b75]
                 "
               >
                 Secure access
@@ -150,7 +150,7 @@ export const AdminLoginPage: React.FC = () => {
                   text-[28px]
                   font-bold
                   tracking-[-0.03em]
-                  text-[#33202b]
+                  text-[#2a3a4c]
                   sm:text-[30px]
                 "
               >
@@ -164,7 +164,7 @@ export const AdminLoginPage: React.FC = () => {
                   max-w-sm
                   text-[13px]
                   leading-6
-                  text-[#765F4E]
+                  text-[#4a5a6a]
                 "
               >
                 Sign in with an approved Google account
@@ -174,19 +174,19 @@ export const AdminLoginPage: React.FC = () => {
 
             {/* Divider */}
             <div className="my-8 flex items-center gap-4">
-              <div className="h-px flex-1 bg-[#e0cdbd]" />
+              <div className="h-px flex-1 bg-[#dbe2e9]" />
               <span
                 className="
                   text-[9px]
                   font-semibold
                   uppercase
                   tracking-[0.22em]
-                  text-[#b98a78]
+                  text-[#8aa0b8]
                 "
               >
                 Authorized accounts only
               </span>
-              <div className="h-px flex-1 bg-[#e0cdbd]" />
+              <div className="h-px flex-1 bg-[#dbe2e9]" />
             </div>
 
             {/* Error */}
@@ -197,17 +197,17 @@ export const AdminLoginPage: React.FC = () => {
                   mb-5
                   rounded-2xl
                   border
-                  border-[#E7B8B8]
-                  bg-[#FFF4F3]
+                  border-[#e7b8b8]
+                  bg-[#fff4f3]
                   px-4
                   py-3
                   text-[13px]
                   leading-5
-                  text-[#9B3C3C]
+                  text-[#9b3c3c]
                 "
               >
                 <div className="flex gap-3">
-                  <div className="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-[#B95757]" />
+                  <div className="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-[#b95757]" />
                   <span>{error}</span>
                 </div>
               </div>
@@ -250,8 +250,8 @@ export const AdminLoginPage: React.FC = () => {
                     animate-spin
                     rounded-full
                     border-2
-                    border-[#e08858]
-                    border-t-[#5e4650]
+                    border-[#0b4f9c]
+                    border-t-[#4a5a6a]
                   "
                 />
 
@@ -260,7 +260,7 @@ export const AdminLoginPage: React.FC = () => {
                     text-[11px]
                     font-medium
                     tracking-wide
-                    text-[#765F4E]
+                    text-[#4a5a6a]
                   "
                 >
                   Authenticating securely…
@@ -277,8 +277,8 @@ export const AdminLoginPage: React.FC = () => {
                 gap-3
                 rounded-2xl
                 border
-                border-[#eadccf]
-                bg-[#f6ece2]
+                border-[#e3eaf1]
+                bg-[#f3f6f9]
                 px-4
                 py-3.5
               "
@@ -289,7 +289,7 @@ export const AdminLoginPage: React.FC = () => {
                   h-4
                   w-4
                   shrink-0
-                  text-[#a63d2a]
+                  text-[#083b75]
                 "
                 strokeWidth={1.8}
               />
@@ -298,7 +298,7 @@ export const AdminLoginPage: React.FC = () => {
                 className="
                   text-[11px]
                   leading-5
-                  text-[#765F4E]
+                  text-[#4a5a6a]
                 "
               >
                 Admin access is restricted to approved
@@ -319,10 +319,10 @@ export const AdminLoginPage: React.FC = () => {
                   gap-2
                   text-[12px]
                   font-medium
-                  text-[#5e4650]
+                  text-[#4a5a6a]
                   transition-colors
                   duration-200
-                  hover:text-[#33202b]
+                  hover:text-[#2a3a4c]
                 "
               >
                 <ArrowLeft
@@ -351,7 +351,7 @@ export const AdminLoginPage: React.FC = () => {
             text-[10px]
             uppercase
             tracking-[0.2em]
-            text-[#b98a78]
+            text-[#8aa0b8]
           "
         >
           Protected administration portal

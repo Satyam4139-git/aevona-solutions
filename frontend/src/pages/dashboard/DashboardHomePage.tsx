@@ -78,15 +78,15 @@ export const DashboardHomePage: React.FC = () => {
   return (
     <div className="space-y-8">
       {/* Header Banner */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-gradient-to-r from-[#1c1019] via-[#3b2a35] to-[#1c1019] text-[#fbf4ee] p-6 sm:p-8 rounded-3xl shadow-xl border border-[#e08858]/30 relative overflow-hidden">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-gradient-to-r from-[#12202f] via-[#1b2b3d] to-[#12202f] text-[#ffffff] p-6 sm:p-8 rounded-3xl shadow-xl border border-[#0b4f9c]/30 relative overflow-hidden">
         <div className="relative z-10 space-y-1">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#e08858] font-serif">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#0b4f9c] font-serif">
             Executive Summary
           </span>
           <h1 className="text-2xl sm:text-3xl font-serif font-bold">
             Hello there, {currentUser?.name || 'Partner'}
           </h1>
-          <p className="text-xs sm:text-sm text-[#ebdacd]/80">
+          <p className="text-xs sm:text-sm text-[#dbe2e9]/80">
             Here's what's happening with your active projects and cloud infrastructure today.
           </p>
         </div>
@@ -101,51 +101,51 @@ export const DashboardHomePage: React.FC = () => {
       {/* Metric Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {/* Metric 1 */}
-        <div className="p-5 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/30 dark:border-[#3a2530] shadow-md flex items-center justify-between">
+        <div className="p-5 rounded-2xl bg-white  border border-[#0b4f9c]/30  shadow-md flex items-center justify-between">
           <div>
-            <div className="text-xs font-medium text-[#5e4650] dark:text-[#e08858]/80">Active Projects</div>
-            <div className="text-2xl font-bold font-serif text-[#1c1019] dark:text-[#fbf4ee] mt-1">{activeProjectsCount}</div>
-            <div className="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold mt-1 flex items-center gap-1">
+            <div className="text-xs font-medium text-[#4a5a6a] ">Active Projects</div>
+            <div className="text-2xl font-bold font-serif text-[#12202f]  mt-1">{activeProjectsCount}</div>
+            <div className="text-[11px] text-emerald-600  font-semibold mt-1 flex items-center gap-1">
               <TrendingUp className="w-3 h-3" /> 2 milestones this week
             </div>
           </div>
-          <div className="w-12 h-12 rounded-xl bg-[#e08858]/20 border border-[#e08858]/40 text-[#5e4650] dark:text-[#e08858] flex items-center justify-center">
+          <div className="w-12 h-12 rounded-xl bg-[#0b4f9c]/20 border border-[#0b4f9c]/40 text-[#4a5a6a]  flex items-center justify-center">
             <FolderKanban className="w-6 h-6" />
           </div>
         </div>
 
         {/* Metric 2 */}
-        <div className="p-5 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/30 dark:border-[#3a2530] shadow-md flex items-center justify-between">
+        <div className="p-5 rounded-2xl bg-white  border border-[#0b4f9c]/30  shadow-md flex items-center justify-between">
           <div>
-            <div className="text-xs font-medium text-[#5e4650] dark:text-[#e08858]/80">Completed Projects</div>
-            <div className="text-2xl font-bold font-serif text-[#1c1019] dark:text-[#fbf4ee] mt-1">{completedProjectsCount}</div>
-            <div className="text-[11px] text-[#5e4650] dark:text-[#e08858]/80 mt-1">100% SLA Guarantee</div>
+            <div className="text-xs font-medium text-[#4a5a6a] ">Completed Projects</div>
+            <div className="text-2xl font-bold font-serif text-[#12202f]  mt-1">{completedProjectsCount}</div>
+            <div className="text-[11px] text-[#4a5a6a]  mt-1">100% SLA Guarantee</div>
           </div>
-          <div className="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 flex items-center justify-center">
+          <div className="w-12 h-12 rounded-xl bg-emerald-100  text-emerald-700  flex items-center justify-center">
             <Activity className="w-6 h-6" />
           </div>
         </div>
 
         {/* Metric 3 */}
-        <div className="p-5 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/30 dark:border-[#3a2530] shadow-md flex items-center justify-between">
+        <div className="p-5 rounded-2xl bg-white  border border-[#0b4f9c]/30  shadow-md flex items-center justify-between">
           <div>
-            <div className="text-xs font-medium text-[#5e4650] dark:text-[#e08858]/80">Pending Tasks</div>
-            <div className="text-2xl font-bold font-serif text-[#1c1019] dark:text-[#fbf4ee] mt-1">{pendingTasksCount}</div>
-            <div className="text-[11px] text-amber-600 dark:text-amber-400 font-semibold mt-1">3 due this week</div>
+            <div className="text-xs font-medium text-[#4a5a6a] ">Pending Tasks</div>
+            <div className="text-2xl font-bold font-serif text-[#12202f]  mt-1">{pendingTasksCount}</div>
+            <div className="text-[11px] text-amber-600  font-semibold mt-1">3 due this week</div>
           </div>
-          <div className="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 flex items-center justify-center">
+          <div className="w-12 h-12 rounded-xl bg-amber-100  text-amber-700  flex items-center justify-center">
             <CheckSquare className="w-6 h-6" />
           </div>
         </div>
 
         {/* Metric 4 */}
-        <div className="p-5 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/30 dark:border-[#3a2530] shadow-md flex items-center justify-between">
+        <div className="p-5 rounded-2xl bg-white  border border-[#0b4f9c]/30  shadow-md flex items-center justify-between">
           <div>
-            <div className="text-xs font-medium text-[#5e4650] dark:text-[#e08858]/80">Total Files Storage</div>
-            <div className="text-2xl font-bold font-serif text-[#1c1019] dark:text-[#fbf4ee] mt-1">{totalFilesCount} Files</div>
-            <div className="text-[11px] text-[#5e4650] dark:text-[#e08858]/80 mt-1">39.1 MB Used / 100 GB</div>
+            <div className="text-xs font-medium text-[#4a5a6a] ">Total Files Storage</div>
+            <div className="text-2xl font-bold font-serif text-[#12202f]  mt-1">{totalFilesCount} Files</div>
+            <div className="text-[11px] text-[#4a5a6a]  mt-1">39.1 MB Used / 100 GB</div>
           </div>
-          <div className="w-12 h-12 rounded-xl bg-sky-100 dark:bg-sky-950/60 text-sky-700 dark:text-sky-300 flex items-center justify-center">
+          <div className="w-12 h-12 rounded-xl bg-sky-100  text-sky-700  flex items-center justify-center">
             <FileText className="w-6 h-6" />
           </div>
         </div>
@@ -153,52 +153,52 @@ export const DashboardHomePage: React.FC = () => {
 
       {/* Quick Actions Bar */}
       <div>
-        <h3 className="text-xs font-bold uppercase tracking-wider text-[#5e4650] dark:text-[#e08858] mb-3 font-serif">
+        <h3 className="text-xs font-bold uppercase tracking-wider text-[#4a5a6a]  mb-3 font-serif">
           Quick Actions
         </h3>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           <button
             onClick={() => setIsCreateProjectOpen(true)}
-            className="p-4 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/40 dark:border-[#3a2530] hover:border-[#e08858] transition-all text-left group shadow-xs"
+            className="p-4 rounded-2xl bg-white  border border-[#0b4f9c]/40  hover:border-[#0b4f9c] transition-all text-left group shadow-xs"
           >
-            <div className="w-9 h-9 rounded-xl bg-[#e08858]/20 text-[#5e4650] dark:text-[#e08858] flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+            <div className="w-9 h-9 rounded-xl bg-[#0b4f9c]/20 text-[#4a5a6a]  flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
               <Plus className="w-5 h-5" />
             </div>
-            <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">Create Project</div>
-            <div className="text-[10px] text-[#5e4650]/70 dark:text-[#e08858]/60 mt-0.5">Start new initiative</div>
+            <div className="text-xs font-bold text-[#12202f] ">Create Project</div>
+            <div className="text-[10px] text-[#4a5a6a]/70  mt-0.5">Start new initiative</div>
           </button>
 
           <button
             onClick={() => navigate('/dashboard/services')}
-            className="p-4 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/40 dark:border-[#3a2530] hover:border-[#e08858] transition-all text-left group shadow-xs"
+            className="p-4 rounded-2xl bg-white  border border-[#0b4f9c]/40  hover:border-[#0b4f9c] transition-all text-left group shadow-xs"
           >
-            <div className="w-9 h-9 rounded-xl bg-[#e08858]/20 text-[#5e4650] dark:text-[#e08858] flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+            <div className="w-9 h-9 rounded-xl bg-[#0b4f9c]/20 text-[#4a5a6a]  flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
               <Wrench className="w-5 h-5" />
             </div>
-            <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">Request Service</div>
-            <div className="text-[10px] text-[#5e4650]/70 dark:text-[#e08858]/60 mt-0.5">Browse technical catalog</div>
+            <div className="text-xs font-bold text-[#12202f] ">Request Service</div>
+            <div className="text-[10px] text-[#4a5a6a]/70  mt-0.5">Browse technical catalog</div>
           </button>
 
           <button
             onClick={() => setIsUploadFileOpen(true)}
-            className="p-4 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/40 dark:border-[#3a2530] hover:border-[#e08858] transition-all text-left group shadow-xs"
+            className="p-4 rounded-2xl bg-white  border border-[#0b4f9c]/40  hover:border-[#0b4f9c] transition-all text-left group shadow-xs"
           >
-            <div className="w-9 h-9 rounded-xl bg-[#e08858]/20 text-[#5e4650] dark:text-[#e08858] flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+            <div className="w-9 h-9 rounded-xl bg-[#0b4f9c]/20 text-[#4a5a6a]  flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
               <Upload className="w-5 h-5" />
             </div>
-            <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">Upload File</div>
-            <div className="text-[10px] text-[#5e4650]/70 dark:text-[#e08858]/60 mt-0.5">Share assets & docs</div>
+            <div className="text-xs font-bold text-[#12202f] ">Upload File</div>
+            <div className="text-[10px] text-[#4a5a6a]/70  mt-0.5">Share assets & docs</div>
           </button>
 
           <button
             onClick={() => navigate('/dashboard/support')}
-            className="p-4 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/40 dark:border-[#3a2530] hover:border-[#e08858] transition-all text-left group shadow-xs"
+            className="p-4 rounded-2xl bg-white  border border-[#0b4f9c]/40  hover:border-[#0b4f9c] transition-all text-left group shadow-xs"
           >
-            <div className="w-9 h-9 rounded-xl bg-[#e08858]/20 text-[#5e4650] dark:text-[#e08858] flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+            <div className="w-9 h-9 rounded-xl bg-[#0b4f9c]/20 text-[#4a5a6a]  flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
               <HelpCircle className="w-5 h-5" />
             </div>
-            <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">Contact Support</div>
-            <div className="text-[10px] text-[#5e4650]/70 dark:text-[#e08858]/60 mt-0.5">Create ticket or query</div>
+            <div className="text-xs font-bold text-[#12202f] ">Contact Support</div>
+            <div className="text-[10px] text-[#4a5a6a]/70  mt-0.5">Create ticket or query</div>
           </button>
         </div>
       </div>
@@ -208,28 +208,28 @@ export const DashboardHomePage: React.FC = () => {
         {/* Left 2 Cols: Recent Projects */}
         <div className="lg:col-span-2 space-y-4">
           <div className="flex items-center justify-between">
-            <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+            <h3 className="text-base font-serif font-bold text-[#12202f] ">
               Recent Projects
             </h3>
-            <Link to="/dashboard/projects" className="text-xs font-semibold text-[#5e4650] dark:text-[#e08858] hover:underline flex items-center gap-1">
+            <Link to="/dashboard/projects" className="text-xs font-semibold text-[#4a5a6a]  hover:underline flex items-center gap-1">
               View All <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
 
-          <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 dark:border-[#3a2530] rounded-2xl shadow-sm overflow-hidden divide-y divide-[#f6e9de] dark:divide-[#33222c]">
+          <div className="bg-white  border border-[#0b4f9c]/30  rounded-2xl shadow-sm overflow-hidden divide-y divide-[#f3f6f9] ">
             {projects.slice(0, 4).map((p) => (
-              <div key={p.id} className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-[#fbf4ee]/50 dark:hover:bg-[#2a1a25]/50 transition-colors">
+              <div key={p.id} className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-[#ffffff]/50  transition-colors">
                 <div className="space-y-1">
                   <div className="flex items-center gap-2">
-                    <Link to={`/dashboard/projects/${p.id}`} className="text-sm font-bold text-[#1c1019] dark:text-[#fbf4ee] hover:text-[#5e4650] dark:hover:text-[#e08858]">
+                    <Link to={`/dashboard/projects/${p.id}`} className="text-sm font-bold text-[#12202f]  hover:text-[#4a5a6a] ">
                       {p.name}
                     </Link>
                     <StatusBadge status={p.status} />
                   </div>
-                  <p className="text-xs text-[#5e4650]/80 dark:text-[#e08858]/70 line-clamp-1">
+                  <p className="text-xs text-[#4a5a6a]/80  line-clamp-1">
                     {p.description}
                   </p>
-                  <div className="text-[11px] text-[#c45139] dark:text-[#e08858]/60 flex items-center gap-3 pt-1">
+                  <div className="text-[11px] text-[#0b4f9c]  flex items-center gap-3 pt-1">
                     <span>Deadline: {p.deadline}</span>
                     <span>•</span>
                     <span>Budget: {p.budget}</span>
@@ -239,11 +239,11 @@ export const DashboardHomePage: React.FC = () => {
                 {/* Progress bar */}
                 <div className="sm:w-36 shrink-0 space-y-1">
                   <div className="flex justify-between text-xs font-semibold">
-                    <span className="text-[#5e4650] dark:text-[#e08858]">Progress</span>
-                    <span className="text-[#1c1019] dark:text-[#fbf4ee]">{p.progress}%</span>
+                    <span className="text-[#4a5a6a] ">Progress</span>
+                    <span className="text-[#12202f] ">{p.progress}%</span>
                   </div>
-                  <div className="h-2 w-full bg-[#f6e9de] dark:bg-[#2a1a25] rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-[#e08858] to-[#5e4650] rounded-full transition-all" style={{ width: `${p.progress}%` }} />
+                  <div className="h-2 w-full bg-[#f3f6f9]  rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-[#0b4f9c] to-[#1a63b5] rounded-full transition-all" style={{ width: `${p.progress}%` }} />
                   </div>
                 </div>
               </div>
@@ -254,24 +254,24 @@ export const DashboardHomePage: React.FC = () => {
         {/* Right Col: Upcoming Tasks & Activity */}
         <div className="space-y-6">
           <div className="flex items-center justify-between">
-            <h3 className="text-base font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+            <h3 className="text-base font-serif font-bold text-[#12202f] ">
               Upcoming Tasks
             </h3>
-            <Link to="/dashboard/tasks" className="text-xs font-semibold text-[#5e4650] dark:text-[#e08858] hover:underline">
+            <Link to="/dashboard/tasks" className="text-xs font-semibold text-[#4a5a6a]  hover:underline">
               View All
             </Link>
           </div>
 
-          <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 dark:border-[#3a2530] rounded-2xl p-4 shadow-sm space-y-3">
+          <div className="bg-white  border border-[#0b4f9c]/30  rounded-2xl p-4 shadow-sm space-y-3">
             {tasks.slice(0, 4).map((t) => (
-              <div key={t.id} className="p-3 rounded-xl bg-[#fbf4ee]/70 dark:bg-[#140a14] border border-[#e08858]/20 space-y-1.5">
+              <div key={t.id} className="p-3 rounded-xl bg-[#ffffff]/70  border border-[#0b4f9c]/20 space-y-1.5">
                 <div className="flex items-start justify-between gap-2">
-                  <span className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee] line-clamp-1">{t.title}</span>
+                  <span className="text-xs font-bold text-[#12202f]  line-clamp-1">{t.title}</span>
                   <span className={`text-[10px] font-semibold px-2 py-0.5 rounded ${t.priority === 'Urgent' ? 'bg-rose-100 text-rose-800' : 'bg-amber-100 text-amber-800'}`}>
                     {t.priority}
                   </span>
                 </div>
-                <div className="flex items-center justify-between text-[11px] text-[#5e4650] dark:text-[#e08858]/70">
+                <div className="flex items-center justify-between text-[11px] text-[#4a5a6a] ">
                   <span className="flex items-center gap-1">
                     <Clock className="w-3 h-3" /> Due {t.dueDate}
                   </span>
@@ -287,7 +287,7 @@ export const DashboardHomePage: React.FC = () => {
       <Modal isOpen={isCreateProjectOpen} onClose={() => setIsCreateProjectOpen(false)} title="Create New Enterprise Project">
         <form onSubmit={handleCreateProjectSubmit} className="space-y-4">
           <div>
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+            <label className="block text-xs font-semibold text-[#12202f]  mb-1">
               Project Name *
             </label>
             <input
@@ -296,12 +296,12 @@ export const DashboardHomePage: React.FC = () => {
               value={newProjName}
               onChange={(e) => setNewProjName(e.target.value)}
               placeholder="e.g. AI-Powered Customer Support Portal"
-              className="w-full px-3.5 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-sm text-[#1c1019] dark:text-[#fbf4ee]"
+              className="w-full px-3.5 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-sm text-[#12202f] "
             />
           </div>
 
           <div>
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+            <label className="block text-xs font-semibold text-[#12202f]  mb-1">
               Description
             </label>
             <textarea
@@ -309,19 +309,19 @@ export const DashboardHomePage: React.FC = () => {
               value={newProjDesc}
               onChange={(e) => setNewProjDesc(e.target.value)}
               placeholder="Detail the scope and deliverables..."
-              className="w-full px-3.5 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-sm text-[#1c1019] dark:text-[#fbf4ee]"
+              className="w-full px-3.5 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-sm text-[#12202f] "
             />
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+              <label className="block text-xs font-semibold text-[#12202f]  mb-1">
                 Service Category
               </label>
               <select
                 value={newProjService}
                 onChange={(e) => setNewProjService(e.target.value)}
-                className="w-full px-3 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-xs text-[#1c1019] dark:text-[#fbf4ee]"
+                className="w-full px-3 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-xs text-[#12202f] "
               >
                 <option value="Cloud Infrastructure">Cloud Infrastructure</option>
                 <option value="Web Application">Web Application</option>
@@ -332,13 +332,13 @@ export const DashboardHomePage: React.FC = () => {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+              <label className="block text-xs font-semibold text-[#12202f]  mb-1">
                 Priority
               </label>
               <select
                 value={newProjPriority}
                 onChange={(e) => setNewProjPriority(e.target.value as any)}
-                className="w-full px-3 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-xs text-[#1c1019] dark:text-[#fbf4ee]"
+                className="w-full px-3 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-xs text-[#12202f] "
               >
                 <option value="Low">Low</option>
                 <option value="Medium">Medium</option>
@@ -363,7 +363,7 @@ export const DashboardHomePage: React.FC = () => {
       <Modal isOpen={isUploadFileOpen} onClose={() => setIsUploadFileOpen(false)} title="Upload Document or File">
         <form onSubmit={handleUploadFileSubmit} className="space-y-4">
           <div>
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+            <label className="block text-xs font-semibold text-[#12202f]  mb-1">
               File Name / Title *
             </label>
             <input
@@ -372,16 +372,16 @@ export const DashboardHomePage: React.FC = () => {
               value={fileName}
               onChange={(e) => setFileName(e.target.value)}
               placeholder="e.g. Q4_Cloud_Architecture_Specs.pdf"
-              className="w-full px-3.5 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-sm text-[#1c1019] dark:text-[#fbf4ee]"
+              className="w-full px-3.5 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-sm text-[#12202f] "
             />
           </div>
 
-          <div className="border-2 border-dashed border-[#e08858]/50 dark:border-[#3a2530] rounded-2xl p-8 text-center bg-[#fbf4ee]/50 dark:bg-[#140a14]">
-            <Upload className="w-8 h-8 text-[#e08858] mx-auto mb-2" />
-            <div className="text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee]">
+          <div className="border-2 border-dashed border-[#0b4f9c]/50  rounded-2xl p-8 text-center bg-[#ffffff]/50 ">
+            <Upload className="w-8 h-8 text-[#0b4f9c] mx-auto mb-2" />
+            <div className="text-xs font-semibold text-[#12202f] ">
               Drag & drop files here or click to browse
             </div>
-            <div className="text-[10px] text-[#5e4650]/70 dark:text-[#e08858]/60 mt-1">
+            <div className="text-[10px] text-[#4a5a6a]/70  mt-1">
               Supports PDF, DOCX, FIG, ZIP up to 50 MB
             </div>
           </div>

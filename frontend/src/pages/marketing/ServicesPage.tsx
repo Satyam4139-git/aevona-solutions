@@ -217,17 +217,17 @@ const accentStyles: Record<
   }
 > = {
   gold: {
-    icon: 'bg-[#e08858]/20 text-[#a63d2a] dark:text-[#e08858]',
-    glow: 'bg-[#e08858]/10',
-    badge: 'bg-[#e08858]/10 text-[#a63d2a] dark:text-[#e08858]',
-    line: 'bg-[#e08858]',
+    icon: 'bg-[#0b4f9c]/20 text-[#083b75] ',
+    glow: 'bg-[#0b4f9c]/10',
+    badge: 'bg-[#0b4f9c]/10 text-[#083b75] ',
+    line: 'bg-[#0b4f9c]',
   },
 
   sage: {
-    icon: 'bg-[#a63d2a]/15 text-[#d08a68]',
-    glow: 'bg-[#a63d2a]/10',
-    badge: 'bg-[#a63d2a]/10 text-[#d08a68]',
-    line: 'bg-[#a63d2a]',
+    icon: 'bg-[#083b75]/15 text-[#4a88c9]',
+    glow: 'bg-[#083b75]/10',
+    badge: 'bg-[#083b75]/10 text-[#4a88c9]',
+    line: 'bg-[#083b75]',
   },
 
   rose: {
@@ -238,24 +238,24 @@ const accentStyles: Record<
   },
 
   olive: {
-    icon: 'bg-[#b06f53]/15 text-[#a86a4a]',
-    glow: 'bg-[#b06f53]/10',
-    badge: 'bg-[#b06f53]/10 text-[#a86a4a]',
-    line: 'bg-[#b06f53]',
+    icon: 'bg-[#1f5ba6]/15 text-[#174f94]',
+    glow: 'bg-[#1f5ba6]/10',
+    badge: 'bg-[#1f5ba6]/10 text-[#174f94]',
+    line: 'bg-[#1f5ba6]',
   },
 
   terracotta: {
-    icon: 'bg-[#a63d2a]/15 text-[#8D513C]',
-    glow: 'bg-[#a63d2a]/10',
-    badge: 'bg-[#a63d2a]/10 text-[#8D513C]',
-    line: 'bg-[#a63d2a]',
+    icon: 'bg-[#083b75]/15 text-[#0a3a70]',
+    glow: 'bg-[#083b75]/10',
+    badge: 'bg-[#083b75]/10 text-[#0a3a70]',
+    line: 'bg-[#083b75]',
   },
 
   brown: {
-    icon: 'bg-[#5e4650]/10 text-[#5e4650] dark:text-[#e08858]',
-    glow: 'bg-[#5e4650]/10',
-    badge: 'bg-[#5e4650]/10 text-[#5e4650] dark:text-[#e08858]',
-    line: 'bg-[#5e4650]',
+    icon: 'bg-[#4a5a6a]/10 text-[#4a5a6a] ',
+    glow: 'bg-[#4a5a6a]/10',
+    badge: 'bg-[#4a5a6a]/10 text-[#4a5a6a] ',
+    line: 'bg-[#4a5a6a]',
   },
 };
 
@@ -294,7 +294,7 @@ export const ServicesPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#fbf4ee] dark:bg-[#140a14] text-[#1c1019] dark:text-[#fbf4ee] overflow-hidden">
+    <div className="min-h-screen bg-[#ffffff]  text-[#12202f]  overflow-hidden">
 
       {/* ===================================================
           HERO
@@ -304,22 +304,22 @@ export const ServicesPage: React.FC = () => {
 <GoldBalls />
 
         {/* Background decoration */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-[#e08858]/10 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-[#0b4f9c]/10 blur-[120px] rounded-full pointer-events-none" />
 
-        <div className="absolute left-[8%] top-28 w-20 h-20 rounded-full bg-[#a63d2a]/5 blur-2xl" />
+        <div className="absolute left-[8%] top-28 w-20 h-20 rounded-full bg-[#083b75]/5 blur-2xl" />
 
-        <div className="absolute right-[8%] top-44 w-24 h-24 rounded-full bg-[#a63d2a]/5 blur-2xl" />
+        <div className="absolute right-[8%] top-44 w-24 h-24 rounded-full bg-[#083b75]/5 blur-2xl" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center text-center lg:text-left">
 
           <div>
 
           {/* Eyebrow */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#e08858]/40 bg-[#e08858]/10">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#0b4f9c]/40 bg-[#0b4f9c]/10">
 
-            <Sparkles className="w-3.5 h-3.5 text-[#e08858]" />
+            <Sparkles className="w-3.5 h-3.5 text-[#0b4f9c]" />
 
-            <span className="text-[10px] sm:text-[11px] font-Clarkson font-bold uppercase tracking-[0.22em] text-[#5e4650] dark:text-[#e08858]">
+            <span className="text-[10px] sm:text-[11px] font-Clarkson font-bold uppercase tracking-[0.22em] text-[#4a5a6a] ">
               Aevona Services
             </span>
 
@@ -328,20 +328,20 @@ export const ServicesPage: React.FC = () => {
           {/* Heading */}
           <h1 className="mt-7 font-Clarkson font-bold text-4xl sm:text-5xl lg:text-5xl xl:text-6xl leading-[1.05] tracking-[-0.05em]">
 
-            <span className="text-[#1c1019] dark:text-[#fbf4ee]">
+            <span className="text-[#12202f] ">
               Everything you need
             </span>
 
             <br />
 
-            <span className="text-[#5e4650] dark:text-[#e08858]">
+            <span className="text-[#4a5a6a] ">
               to build what's next.
             </span>
 
           </h1>
 
           {/* Description */}
-          <p className="mt-7 max-w-2xl mx-auto lg:mx-0 text-sm sm:text-base leading-8 font-Clarkson text-[#5e4650]/80 dark:text-[#e08858]/75">
+          <p className="mt-7 max-w-2xl mx-auto lg:mx-0 text-sm sm:text-base leading-8 font-Clarkson text-[#4a5a6a]/80 ">
             From product design and software development to data,
             AI, cloud, and strategy, we bring the pieces together
             to create digital experiences that actually work.
@@ -350,26 +350,26 @@ export const ServicesPage: React.FC = () => {
           {/* Service stats */}
           <div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-3">
 
-            <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm">
-              <Layers3 className="w-3.5 h-3.5 text-[#e08858]" />
+            <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white  border border-[#0b4f9c]/25 shadow-sm">
+              <Layers3 className="w-3.5 h-3.5 text-[#0b4f9c]" />
 
-              <span className="text-[10px] sm:text-[11px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+              <span className="text-[10px] sm:text-[11px] font-Clarkson font-semibold text-[#4a5a6a] ">
                 {allServices.length}+ Services
               </span>
             </div>
 
-            <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm">
-              <Globe2 className="w-3.5 h-3.5 text-[#a63d2a]" />
+            <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white  border border-[#0b4f9c]/25 shadow-sm">
+              <Globe2 className="w-3.5 h-3.5 text-[#083b75]" />
 
-              <span className="text-[10px] sm:text-[11px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+              <span className="text-[10px] sm:text-[11px] font-Clarkson font-semibold text-[#4a5a6a] ">
                 End-to-End Solutions
               </span>
             </div>
 
-            <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm">
-              <Cpu className="w-3.5 h-3.5 text-[#a63d2a]" />
+            <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white  border border-[#0b4f9c]/25 shadow-sm">
+              <Cpu className="w-3.5 h-3.5 text-[#083b75]" />
 
-              <span className="text-[10px] sm:text-[11px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+              <span className="text-[10px] sm:text-[11px] font-Clarkson font-semibold text-[#4a5a6a] ">
                 Modern Technology
               </span>
             </div>
@@ -380,11 +380,11 @@ export const ServicesPage: React.FC = () => {
 
           {/* Hero image, side by side with the text */}
           <div className="relative">
-            <div className="absolute -inset-3 rounded-[2rem] border border-[#e08858]/30 rotate-2" />
+            <div className="absolute -inset-3 rounded-xl border border-[#0b4f9c]/30 " />
             <img
               src="/images/ai-human-robot.jpg"
               alt="A human hand and a robotic hand reaching toward a glowing AI chip"
-              className="relative w-full rounded-[2rem] border border-[#e08858]/30 shadow-[0_24px_60px_rgba(28,16,28,.25)] object-cover"
+              className="relative w-full rounded-xl border border-[#0b4f9c]/30 shadow-[0_24px_60px_rgba(28,16,28,.25)] object-cover"
               style={{ aspectRatio: '850 / 457' }}
             />
           </div>
@@ -400,27 +400,27 @@ export const ServicesPage: React.FC = () => {
       <section className="gold-balls max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
 <GoldBalls />
 
-        <div className="rounded-[1.75rem] bg-white dark:bg-[#1e1220] border border-[#e08858]/30 p-4 sm:p-5 shadow-sm">
+        <div className="rounded-xl bg-white  border border-[#0b4f9c]/30 p-4 sm:p-5 shadow-sm">
 
           <div className="flex flex-col lg:flex-row gap-4">
 
             {/* Search */}
             <div className="relative flex-1">
 
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[#5e4650]/45 dark:text-[#e08858]/45" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[#4a5a6a]/45 " />
 
               <input
                 type="text"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Search services, features, technologies..."
-                className="w-full h-12 pl-11 pr-11 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/20 outline-none font-Clarkson text-xs text-[#1c1019] dark:text-[#fbf4ee] placeholder:text-[#5e4650]/40 dark:placeholder:text-[#e08858]/40 focus:border-[#e08858] focus:ring-2 focus:ring-[#e08858]/10 transition-all"
+                className="w-full h-12 pl-11 pr-11 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/20 outline-none font-Clarkson text-xs text-[#12202f]  placeholder:text-[#4a5a6a]/40  focus:border-[#0b4f9c] focus:ring-2 focus:ring-[#0b4f9c]/10 transition-all"
               />
 
               {search && (
                 <button
                   onClick={() => setSearch('')}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-[#5e4650]/50 hover:text-[#5e4650] dark:text-[#e08858]/50 dark:hover:text-[#e08858]"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-[#4a5a6a]/50 hover:text-[#4a5a6a]  "
                 >
                   <X className="w-4 h-4" />
                 </button>
@@ -451,8 +451,8 @@ export const ServicesPage: React.FC = () => {
                     transition-all duration-300
                     ${
                       isActive
-                        ? 'bg-[#1c1019] text-[#fbf4ee] border-[#1c1019] shadow-md dark:bg-[#e08858] dark:text-[#1c1019] dark:border-[#e08858]'
-                        : 'bg-[#fbf4ee] dark:bg-[#140a14] text-[#5e4650] dark:text-[#e08858] border-[#e08858]/20 hover:border-[#e08858]/60'
+                        ? 'bg-[#12202f] text-[#ffffff] border-[#12202f] shadow-md   '
+                        : 'bg-[#ffffff]  text-[#4a5a6a]  border-[#0b4f9c]/20 hover:border-[#0b4f9c]/60'
                     }
                   `}
                 >
@@ -480,33 +480,33 @@ export const ServicesPage: React.FC = () => {
         <section className="gold-balls max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
 <GoldBalls />
 
-          <div className="relative overflow-hidden rounded-[2rem] bg-[#1c1019] dark:bg-[#1e1220] border border-[#e08858]/30">
+          <div className="relative overflow-hidden rounded-xl bg-[#12202f]  border border-[#0b4f9c]/30">
 
             {/* Decorative circles */}
-            <div className="absolute -right-24 -top-24 w-80 h-80 rounded-full bg-[#e08858]/10 blur-3xl" />
+            <div className="absolute -right-24 -top-24 w-80 h-80 rounded-full bg-[#0b4f9c]/10 blur-3xl" />
 
-            <div className="absolute -left-20 -bottom-20 w-60 h-60 rounded-full bg-[#a63d2a]/5 blur-3xl" />
+            <div className="absolute -left-20 -bottom-20 w-60 h-60 rounded-full bg-[#083b75]/5 blur-3xl" />
 
             <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-10 p-7 sm:p-10 lg:p-14">
 
               <div>
 
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#e08858]/10 border border-[#e08858]/20">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0b4f9c]/10 border border-[#0b4f9c]/20">
 
-                  <Sparkles className="w-3 h-3 text-[#e08858]" />
+                  <Sparkles className="w-3 h-3 text-[#0b4f9c]" />
 
-                  <span className="text-[9px] font-Clarkson uppercase tracking-[0.2em] text-[#e08858]">
+                  <span className="text-[9px] font-Clarkson uppercase tracking-[0.2em] text-[#0b4f9c]">
                     Featured Capability
                   </span>
 
                 </div>
 
-                <h2 className="mt-5 max-w-2xl font-Clarkson font-bold text-2xl sm:text-3xl lg:text-4xl tracking-[-0.035em] text-[#fbf4ee]">
+                <h2 className="mt-5 max-w-2xl font-Clarkson font-bold text-2xl sm:text-3xl lg:text-4xl tracking-[-0.035em] text-[#ffffff]">
                   Digital products that
-                  <span className="text-[#e08858]"> feel effortless.</span>
+                  <span className="text-[#0b4f9c]"> feel effortless.</span>
                 </h2>
 
-                <p className="mt-4 max-w-2xl text-sm leading-7 font-Clarkson text-[#fbf4ee]/65">
+                <p className="mt-4 max-w-2xl text-sm leading-7 font-Clarkson text-[#ffffff]/65">
                   We combine engineering, design, data, and strategy to
                   create products that are practical today and ready for
                   tomorrow.
@@ -522,7 +522,7 @@ export const ServicesPage: React.FC = () => {
                   ].map((item) => (
                     <span
                       key={item}
-                      className="px-3 py-1.5 rounded-full border border-[#fbf4ee]/10 bg-[#fbf4ee]/5 text-[10px] font-Clarkson text-[#fbf4ee]/70"
+                      className="px-3 py-1.5 rounded-full border border-[#ffffff]/10 bg-[#ffffff]/5 text-[10px] font-Clarkson text-[#ffffff]/70"
                     >
                       {item}
                     </span>
@@ -534,17 +534,17 @@ export const ServicesPage: React.FC = () => {
 
               <div className="hidden lg:flex items-center justify-center">
 
-                <div className="relative w-32 h-32 rounded-[2rem] border border-[#e08858]/20 bg-[#e08858]/5">
+                <div className="relative w-32 h-32 rounded-xl border border-[#0b4f9c]/20 bg-[#0b4f9c]/5">
 
-                  <div className="absolute inset-5 rounded-[1.5rem] bg-[#e08858]/10 flex items-center justify-center">
+                  <div className="absolute inset-5 rounded-xl bg-[#0b4f9c]/10 flex items-center justify-center">
 
-                    <Cpu className="w-10 h-10 text-[#e08858]" />
+                    <Cpu className="w-10 h-10 text-[#0b4f9c]" />
 
                   </div>
 
-                  <div className="absolute -top-3 -right-3 w-7 h-7 rounded-full bg-[#a63d2a] border-4 border-[#1c1019]" />
+                  <div className="absolute -top-3 -right-3 w-7 h-7 rounded-full bg-[#083b75] border-4 border-[#12202f]" />
 
-                  <div className="absolute -bottom-3 -left-3 w-7 h-7 rounded-full bg-[#a63d2a] border-4 border-[#1c1019]" />
+                  <div className="absolute -bottom-3 -left-3 w-7 h-7 rounded-full bg-[#083b75] border-4 border-[#12202f]" />
 
                 </div>
 
@@ -569,17 +569,17 @@ export const ServicesPage: React.FC = () => {
 
           <div>
 
-            <span className="text-[10px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#e08858]">
+            <span className="text-[10px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#0b4f9c]">
               Explore
             </span>
 
-            <h2 className="mt-2 text-2xl sm:text-3xl font-Clarkson font-bold tracking-[-0.035em] text-[#1c1019] dark:text-[#fbf4ee]">
+            <h2 className="mt-2 text-2xl sm:text-3xl font-Clarkson font-bold tracking-[-0.035em] text-[#12202f] ">
               What we can build together
             </h2>
 
           </div>
 
-          <span className="hidden sm:block text-[10px] font-Clarkson text-[#5e4650]/45 dark:text-[#e08858]/45">
+          <span className="hidden sm:block text-[10px] font-Clarkson text-[#4a5a6a]/45 ">
             {filteredServices.length} available
           </span>
 
@@ -600,7 +600,7 @@ export const ServicesPage: React.FC = () => {
               return (
                 <div
                   key={service.id || index}
-                  className="group relative overflow-hidden rounded-[1.75rem] bg-white dark:bg-[#1e1220] border border-[#e08858]/25 shadow-sm hover:shadow-xl hover:-translate-y-1.5 hover:border-[#e08858]/55 transition-all duration-500"
+                  className="group relative overflow-hidden rounded-xl bg-white  border border-[#0b4f9c]/25 shadow-sm hover:shadow-xl hover:-translate-y-1.5 hover:border-[#0b4f9c]/55 transition-all duration-500"
                 >
 
                   {/* Accent glow */}
@@ -619,7 +619,7 @@ export const ServicesPage: React.FC = () => {
                         <Icon className="w-5 h-5" />
                       </div>
 
-                      <span className="text-[10px] font-Clarkson font-semibold text-[#5e4650]/30 dark:text-[#e08858]/30">
+                      <span className="text-[10px] font-Clarkson font-semibold text-[#4a5a6a]/30 ">
                         {String(index + 1).padStart(2, '0')}
                       </span>
 
@@ -629,7 +629,7 @@ export const ServicesPage: React.FC = () => {
                     {/* Title */}
                     <div className="mt-6 flex items-center gap-3 flex-wrap">
 
-                      <h3 className="text-xl font-Clarkson font-bold tracking-[-0.025em] text-[#1c1019] dark:text-[#fbf4ee]">
+                      <h3 className="text-xl font-Clarkson font-bold tracking-[-0.025em] text-[#12202f] ">
                         {service.title}
                       </h3>
 
@@ -643,7 +643,7 @@ export const ServicesPage: React.FC = () => {
 
 
                     {/* Description */}
-                    <p className="mt-3 text-xs sm:text-sm leading-7 font-Clarkson text-[#5e4650]/75 dark:text-[#e08858]/70">
+                    <p className="mt-3 text-xs sm:text-sm leading-7 font-Clarkson text-[#4a5a6a]/75 ">
                       {service.description || service.fullDesc}
                     </p>
 
@@ -653,11 +653,11 @@ export const ServicesPage: React.FC = () => {
 
                       <div className="flex items-center gap-2 mb-3">
 
-                        <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#5e4650]/45 dark:text-[#e08858]/45">
+                        <span className="text-[9px] font-Clarkson font-bold uppercase tracking-[0.18em] text-[#4a5a6a]/45 ">
                           Includes
                         </span>
 
-                        <div className="h-px flex-1 bg-[#f6e9de] dark:bg-[#33222c]" />
+                        <div className="h-px flex-1 bg-[#f3f6f9] " />
 
                       </div>
 
@@ -668,7 +668,7 @@ export const ServicesPage: React.FC = () => {
 
                             <div
                               key={featureIndex}
-                              className="flex items-start gap-2 text-[10px] sm:text-[11px] leading-5 font-Clarkson text-[#5e4650] dark:text-[#e08858]"
+                              className="flex items-start gap-2 text-[10px] sm:text-[11px] leading-5 font-Clarkson text-[#4a5a6a] "
                             >
 
                               <CheckCircle2
@@ -688,13 +688,13 @@ export const ServicesPage: React.FC = () => {
 
 
                     {/* Footer */}
-                    <div className="mt-7 pt-5 border-t border-[#f6e9de] dark:border-[#33222c] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div className="mt-7 pt-5 border-t border-[#f3f6f9]  flex flex-col sm:flex-row sm:items-center justify-between gap-4">
 
                       <div className="flex items-center gap-2">
 
-                        <Clock3 className="w-3.5 h-3.5 text-[#e08858]" />
+                        <Clock3 className="w-3.5 h-3.5 text-[#0b4f9c]" />
 
-                        <span className="text-[10px] font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858]">
+                        <span className="text-[10px] font-Clarkson font-semibold text-[#4a5a6a] ">
                           {service.timeline || service.estimatedTimeline}
                         </span>
 
@@ -726,25 +726,25 @@ export const ServicesPage: React.FC = () => {
 
           /* Empty state */
 
-          <div className="py-20 rounded-[2rem] bg-white dark:bg-[#1e1220] border border-[#e08858]/30 text-center">
+          <div className="py-20 rounded-xl bg-white  border border-[#0b4f9c]/30 text-center">
 
-            <div className="w-14 h-14 mx-auto rounded-2xl bg-[#e08858]/10 flex items-center justify-center">
+            <div className="w-14 h-14 mx-auto rounded-2xl bg-[#0b4f9c]/10 flex items-center justify-center">
 
-              <Search className="w-6 h-6 text-[#e08858]" />
+              <Search className="w-6 h-6 text-[#0b4f9c]" />
 
             </div>
 
-            <h3 className="mt-5 font-Clarkson font-bold text-lg text-[#1c1019] dark:text-[#fbf4ee]">
+            <h3 className="mt-5 font-Clarkson font-bold text-lg text-[#12202f] ">
               No matching services
             </h3>
 
-            <p className="mt-2 text-xs font-Clarkson text-[#5e4650]/60 dark:text-[#e08858]/60">
+            <p className="mt-2 text-xs font-Clarkson text-[#4a5a6a]/60 ">
               Try another search term or category.
             </p>
 
             <button
               onClick={clearFilters}
-              className="mt-5 text-xs font-Clarkson font-semibold text-[#5e4650] dark:text-[#e08858] underline underline-offset-4"
+              className="mt-5 text-xs font-Clarkson font-semibold text-[#4a5a6a]  underline underline-offset-4"
             >
               Clear filters
             </button>
@@ -765,15 +765,15 @@ export const ServicesPage: React.FC = () => {
 
         <div className="text-center mb-11">
 
-          <span className="text-[10px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#e08858]">
+          <span className="text-[10px] font-Clarkson font-bold uppercase tracking-[0.2em] text-[#0b4f9c]">
             How we work
           </span>
 
-          <h2 className="mt-3 text-2xl sm:text-3xl font-Clarkson font-bold tracking-[-0.035em] text-[#1c1019] dark:text-[#fbf4ee]">
+          <h2 className="mt-3 text-2xl sm:text-3xl font-Clarkson font-bold tracking-[-0.035em] text-[#12202f] ">
             From idea to impact.
           </h2>
 
-          <p className="mt-3 max-w-xl mx-auto text-xs sm:text-sm leading-6 font-Clarkson text-[#5e4650]/65 dark:text-[#e08858]/65">
+          <p className="mt-3 max-w-xl mx-auto text-xs sm:text-sm leading-6 font-Clarkson text-[#4a5a6a]/65 ">
             A simple process designed to keep projects clear,
             collaborative, and moving forward.
           </p>
@@ -819,7 +819,7 @@ export const ServicesPage: React.FC = () => {
             return (
               <div
                 key={step.number}
-                className="group relative p-6 rounded-2xl bg-white dark:bg-[#1e1220] border border-[#e08858]/25 hover:-translate-y-1 transition-all duration-300"
+                className="group relative p-6 rounded-2xl bg-white  border border-[#0b4f9c]/25 hover:-translate-y-1 transition-all duration-300"
               >
 
                 <div className="flex items-center justify-between">
@@ -830,15 +830,15 @@ export const ServicesPage: React.FC = () => {
                     {step.number}
                   </span>
 
-                  <ArrowRight className="w-3.5 h-3.5 text-[#e08858]/40 group-hover:text-[#e08858] group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="w-3.5 h-3.5 text-[#0b4f9c]/40 group-hover:text-[#0b4f9c] group-hover:translate-x-1 transition-all" />
 
                 </div>
 
-                <h3 className="mt-6 text-sm font-Clarkson font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+                <h3 className="mt-6 text-sm font-Clarkson font-bold text-[#12202f] ">
                   {step.title}
                 </h3>
 
-                <p className="mt-2 text-[11px] leading-5 font-Clarkson text-[#5e4650]/65 dark:text-[#e08858]/65">
+                <p className="mt-2 text-[11px] leading-5 font-Clarkson text-[#4a5a6a]/65 ">
                   {step.description}
                 </p>
 
@@ -858,40 +858,40 @@ export const ServicesPage: React.FC = () => {
       <section className="gold-balls max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
 <GoldBalls />
 
-        <div className="relative overflow-hidden rounded-[2rem] bg-[#1c1019] dark:bg-[#1e1220] border border-[#e08858]/30 px-7 py-14 sm:px-12 sm:py-16 text-center">
+        <div className="relative overflow-hidden rounded-xl bg-[#12202f]  border border-[#0b4f9c]/30 px-7 py-14 sm:px-12 sm:py-16 text-center">
 
           {/* Decorative lights */}
-          <div className="absolute left-[20%] top-0 w-40 h-40 rounded-full bg-[#e08858]/10 blur-3xl" />
+          <div className="absolute left-[20%] top-0 w-40 h-40 rounded-full bg-[#0b4f9c]/10 blur-3xl" />
 
-          <div className="absolute right-[20%] bottom-0 w-40 h-40 rounded-full bg-[#a63d2a]/10 blur-3xl" />
+          <div className="absolute right-[20%] bottom-0 w-40 h-40 rounded-full bg-[#083b75]/10 blur-3xl" />
 
           <div className="relative">
 
             <div className="inline-flex items-center gap-2">
 
-              <span className="w-1.5 h-1.5 rounded-full bg-[#e08858]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0b4f9c]" />
 
-              <span className="text-[10px] font-Clarkson uppercase tracking-[0.25em] text-[#e08858]">
+              <span className="text-[10px] font-Clarkson uppercase tracking-[0.25em] text-[#0b4f9c]">
                 Build something better
               </span>
 
-              <span className="w-1.5 h-1.5 rounded-full bg-[#e08858]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0b4f9c]" />
 
             </div>
 
-            <h2 className="mt-5 max-w-3xl mx-auto text-2xl sm:text-3xl lg:text-4xl font-Clarkson font-bold tracking-[-0.04em] text-[#fbf4ee]">
+            <h2 className="mt-5 max-w-3xl mx-auto text-2xl sm:text-3xl lg:text-4xl font-Clarkson font-bold tracking-[-0.04em] text-[#ffffff]">
 
               Have a problem worth solving?
 
               <br />
 
-              <span className="text-[#e08858]">
+              <span className="text-[#0b4f9c]">
                 Let's build the solution.
               </span>
 
             </h2>
 
-            <p className="mt-5 max-w-xl mx-auto text-xs sm:text-sm leading-7 font-Clarkson text-[#fbf4ee]/60">
+            <p className="mt-5 max-w-xl mx-auto text-xs sm:text-sm leading-7 font-Clarkson text-[#ffffff]/60">
               Tell us what you are trying to build, improve, or automate.
               We will help turn the idea into a practical digital product.
             </p>

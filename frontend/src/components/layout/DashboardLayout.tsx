@@ -15,7 +15,7 @@ export const DashboardLayout: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen flex bg-[#fbf4ee] dark:bg-[#100810] text-[#1c1019] dark:text-[#fbf4ee]">
+    <div className="min-h-screen flex bg-[#ffffff]  text-[#12202f] ">
       {/* Sidebar */}
       <DashboardSidebar
         mobileOpen={mobileSidebarOpen}

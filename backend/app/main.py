@@ -3,6 +3,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.core.config import settings
 from app.database import Base, SessionLocal, engine
 from app.routers import (
     auth,
@@ -42,13 +43,19 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-# Allow requests from the deployed Aevona frontend.
+# Allow the deployed Aevona frontend plus anything listed in CORS_ORIGINS
+# (defaults include http://localhost:3000 and :5173 for local development).
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://www.aevonasolution.com",
-        "https://aevonasolution.com",
-    ],
+    allow_origins=list(
+        dict.fromkeys(
+            [
+                "https://www.aevonasolution.com",
+                "https://aevonasolution.com",
+                *settings.cors_origins_list,
+            ]
+        )
+    ),
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

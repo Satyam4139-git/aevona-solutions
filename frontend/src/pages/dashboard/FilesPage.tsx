@@ -70,10 +70,10 @@ export const FilesPage: React.FC = () => {
       {/* Title */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+          <h1 className="text-2xl font-serif font-bold text-[#12202f] ">
             File Management
           </h1>
-          <p className="text-xs text-[#5e4650] dark:text-[#e08858]/80 mt-1">
+          <p className="text-xs text-[#4a5a6a]  mt-1">
             Centralized document repository, architectural blueprints, and deliverables.
           </p>
         </div>
@@ -91,8 +91,8 @@ export const FilesPage: React.FC = () => {
             onClick={() => setSelectedFolder(f)}
             className={`flex items-center gap-2 px-4 py-2 rounded-2xl text-xs font-semibold whitespace-nowrap transition-colors border ${
               selectedFolder === f
-                ? 'bg-[#5e4650] text-white dark:bg-[#e08858] dark:text-[#140a14] border-[#5e4650]'
-                : 'bg-white dark:bg-[#1e1220] text-[#5e4650] dark:text-[#e08858] border-[#e08858]/30 hover:border-[#e08858]'
+                ? 'bg-[#4a5a6a] text-white   border-[#4a5a6a]'
+                : 'bg-white  text-[#4a5a6a]  border-[#0b4f9c]/30 hover:border-[#0b4f9c]'
             }`}
           >
             <Folder className="w-4 h-4" /> {f}
@@ -101,36 +101,36 @@ export const FilesPage: React.FC = () => {
       </div>
 
       {/* Search Bar */}
-      <div className="bg-white dark:bg-[#1e1220] p-3.5 rounded-2xl border border-[#e08858]/30 flex items-center justify-between">
+      <div className="bg-white  p-3.5 rounded-2xl border border-[#0b4f9c]/30 flex items-center justify-between">
         <div className="relative w-full sm:w-80">
-          <Search className="absolute left-3.5 top-3 w-4 h-4 text-[#c45139]" />
+          <Search className="absolute left-3.5 top-3 w-4 h-4 text-[#0b4f9c]" />
           <input
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search files by name..."
-            className="w-full pl-9 pr-4 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/40 rounded-xl text-xs text-[#1c1019] dark:text-[#fbf4ee]"
+            className="w-full pl-9 pr-4 py-2 bg-[#ffffff]  border border-[#0b4f9c]/40 rounded-xl text-xs text-[#12202f] "
           />
         </div>
-        <span className="text-xs text-[#5e4650] dark:text-[#e08858]">
+        <span className="text-xs text-[#4a5a6a] ">
           Showing {filteredFiles.length} items
         </span>
       </div>
 
       {/* File List Table */}
-      <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-3xl shadow-sm overflow-hidden">
-        <div className="divide-y divide-[#f6e9de] dark:divide-[#33222c]">
+      <div className="bg-white  border border-[#0b4f9c]/30 rounded-3xl shadow-sm overflow-hidden">
+        <div className="divide-y divide-[#f3f6f9] ">
           {filteredFiles.map((file) => (
-            <div key={file.id} className="p-4 flex items-center justify-between gap-4 hover:bg-[#fbf4ee]/50 dark:hover:bg-[#2a1a25]/50 transition-colors">
+            <div key={file.id} className="p-4 flex items-center justify-between gap-4 hover:bg-[#ffffff]/50  transition-colors">
               <div className="flex items-center gap-3.5 min-w-0">
-                <div className="p-2 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] shrink-0">
+                <div className="p-2 rounded-xl bg-[#ffffff]  shrink-0">
                   {getFileIcon(file.type)}
                 </div>
                 <div className="min-w-0">
-                  <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee] truncate">
+                  <div className="text-xs font-bold text-[#12202f]  truncate">
                     {file.name}
                   </div>
-                  <div className="text-[11px] text-[#5e4650] dark:text-[#e08858]/70">
+                  <div className="text-[11px] text-[#4a5a6a] ">
                     {file.size} • Category: {file.category} • Uploaded by {file.uploadedBy} on {file.uploadedAt}
                   </div>
                 </div>
@@ -140,21 +140,21 @@ export const FilesPage: React.FC = () => {
               <div className="flex items-center gap-2 shrink-0">
                 <button
                   onClick={() => setPreviewFile(file)}
-                  className="p-2 rounded-lg text-[#5e4650] dark:text-[#e08858] hover:bg-[#f6e9de] dark:hover:bg-[#2a1a25]"
+                  className="p-2 rounded-lg text-[#4a5a6a]  hover:bg-[#f3f6f9] "
                   title="Preview UI"
                 >
                   <Eye className="w-4 h-4" />
                 </button>
                 <button
                   onClick={() => alert(`Downloading ${file.name}...`)}
-                  className="p-2 rounded-lg text-[#5e4650] dark:text-[#e08858] hover:bg-[#f6e9de] dark:hover:bg-[#2a1a25]"
+                  className="p-2 rounded-lg text-[#4a5a6a]  hover:bg-[#f3f6f9] "
                   title="Download File"
                 >
                   <Download className="w-4 h-4" />
                 </button>
                 <button
                   onClick={() => deleteFile(file.id)}
-                  className="p-2 rounded-lg text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/40"
+                  className="p-2 rounded-lg text-rose-500 hover:bg-rose-50 "
                   title="Delete File"
                 >
                   <Trash2 className="w-4 h-4" />
@@ -169,7 +169,7 @@ export const FilesPage: React.FC = () => {
       <Modal isOpen={isUploadModalOpen} onClose={() => setIsUploadModalOpen(false)} title="Upload New File">
         <form onSubmit={handleUploadSubmit} className="space-y-4">
           <div>
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+            <label className="block text-xs font-semibold text-[#12202f]  mb-1">
               File Title / Filename *
             </label>
             <input
@@ -178,18 +178,18 @@ export const FilesPage: React.FC = () => {
               value={fileName}
               onChange={(e) => setFileName(e.target.value)}
               placeholder="e.g. AWS_Infrastructure_Specification.pdf"
-              className="w-full px-3.5 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 rounded-xl text-sm"
+              className="w-full px-3.5 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50 rounded-xl text-sm"
             />
           </div>
 
           <div>
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+            <label className="block text-xs font-semibold text-[#12202f]  mb-1">
               Category
             </label>
             <select
               value={fileCategory}
               onChange={(e) => setFileCategory(e.target.value as any)}
-              className="w-full px-3.5 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 rounded-xl text-xs"
+              className="w-full px-3.5 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50 rounded-xl text-xs"
             >
               <option value="Document">Document</option>
               <option value="Design">Design</option>
@@ -209,11 +209,11 @@ export const FilesPage: React.FC = () => {
       {/* PREVIEW MODAL */}
       <Modal isOpen={!!previewFile} onClose={() => setPreviewFile(null)} title={`Preview: ${previewFile?.name}`}>
         <div className="space-y-4 text-center py-6">
-          <div className="p-8 rounded-2xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/30">
-            <FileText className="w-16 h-16 text-[#e08858] mx-auto mb-3" />
-            <div className="text-sm font-bold text-[#1c1019] dark:text-[#fbf4ee]">{previewFile?.name}</div>
-            <div className="text-xs text-[#5e4650] mt-1">Size: {previewFile?.size} • Category: {previewFile?.category}</div>
-            <div className="text-[11px] text-[#c45139] mt-2">Uploaded by {previewFile?.uploadedBy}</div>
+          <div className="p-8 rounded-2xl bg-[#ffffff]  border border-[#0b4f9c]/30">
+            <FileText className="w-16 h-16 text-[#0b4f9c] mx-auto mb-3" />
+            <div className="text-sm font-bold text-[#12202f] ">{previewFile?.name}</div>
+            <div className="text-xs text-[#4a5a6a] mt-1">Size: {previewFile?.size} • Category: {previewFile?.category}</div>
+            <div className="text-[11px] text-[#0b4f9c] mt-2">Uploaded by {previewFile?.uploadedBy}</div>
           </div>
           <Button variant="gold" size="sm" onClick={() => { alert(`Downloading ${previewFile?.name}`); setPreviewFile(null); }}>
             Download Copy

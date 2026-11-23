@@ -94,9 +94,9 @@ export const OnboardingPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#fbf4ee] dark:bg-[#100810] text-[#1c1019] dark:text-[#fbf4ee] flex flex-col justify-between p-4 sm:p-8">
+    <div className="min-h-screen bg-[#ffffff]  text-[#12202f]  flex flex-col justify-between p-4 sm:p-8">
       {/* Top Header */}
-      <div className="max-w-4xl mx-auto w-full flex items-center justify-between pb-6 border-b border-[#e08858]/30 dark:border-[#3a2530]">
+      <div className="max-w-4xl mx-auto w-full flex items-center justify-between pb-6 border-b border-[#0b4f9c]/30 ">
         <Logo size="md" />
 
         {/* Progress Dots / Steps */}
@@ -110,10 +110,10 @@ export const OnboardingPage: React.FC = () => {
                 <div
                   className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all ${
                     isCurrent
-                      ? 'bg-[#5e4650] text-white dark:bg-[#e08858] dark:text-[#140a14] ring-4 ring-[#e08858]/30'
+                      ? 'bg-[#4a5a6a] text-white   ring-4 ring-[#0b4f9c]/30'
                       : isCompleted
                       ? 'bg-emerald-600 text-white'
-                      : 'bg-[#f6e9de] dark:bg-[#2a1a25] text-[#5e4650] dark:text-[#e08858]'
+                      : 'bg-[#f3f6f9]  text-[#4a5a6a] '
                   }`}
                 >
                   {isCompleted ? <CheckCircle2 className="w-4 h-4" /> : `0${stepNum}`}
@@ -121,7 +121,7 @@ export const OnboardingPage: React.FC = () => {
                 {stepNum < 6 && (
                   <div
                     className={`w-4 sm:w-8 h-0.5 mx-1 transition-colors ${
-                      stepNum < step ? 'bg-emerald-600' : 'bg-[#f6e9de] dark:bg-[#2a1a25]'
+                      stepNum < step ? 'bg-emerald-600' : 'bg-[#f3f6f9] '
                     }`}
                   />
                 )}
@@ -133,22 +133,22 @@ export const OnboardingPage: React.FC = () => {
 
       {/* Main Wizard Card */}
       <div className="max-w-2xl mx-auto w-full my-auto py-8">
-        <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/40 dark:border-[#3a2530] rounded-3xl p-6 sm:p-10 shadow-2xl space-y-6 animate-fade-in">
+        <div className="bg-white  border border-[#0b4f9c]/40  rounded-3xl p-6 sm:p-10 shadow-2xl space-y-6 animate-fade-in">
           {/* STEP 01: WELCOME */}
           {step === 1 && (
             <div className="text-center space-y-6">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#e08858] to-[#5e4650] text-white flex items-center justify-center mx-auto shadow-gold-glow">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#0b4f9c] to-[#1a63b5] text-white flex items-center justify-center mx-auto shadow-gold-glow">
                 <Sparkles className="w-8 h-8" />
               </div>
 
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-[#e08858] font-serif">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#0b4f9c] font-serif">
                   Step 01 • Welcome
                 </span>
-                <h1 className="text-3xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee] mt-1">
+                <h1 className="text-3xl font-serif font-bold text-[#12202f]  mt-1">
                   Welcome to Aevona Solution, {currentUser?.name || 'Partner'}!
                 </h1>
-                <p className="text-sm text-[#5e4650] dark:text-[#e08858]/80 mt-2 max-w-md mx-auto leading-relaxed">
+                <p className="text-sm text-[#4a5a6a]  mt-2 max-w-md mx-auto leading-relaxed">
                   Let’s customize your workspace experience in under 2 minutes so you can access your SaaS platform projects, tools, and technical services.
                 </p>
               </div>
@@ -165,36 +165,36 @@ export const OnboardingPage: React.FC = () => {
           {step === 2 && (
             <div className="space-y-6">
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-[#e08858] font-serif">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#0b4f9c] font-serif">
                   Step 02 • Personal Details
                 </span>
-                <h2 className="text-2xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee] mt-1">
+                <h2 className="text-2xl font-serif font-bold text-[#12202f]  mt-1">
                   Tell us about your role
                 </h2>
-                <p className="text-xs text-[#5e4650] dark:text-[#e08858]/80">
+                <p className="text-xs text-[#4a5a6a] ">
                   This helps customize project permissions and team notifications.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <div>
-                  <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+                  <label className="block text-xs font-semibold text-[#12202f]  mb-1">
                     Job Title / Designation
                   </label>
                   <div className="relative">
-                    <UserIcon className="absolute left-3.5 top-3.5 w-4 h-4 text-[#c45139]" />
+                    <UserIcon className="absolute left-3.5 top-3.5 w-4 h-4 text-[#0b4f9c]" />
                     <input
                       type="text"
                       value={personalInfo.jobTitle}
                       onChange={(e) => setPersonalInfo({ ...personalInfo, jobTitle: e.target.value })}
                       placeholder="e.g. VP of Technology / Product Owner"
-                      className="w-full pl-10 pr-4 py-2.5 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-sm text-[#1c1019] dark:text-[#fbf4ee] focus:ring-2 focus:ring-[#e08858]"
+                      className="w-full pl-10 pr-4 py-2.5 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-sm text-[#12202f]  focus:ring-2 focus:ring-[#0b4f9c]"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+                  <label className="block text-xs font-semibold text-[#12202f]  mb-1">
                     Phone Number
                   </label>
                   <input
@@ -202,12 +202,12 @@ export const OnboardingPage: React.FC = () => {
                     value={personalInfo.phone}
                     onChange={(e) => setPersonalInfo({ ...personalInfo, phone: e.target.value })}
                     placeholder="+1 (555) 000-0000"
-                    className="w-full px-4 py-2.5 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-sm text-[#1c1019] dark:text-[#fbf4ee] focus:ring-2 focus:ring-[#e08858]"
+                    className="w-full px-4 py-2.5 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-sm text-[#12202f]  focus:ring-2 focus:ring-[#0b4f9c]"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+                  <label className="block text-xs font-semibold text-[#12202f]  mb-1">
                     Location / Timezone
                   </label>
                   <input
@@ -215,7 +215,7 @@ export const OnboardingPage: React.FC = () => {
                     value={personalInfo.location}
                     onChange={(e) => setPersonalInfo({ ...personalInfo, location: e.target.value })}
                     placeholder="e.g. San Francisco, CA (PST)"
-                    className="w-full px-4 py-2.5 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-sm text-[#1c1019] dark:text-[#fbf4ee] focus:ring-2 focus:ring-[#e08858]"
+                    className="w-full px-4 py-2.5 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-sm text-[#12202f]  focus:ring-2 focus:ring-[#0b4f9c]"
                   />
                 </div>
               </div>
@@ -226,41 +226,41 @@ export const OnboardingPage: React.FC = () => {
           {step === 3 && (
             <div className="space-y-6">
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-[#e08858] font-serif">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#0b4f9c] font-serif">
                   Step 03 • Organization
                 </span>
-                <h2 className="text-2xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee] mt-1">
+                <h2 className="text-2xl font-serif font-bold text-[#12202f]  mt-1">
                   Company Details
                 </h2>
-                <p className="text-xs text-[#5e4650] dark:text-[#e08858]/80">
+                <p className="text-xs text-[#4a5a6a] ">
                   Configure workspace parameters for your enterprise organization.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <div>
-                  <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+                  <label className="block text-xs font-semibold text-[#12202f]  mb-1">
                     Company Name
                   </label>
                   <div className="relative">
-                    <Building className="absolute left-3.5 top-3.5 w-4 h-4 text-[#c45139]" />
+                    <Building className="absolute left-3.5 top-3.5 w-4 h-4 text-[#0b4f9c]" />
                     <input
                       type="text"
                       value={companyInfo.companyName}
                       onChange={(e) => setCompanyInfo({ ...companyInfo, companyName: e.target.value })}
-                      className="w-full pl-10 pr-4 py-2.5 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-sm text-[#1c1019] dark:text-[#fbf4ee] focus:ring-2 focus:ring-[#e08858]"
+                      className="w-full pl-10 pr-4 py-2.5 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-sm text-[#12202f]  focus:ring-2 focus:ring-[#0b4f9c]"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+                  <label className="block text-xs font-semibold text-[#12202f]  mb-1">
                     Company Size
                   </label>
                   <select
                     value={companyInfo.companySize}
                     onChange={(e) => setCompanyInfo({ ...companyInfo, companySize: e.target.value })}
-                    className="w-full px-4 py-2.5 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-sm text-[#1c1019] dark:text-[#fbf4ee] focus:ring-2 focus:ring-[#e08858]"
+                    className="w-full px-4 py-2.5 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-sm text-[#12202f]  focus:ring-2 focus:ring-[#0b4f9c]"
                   >
                     <option value="1-10 employees">1 - 10 employees</option>
                     <option value="10-50 employees">10 - 50 employees</option>
@@ -270,13 +270,13 @@ export const OnboardingPage: React.FC = () => {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+                  <label className="block text-xs font-semibold text-[#12202f]  mb-1">
                     Industry Category
                   </label>
                   <select
                     value={companyInfo.industry}
                     onChange={(e) => setCompanyInfo({ ...companyInfo, industry: e.target.value })}
-                    className="w-full px-4 py-2.5 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 dark:border-[#3a2530] rounded-xl text-sm text-[#1c1019] dark:text-[#fbf4ee] focus:ring-2 focus:ring-[#e08858]"
+                    className="w-full px-4 py-2.5 bg-[#ffffff]  border border-[#0b4f9c]/50  rounded-xl text-sm text-[#12202f]  focus:ring-2 focus:ring-[#0b4f9c]"
                   >
                     <option value="Technology & Software">Technology & Software</option>
                     <option value="Finance & Fintech">Finance & Fintech</option>
@@ -294,13 +294,13 @@ export const OnboardingPage: React.FC = () => {
           {step === 4 && (
             <div className="space-y-6">
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-[#e08858] font-serif">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#0b4f9c] font-serif">
                   Step 04 • Objectives
                 </span>
-                <h2 className="text-2xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee] mt-1">
+                <h2 className="text-2xl font-serif font-bold text-[#12202f]  mt-1">
                   What are you looking to accomplish?
                 </h2>
-                <p className="text-xs text-[#5e4650] dark:text-[#e08858]/80">
+                <p className="text-xs text-[#4a5a6a] ">
                   Select all digital solutions relevant to your organization.
                 </p>
               </div>
@@ -315,16 +315,16 @@ export const OnboardingPage: React.FC = () => {
                       onClick={() => handleToggleUseCase(opt.label)}
                       className={`p-3.5 rounded-2xl border cursor-pointer transition-all flex items-start gap-3 ${
                         isSelected
-                          ? 'border-[#e08858] bg-[#e08858]/15 shadow-sm'
-                          : 'border-[#e08858]/30 dark:border-[#3a2530] bg-[#fbf4ee]/50 dark:bg-[#140a14] hover:border-[#e08858]/60'
+                          ? 'border-[#0b4f9c] bg-[#0b4f9c]/15 shadow-sm'
+                          : 'border-[#0b4f9c]/30  bg-[#ffffff]/50  hover:border-[#0b4f9c]/60'
                       }`}
                     >
-                      <div className={`p-2 rounded-xl shrink-0 ${isSelected ? 'bg-[#5e4650] text-white dark:bg-[#e08858] dark:text-[#140a14]' : 'bg-[#f6e9de] dark:bg-[#2a1a25] text-[#5e4650] dark:text-[#e08858]'}`}>
+                      <div className={`p-2 rounded-xl shrink-0 ${isSelected ? 'bg-[#4a5a6a] text-white  ' : 'bg-[#f3f6f9]  text-[#4a5a6a] '}`}>
                         <Icon className="w-4 h-4" />
                       </div>
                       <div className="flex-1">
-                        <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">{opt.label}</div>
-                        <div className="text-[11px] text-[#5e4650]/70 dark:text-[#e08858]/60 mt-0.5">{opt.desc}</div>
+                        <div className="text-xs font-bold text-[#12202f] ">{opt.label}</div>
+                        <div className="text-[11px] text-[#4a5a6a]/70  mt-0.5">{opt.desc}</div>
                       </div>
                     </div>
                   );
@@ -337,54 +337,54 @@ export const OnboardingPage: React.FC = () => {
           {step === 5 && (
             <div className="space-y-6">
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-[#e08858] font-serif">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#0b4f9c] font-serif">
                   Step 05 • Platform Preferences
                 </span>
-                <h2 className="text-2xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee] mt-1">
+                <h2 className="text-2xl font-serif font-bold text-[#12202f]  mt-1">
                   Notification & Reports
                 </h2>
-                <p className="text-xs text-[#5e4650] dark:text-[#e08858]/80">
+                <p className="text-xs text-[#4a5a6a] ">
                   Manage how you receive project updates and engineering alerts.
                 </p>
               </div>
 
               <div className="space-y-3">
-                <label className="flex items-center justify-between p-3.5 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/30 cursor-pointer">
+                <label className="flex items-center justify-between p-3.5 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/30 cursor-pointer">
                   <div>
-                    <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">Email Notifications</div>
-                    <div className="text-[11px] text-[#5e4650]/70 dark:text-[#e08858]/60">Receive task assignments and project milestones.</div>
+                    <div className="text-xs font-bold text-[#12202f] ">Email Notifications</div>
+                    <div className="text-[11px] text-[#4a5a6a]/70 ">Receive task assignments and project milestones.</div>
                   </div>
                   <input
                     type="checkbox"
                     checked={preferences.emailUpdates}
                     onChange={(e) => setPreferences({ ...preferences, emailUpdates: e.target.checked })}
-                    className="w-4 h-4 accent-[#5e4650] dark:accent-[#e08858]"
+                    className="w-4 h-4 accent-[#4a5a6a] "
                   />
                 </label>
 
-                <label className="flex items-center justify-between p-3.5 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/30 cursor-pointer">
+                <label className="flex items-center justify-between p-3.5 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/30 cursor-pointer">
                   <div>
-                    <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">Critical Security & Task Alerts</div>
-                    <div className="text-[11px] text-[#5e4650]/70 dark:text-[#e08858]/60">Instant notifications for urgent deployment changes.</div>
+                    <div className="text-xs font-bold text-[#12202f] ">Critical Security & Task Alerts</div>
+                    <div className="text-[11px] text-[#4a5a6a]/70 ">Instant notifications for urgent deployment changes.</div>
                   </div>
                   <input
                     type="checkbox"
                     checked={preferences.taskAlerts}
                     onChange={(e) => setPreferences({ ...preferences, taskAlerts: e.target.checked })}
-                    className="w-4 h-4 accent-[#5e4650] dark:accent-[#e08858]"
+                    className="w-4 h-4 accent-[#4a5a6a] "
                   />
                 </label>
 
-                <label className="flex items-center justify-between p-3.5 rounded-xl bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/30 cursor-pointer">
+                <label className="flex items-center justify-between p-3.5 rounded-xl bg-[#ffffff]  border border-[#0b4f9c]/30 cursor-pointer">
                   <div>
-                    <div className="text-xs font-bold text-[#1c1019] dark:text-[#fbf4ee]">Weekly Analytics Digest</div>
-                    <div className="text-[11px] text-[#5e4650]/70 dark:text-[#e08858]/60">Summary report of monthly bandwidth and task completion.</div>
+                    <div className="text-xs font-bold text-[#12202f] ">Weekly Analytics Digest</div>
+                    <div className="text-[11px] text-[#4a5a6a]/70 ">Summary report of monthly bandwidth and task completion.</div>
                   </div>
                   <input
                     type="checkbox"
                     checked={preferences.weeklyReport}
                     onChange={(e) => setPreferences({ ...preferences, weeklyReport: e.target.checked })}
-                    className="w-4 h-4 accent-[#5e4650] dark:accent-[#e08858]"
+                    className="w-4 h-4 accent-[#4a5a6a] "
                   />
                 </label>
               </div>
@@ -394,19 +394,19 @@ export const OnboardingPage: React.FC = () => {
           {/* STEP 06: COMPLETE */}
           {step === 6 && (
             <div className="text-center space-y-6 py-4">
-              <div className="w-20 h-20 rounded-full bg-emerald-100 dark:bg-emerald-950/80 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mx-auto shadow-xl ring-8 ring-emerald-500/10">
+              <div className="w-20 h-20 rounded-full bg-emerald-100  text-emerald-600  flex items-center justify-center mx-auto shadow-xl ring-8 ring-emerald-500/10">
                 <CheckCircle2 className="w-10 h-10" />
               </div>
 
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-[#e08858] font-serif">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#0b4f9c] font-serif">
                   Step 06 • Setup Complete
                 </span>
-                <h1 className="text-3xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee] mt-1">
+                <h1 className="text-3xl font-serif font-bold text-[#12202f]  mt-1">
                   You're all set!
                 </h1>
-                <p className="text-sm text-[#5e4650] dark:text-[#e08858]/80 mt-2 max-w-md mx-auto">
-                  Your enterprise portal for <span className="font-bold text-[#1c1019] dark:text-[#fbf4ee]">{companyInfo.companyName}</span> has been provisioned.
+                <p className="text-sm text-[#4a5a6a]  mt-2 max-w-md mx-auto">
+                  Your enterprise portal for <span className="font-bold text-[#12202f] ">{companyInfo.companyName}</span> has been provisioned.
                 </p>
               </div>
 
@@ -420,7 +420,7 @@ export const OnboardingPage: React.FC = () => {
 
           {/* Navigation Controls for Steps 2 to 5 */}
           {step > 1 && step < 6 && (
-            <div className="flex items-center justify-between pt-6 border-t border-[#f6e9de] dark:border-[#33222c]">
+            <div className="flex items-center justify-between pt-6 border-t border-[#f3f6f9] ">
               <Button variant="ghost" size="sm" onClick={handleBack} icon={<ArrowLeft className="w-4 h-4" />}>
                 Back
               </Button>
@@ -441,7 +441,7 @@ export const OnboardingPage: React.FC = () => {
       </div>
 
       {/* Footer copyright */}
-      <div className="text-center text-xs text-[#5e4650]/70 dark:text-[#e08858]/60">
+      <div className="text-center text-xs text-[#4a5a6a]/70 ">
         © {new Date().getFullYear()} AEVONA SOLUTION. All rights reserved.
       </div>
     </div>

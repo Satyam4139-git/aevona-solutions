@@ -28,10 +28,10 @@ export const TeamPage: React.FC = () => {
       {/* Title */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-serif font-bold text-[#1c1019] dark:text-[#fbf4ee]">
+          <h1 className="text-2xl font-serif font-bold text-[#12202f] ">
             Team & Access Control
           </h1>
-          <p className="text-xs text-[#5e4650] dark:text-[#e08858]/80 mt-1">
+          <p className="text-xs text-[#4a5a6a]  mt-1">
             Manage organization members, assign role permissions, and send workspace invitations.
           </p>
         </div>
@@ -42,25 +42,25 @@ export const TeamPage: React.FC = () => {
       </div>
 
       {/* Team Members Grid */}
-      <div className="bg-white dark:bg-[#1e1220] border border-[#e08858]/30 rounded-3xl shadow-sm overflow-hidden">
-        <div className="divide-y divide-[#f6e9de] dark:divide-[#33222c]">
+      <div className="bg-white  border border-[#0b4f9c]/30 rounded-3xl shadow-sm overflow-hidden">
+        <div className="divide-y divide-[#f3f6f9] ">
           {teamMembers.map((member) => (
-            <div key={member.id} className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-[#fbf4ee]/50 dark:hover:bg-[#2a1a25]/50 transition-colors">
+            <div key={member.id} className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-[#ffffff]/50  transition-colors">
               <div className="flex items-center gap-4">
                 <img
                   src={member.avatar}
                   alt={member.name}
-                  className="w-11 h-11 rounded-full object-cover border-2 border-[#e08858]"
+                  className="w-11 h-11 rounded-full object-cover border-2 border-[#0b4f9c]"
                 />
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className="text-sm font-bold text-[#1c1019] dark:text-[#fbf4ee]">{member.name}</span>
+                    <span className="text-sm font-bold text-[#12202f] ">{member.name}</span>
                     <span className={`text-[10px] font-bold px-2 py-0.5 rounded ${member.status === 'Active' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'}`}>
                       {member.status}
                     </span>
                   </div>
-                  <div className="text-xs text-[#5e4650] dark:text-[#e08858]/80">{member.email}</div>
-                  <div className="text-[10px] text-[#c45139] mt-0.5">{member.department} • Joined {member.joinedDate}</div>
+                  <div className="text-xs text-[#4a5a6a] ">{member.email}</div>
+                  <div className="text-[10px] text-[#0b4f9c] mt-0.5">{member.department} • Joined {member.joinedDate}</div>
                 </div>
               </div>
 
@@ -70,7 +70,7 @@ export const TeamPage: React.FC = () => {
                   value={member.role}
                   disabled={member.role === 'Owner'}
                   onChange={(e) => updateTeamMemberRole(member.id, e.target.value as any)}
-                  className="px-3 py-1.5 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/40 rounded-xl text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee]"
+                  className="px-3 py-1.5 bg-[#ffffff]  border border-[#0b4f9c]/40 rounded-xl text-xs font-semibold text-[#12202f] "
                 >
                   <option value="Owner">Owner</option>
                   <option value="Admin">Admin</option>
@@ -81,7 +81,7 @@ export const TeamPage: React.FC = () => {
                 {member.role !== 'Owner' && (
                   <button
                     onClick={() => removeTeamMember(member.id)}
-                    className="p-2 rounded-lg text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/40"
+                    className="p-2 rounded-lg text-rose-500 hover:bg-rose-50 "
                     title="Remove Member"
                   >
                     <Trash2 className="w-4 h-4" />
@@ -97,7 +97,7 @@ export const TeamPage: React.FC = () => {
       <Modal isOpen={isInviteModalOpen} onClose={() => setIsInviteModalOpen(false)} title="Invite New Team Member">
         <form onSubmit={handleInviteSubmit} className="space-y-4">
           <div>
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+            <label className="block text-xs font-semibold text-[#12202f]  mb-1">
               Full Name *
             </label>
             <input
@@ -106,12 +106,12 @@ export const TeamPage: React.FC = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="e.g. Marcus Vance"
-              className="w-full px-3.5 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 rounded-xl text-sm"
+              className="w-full px-3.5 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50 rounded-xl text-sm"
             />
           </div>
 
           <div>
-            <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+            <label className="block text-xs font-semibold text-[#12202f]  mb-1">
               Email Address *
             </label>
             <input
@@ -120,19 +120,19 @@ export const TeamPage: React.FC = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="marcus@company.com"
-              className="w-full px-3.5 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 rounded-xl text-sm"
+              className="w-full px-3.5 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50 rounded-xl text-sm"
             />
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+              <label className="block text-xs font-semibold text-[#12202f]  mb-1">
                 Access Role
               </label>
               <select
                 value={role}
                 onChange={(e) => setRole(e.target.value as any)}
-                className="w-full px-3 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 rounded-xl text-xs"
+                className="w-full px-3 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50 rounded-xl text-xs"
               >
                 <option value="Admin">Admin</option>
                 <option value="Manager">Manager</option>
@@ -141,7 +141,7 @@ export const TeamPage: React.FC = () => {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-[#1c1019] dark:text-[#fbf4ee] mb-1">
+              <label className="block text-xs font-semibold text-[#12202f]  mb-1">
                 Department
               </label>
               <input
@@ -149,7 +149,7 @@ export const TeamPage: React.FC = () => {
                 value={department}
                 onChange={(e) => setDepartment(e.target.value)}
                 placeholder="Engineering"
-                className="w-full px-3 py-2 bg-[#fbf4ee] dark:bg-[#140a14] border border-[#e08858]/50 rounded-xl text-xs"
+                className="w-full px-3 py-2 bg-[#ffffff]  border border-[#0b4f9c]/50 rounded-xl text-xs"
               />
             </div>
           </div>

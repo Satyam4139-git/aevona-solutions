@@ -41,17 +41,14 @@ export const PublicNavbar: React.FC = () => {
       className="
         sticky top-0 z-40
         bg-white
-        dark:bg-[#1e1018]
-        border-b border-[#c45139]/40
+        
+        border-b border-[#0b4f9c]/40
         shadow-[0_4px_20px_rgba(40,20,32,0.08)]
       "
     >
       <div className="aenova-utility-bar">
-        <div className="aenova-utility-inner">
-          <span>Studio 51, Birmingham B4 7AH</span>
+        <div className="aenova-utility-inner" style={{ justifyContent: 'flex-end' }}>
           <div>
-            <a href="mailto:info@aevonasolution.com">info@aevonasolution.com</a>
-            <a href="tel:+447404010483">+44 7404 010483</a>
             <Link to="/contact#estimate">Cost calculator ↗</Link>
           </div>
         </div>
@@ -79,18 +76,16 @@ export const PublicNavbar: React.FC = () => {
                   ${
                     active
                       ? `
-                        text-[#1c1019]
-                        dark:text-[#fbf4ee]
-                        bg-[#e08858]/35
+                        text-[#0b4f9c]
+                        bg-[#e6eef8]
                         font-semibold
                         shadow-sm
                       `
                       : `
-                        text-[#3b2a35]/85
-                        dark:text-[#fbf4ee]/80
-                        hover:text-[#1c1019]
-                        dark:hover:text-[#e08858]
-                        hover:bg-[#e08858]/20
+                        text-[#2a3a4c]/85
+                        
+                        hover:text-[#0b4f9c]
+                        hover:bg-[#f3f6f9]
                       `
                   }
                 `}
@@ -152,9 +147,9 @@ export const PublicNavbar: React.FC = () => {
             className="
               p-2
               rounded-lg
-              text-[#5e4650]
-              dark:text-[#e08858]
-              hover:bg-[#e08858]/20
+              text-[#4a5a6a]
+              
+              hover:bg-[#f3f6f9]
               transition-colors
             "
           >
@@ -173,9 +168,9 @@ export const PublicNavbar: React.FC = () => {
           className="
             lg:hidden
             bg-white
-            dark:bg-[#1e1018]
-            border-t border-[#c45139]/20
-            border-b border-[#c45139]/40
+            
+            border-t border-[#0b4f9c]/20
+            border-b border-[#0b4f9c]/40
             px-4
             pt-3
             pb-6
@@ -202,15 +197,15 @@ export const PublicNavbar: React.FC = () => {
                 ${
                   isActive(link.path)
                     ? `
-                      bg-[#e08858]/30
-                      text-[#1c1019]
-                      dark:text-[#fbf4ee]
+                      bg-[#0b4f9c]/30
+                      text-[#12202f]
+                      
                       font-semibold
                     `
                     : `
-                      text-[#1c1019]
-                      dark:text-[#fbf4ee]
-                      hover:bg-[#e08858]/20
+                      text-[#12202f]
+                      
+                      hover:bg-[#f3f6f9]
                     `
                 }
               `}
@@ -220,7 +215,7 @@ export const PublicNavbar: React.FC = () => {
           ))}
 
           {/* Mobile Actions */}
-          <div className="pt-4 border-t border-[#c45139]/30 space-y-2">
+          <div className="pt-4 border-t border-[#0b4f9c]/30 space-y-2">
             <CursorToggle />
           <MotionToggle />
 

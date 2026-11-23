@@ -13,5 +13,14 @@ export default defineConfig({
   server: {
     port: 3000,
     open: false,
+    // Allow access through VS Code port forwarding / dev tunnels / ngrok.
+    allowedHosts: true,
+    // Forward API calls to the local backend, so only port 3000 needs to be shared.
+    proxy: {
+      '/api': {
+        target: 'http://127.0.0.1:8000',
+        changeOrigin: true,
+      },
+    },
   },
 });

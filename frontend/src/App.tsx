@@ -19,6 +19,7 @@ import { CaseStudiesPage } from './pages/marketing/CaseStudiesPage';
 import { CareersPage } from './pages/marketing/CareersPage';
 import { ContactPage } from './pages/marketing/ContactPage';
 import { LegalPage } from './pages/marketing/LegalPage';
+import { BrochurePage } from './pages/marketing/BrochurePage';
 
 // Auth Pages
 import { LoginPage } from './pages/auth/LoginPage';
@@ -71,6 +72,7 @@ export const App: React.FC = () => {
                 <Route path="/case-studies" element={<CaseStudiesPage />} />
                 <Route path="/careers" element={<CareersPage />} />
                 <Route path="/contact" element={<ContactPage />} />
+                <Route path="/brochure" element={<BrochurePage />} />
                 <Route path="/privacy" element={<LegalPage />} />
                 <Route path="/terms" element={<LegalPage />} />
                 <Route path="/cookies" element={<LegalPage />} />

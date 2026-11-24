@@ -26,7 +26,7 @@ import {
 } from 'lucide-react';
 
 import { Button } from '../../components/ui/Button';
-import { PromoVideoSection } from '../../components/ui/PromoVideoSection';
+import { ScrollVideoHero } from '../../components/ui/ScrollVideoHero';
 import { ProjectShowcase } from '../../components/ui/ProjectShowcase';
 
 export const HomePage: React.FC = () => {
@@ -115,6 +115,14 @@ export const HomePage: React.FC = () => {
   return (
     <div className="hl-borders min-h-screen bg-[#ffffff]  text-[#12202f] ">
 
+      {/* FULL-SCREEN INTRO VIDEO: stays pinned while the website slides up over it (like tcs.com) */}
+      <ScrollVideoHero />
+
+      {/* WEBSITE CONTENT (slides up over the video) */}
+      <div
+        className="relative z-10 bg-white"
+      >
+
       {/* =========================================================
           HERO
       ========================================================= */}
@@ -145,7 +153,7 @@ export const HomePage: React.FC = () => {
               </div>
 
               {/* Heading */}
-              <h1 className="mt-7 text-5xl sm:text-6xl lg:text-[72px] xl:text-[80px] font-Clarkson font-bold leading-[0.98] tracking-tight text-[#12202f] ">
+              <h1 className="mt-7 text-5xl sm:text-6xl lg:text-[72px] xl:text-[80px] font-heading font-bold leading-[0.98] tracking-tight text-[#12202f] ">
 
                 Technology for a
 
@@ -296,9 +304,6 @@ export const HomePage: React.FC = () => {
       </section>
 
 
-      {/* PROMO VIDEO */}
-      <PromoVideoSection />
-
       {/* =========================================================
           TRUST / CAPABILITIES STRIP
       ========================================================= */}
@@ -348,7 +353,7 @@ export const HomePage: React.FC = () => {
           SERVICES
       ========================================================= */}
 
-      <section className="gold-balls py-24 lg:py-32">
+      <section className="gold-balls py-20 lg:py-28">
 <GoldBalls />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -360,7 +365,7 @@ export const HomePage: React.FC = () => {
               Our Expertise
             </span>
 
-            <h2 className="mt-4 text-5xl sm:text-6xl font-Clarkson font-bold leading-tight">
+            <h2 className="mt-4 text-5xl sm:text-6xl font-heading font-bold leading-tight">
               Technology built around
               <span className="text-[#0b4f9c] ">
                 {' '}business outcomes.
@@ -448,7 +453,7 @@ export const HomePage: React.FC = () => {
           SOLUTIONS
       ========================================================= */}
 
-      <section className="gold-balls py-24 lg:py-32 bg-[#ffffff] ">
+      <section className="gold-balls py-20 lg:py-28 bg-[#ffffff] ">
 <GoldBalls />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -462,7 +467,7 @@ export const HomePage: React.FC = () => {
                 Solutions
               </span>
 
-              <h2 className="mt-4 text-5xl sm:text-6xl font-Clarkson font-bold leading-tight">
+              <h2 className="mt-4 text-5xl sm:text-6xl font-heading font-bold leading-tight">
                 Built for the way
                 <span className="text-[#0b4f9c] ">
                   {' '}business works.
@@ -547,7 +552,7 @@ export const HomePage: React.FC = () => {
           ENTERPRISE TECHNOLOGY
       ========================================================= */}
 
-      <section className="gold-balls py-24 lg:py-32">
+      <section className="gold-balls py-20 lg:py-28">
 <GoldBalls />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -669,7 +674,7 @@ export const HomePage: React.FC = () => {
                 Enterprise Technology
               </span>
 
-              <h2 className="mt-4 text-5xl sm:text-6xl font-Clarkson font-bold leading-tight">
+              <h2 className="mt-4 text-5xl sm:text-6xl font-heading font-bold leading-tight">
                 Systems designed to
                 <span className="text-[#0b4f9c] ">
                   {' '}scale with you.
@@ -728,7 +733,7 @@ export const HomePage: React.FC = () => {
           HOW WE WORK
       ========================================================= */}
 
-      <section className="gold-balls py-24 bg-[#12202f] text-[#ffffff]">
+      <section className="gold-balls py-20 lg:py-28 bg-[#12202f] text-[#ffffff]">
 <GoldBalls />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -739,7 +744,7 @@ export const HomePage: React.FC = () => {
               How We Work
             </span>
 
-            <h2 className="mt-4 text-4xl sm:text-5xl font-Clarkson font-bold">
+            <h2 className="mt-4 text-4xl sm:text-5xl font-heading font-bold">
               From "Idea" to "Impact".
             </h2>
 
@@ -830,7 +835,7 @@ export const HomePage: React.FC = () => {
           TECHNOLOGY STACK
       ========================================================= */}
 
-      <section className="gold-balls py-24 bg-[#ffffff] ">
+      <section className="gold-balls py-20 lg:py-28 bg-[#ffffff] ">
 <GoldBalls />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -841,7 +846,7 @@ export const HomePage: React.FC = () => {
               Technology
             </span>
 
-            <h2 className="mt-4 text-5xl sm:text-6xl font-Clarkson font-bold leading-tight">
+            <h2 className="mt-4 text-5xl sm:text-6xl font-heading font-bold leading-tight">
               Powered by modern technology.
             </h2>
 
@@ -877,7 +882,7 @@ export const HomePage: React.FC = () => {
           IMPACT
       ========================================================= */}
 
-      <section className="gold-balls py-24">
+      <section className="gold-balls py-20 lg:py-28">
 <GoldBalls />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -962,7 +967,7 @@ export const HomePage: React.FC = () => {
           FINAL CTA
       ========================================================= */}
 
-      <section className="gold-balls pb-24 lg:pb-32">
+      <section className="gold-balls pb-20 lg:pb-28">
 <GoldBalls />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -977,11 +982,11 @@ export const HomePage: React.FC = () => {
 
               <div className="max-w-2xl">
 
-                <span className="text-xs uppercase tracking-[0.3em] font-Clarkson text-white/80">
+                <span className="text-xs uppercase tracking-[0.3em] font-heading text-white/80">
                   Let's Build Something Meaningful
                 </span>
 
-                <h2 className="mt-5 text-4xl sm:text-5xl font-Clarkson font-bold leading-tight">
+                <h2 className="mt-5 text-4xl sm:text-5xl font-heading font-bold leading-tight">
                   Let's build technology
                   that moves your business forward.
                 </h2>
@@ -1032,10 +1037,9 @@ export const HomePage: React.FC = () => {
 
       </section>
 
+      </div>
+
         </div>
 
-      
-
-    
   );
 };

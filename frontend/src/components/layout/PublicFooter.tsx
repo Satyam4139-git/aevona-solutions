@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Logo } from '../ui/Logo';
-import { downloadBrochure } from '../../lib/brochure';
+import { BROCHURE_URL } from '../../lib/brochure';
 import {
   Mail,
   Phone,
@@ -91,9 +91,9 @@ export const PublicFooter: React.FC = () => {
               </li>
 
               <li>
-                <Link to="/brochure" onClick={downloadBrochure} className="hover:text-[#0b4f9c] transition-colors">
-                  Pricing Brochure (PDF)
-                </Link>
+                <a href={BROCHURE_URL} target="_blank" rel="noopener noreferrer" className="hover:text-[#0b4f9c] transition-colors">
+                  Company Brochure (PDF)
+                </a>
               </li>
             </ul>
           </div>

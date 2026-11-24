@@ -1,4 +1,4 @@
-/* Pricing taken from "Aevona Solutions Pricing Brochure 2026".
+/* Pricing matches the "Aevona Solution Brochure" (Startup Partner Rates).
    All amounts are introductory STARTING prices (India in INR, International in USD). */
 export interface PriceItem { id: string; name: string; inr: number; usd: number; }
 export interface PriceCategory { id: string; label: string; items: PriceItem[]; }

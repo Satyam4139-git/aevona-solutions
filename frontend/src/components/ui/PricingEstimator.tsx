@@ -5,7 +5,7 @@ import { PRICE_CATEGORIES, MAINTENANCE_PLANS } from '../../data/pricing';
 
 type Region = 'india' | 'intl';
 
-/** Project estimator driven by the Aevona 2026 pricing brochure. */
+/** Project estimator driven by the Aevona Solution brochure pricing. */
 export const PricingEstimator: React.FC = () => {
   const [region, setRegion] = useState<Region>('india');
   const [categoryId, setCategoryId] = useState(PRICE_CATEGORIES[0].id);

@@ -1,12 +1,8 @@
-export const BROCHURE_URL = '/Aevona_Solutions_Pricing_Brochure_2026.pdf';
-export const BROCHURE_FILENAME = 'Aevona_Solutions_Pricing_Brochure_2026.pdf';
+/** Company brochure (PDF). It is opened in the browser, never force-downloaded. */
+export const BROCHURE_URL = '/Aevona_Solution_Brochure_Professional.pdf';
+export const BROCHURE_TITLE = 'Aevona Solution Brochure';
 
-/** Starts a file download of the brochure (call from a click handler). */
-export const downloadBrochure = () => {
-  const a = document.createElement('a');
-  a.href = BROCHURE_URL;
-  a.download = BROCHURE_FILENAME;
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
+/** Opens the brochure in a new browser tab (call from a click handler). */
+export const openBrochure = () => {
+  window.open(BROCHURE_URL, '_blank', 'noopener,noreferrer');
 };
